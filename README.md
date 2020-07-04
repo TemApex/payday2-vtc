@@ -1,2 +1,2 @@
 # payday2-vtc
-Various Text Changes, now with a lot more changes!
+Various Text Changes, updated again with a lot more changes!
