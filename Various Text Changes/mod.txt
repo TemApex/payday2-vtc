@@ -12,7 +12,7 @@
 			"identifier": "vtc",
 			"revision": 23,
 			"host": {
-				"meta": https://github.com/TemApex/payday2-vtc/raw/master/latest.json
+				"meta": https://github.com/TemApex/payday2-vtc/raw/master/meta.json
 				"download": https://github.com/TemApex/payday2-vtc/raw/master/VTC.zip
 			}
 		}
