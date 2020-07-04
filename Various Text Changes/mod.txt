@@ -12,7 +12,8 @@
 			"identifier": "vtc",
 			"revision": 23,
 			"host": {
-				"meta": https://github.com/TemApex/payday2-vtc/raw/master/Various%20Text%20Changes/latest.json
+				"meta": https://github.com/TemApex/payday2-vtc/raw/master/latest.json
+				"download": https://github.com/TemApex/payday2-vtc/raw/master/VTC.zip
 			}
 		}
 	],
