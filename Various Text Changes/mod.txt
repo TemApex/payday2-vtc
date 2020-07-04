@@ -5,14 +5,14 @@
 	"contact" : "TemApex00@gmail.com",
 	"version" : "6.0-PRE1",
 	"blt_version" : 2,
-	"color" : "102 204 255",
+	"color" : "51 153 204",
 	"image" : "vtc.png",
 	"updates" : [
 		{
 			"identifier": "vtc",
 			"revision": 24,
 			"host": {
-				"meta": https://github.com/TemApex/payday2-vtc/raw/master/meta.json
+				"meta": "https://github.com/TemApex/payday2-vtc/raw/master/meta.json"
 			}
 		}
 	],
