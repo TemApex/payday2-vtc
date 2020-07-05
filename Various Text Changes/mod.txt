@@ -1,19 +1,18 @@
 {
-	"name" : "Various Text Changes: Reloaded",
+	"name" : "Various Text Changes",
 	"description" : "Replaces various lines of text throughout the game to increase consistency and make text quicker to read. Aimed at experienced players.",
 	"author" : "TemApex",
 	"contact" : "TemApex00@gmail.com",
-	"version" : "5.23",
+	"version" : "6.0-PRE2",
 	"blt_version" : 2,
-	"color" : "102 204 255",
+	"color" : "51 153 204",
 	"image" : "vtc.png",
 	"updates" : [
 		{
 			"identifier": "vtc",
-			"revision": 23,
+			"revision": 25,
 			"host": {
-				"meta": https://github.com/TemApex/payday2-vtc/raw/master/meta.json
-				"download": https://github.com/TemApex/payday2-vtc/raw/master/VTC.zip
+				"meta": "https://github.com/TemApex/payday2-vtc/raw/master/meta.json"
 			}
 		}
 	],
