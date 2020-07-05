@@ -36,8 +36,7 @@ Biker Heist
 Panic Room  
 Undercover  
 Counterfeit  
-First World Bank  
-Diamond Heist  
+First World Bank   
 Green Bridge  
 Slaughterhouse  
 Rats  
