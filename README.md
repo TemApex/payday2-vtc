@@ -26,7 +26,7 @@ Four Stores
 Mallcrasher  
 Nightclub  
 
-Heists with some support (not fully tested):  
+Heists with partial support (not fully tested):  
 Armored Transport (truck heists)  
 Stealing Xmas  
 Santa's Workshop  
