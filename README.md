@@ -25,11 +25,12 @@ Scarface Mansion
 Four Stores  
 Mallcrasher  
 Nightclub  
-
-Heists with partial support (not fully tested):  
 Armored Transport (truck heists)  
 Stealing Xmas  
 Santa's Workshop  
+Framing Frame  
+
+Heists with partial support (not fully tested):  
 Diamond Heist  
 The Diamond  
 Biker Heist  
@@ -53,7 +54,6 @@ Hoxton Revenge
 Big Bank  
 Big Oil  
 Election Day  
-Framing Frame  
 Aftershock  
 Goat Simulator  
 Meltdown  
