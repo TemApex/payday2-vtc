@@ -28,6 +28,9 @@ Armored Transport DLC
 Stealing Xmas  
 Santa's Workshop  
 Framing Frame  
+Safehouse Nightmare  
+Yacht Heist  
+Shacklethorne Auction  
 
 Heists with partial support (not fully tested):  
 Diamond Heist  
@@ -63,9 +66,6 @@ Border Crossing
 Border Crystals  
 San Martin Bank  
 Breakfast In Tijuana  
-Safehouse Nightmare (probably fine?)  
 Hell's Island  
 Henry's Rock  
-Shacklethorne Auction  
 Brooklyn 10-10  
-Yacht Heist  
