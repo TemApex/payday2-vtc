@@ -3,7 +3,6 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 
 Heists with full support (fully tested):  
 Golden Grin (missing Dentist's loot)  
-Train Heist  
 Heat Street  
 Bank Heist (all variants)  
 No Mercy  
@@ -25,7 +24,7 @@ Scarface Mansion
 Four Stores  
 Mallcrasher  
 Nightclub  
-Armored Transport (truck heists)  
+Armored Transport DLC  
 Stealing Xmas  
 Santa's Workshop  
 Framing Frame  
