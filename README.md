@@ -37,7 +37,7 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 - Diamond Heist  
 - The Diamond  
 
-**Heists with partial support (not fully tested):  **
+**Heists with partial support (not fully tested):**
 - Biker Heist  
 - Panic Room  
 - Undercover  
@@ -65,7 +65,7 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 - Ukrainian Job  
 - Border Crossing  
 
-**Heists with no support (completely untested):  **
+**Heists with no support (completely untested):**
 - Border Crystals  
 - San Martin Bank  
 - Breakfast In Tijuana  
