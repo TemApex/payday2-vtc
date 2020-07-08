@@ -31,6 +31,8 @@ Framing Frame
 Safehouse Nightmare  
 Yacht Heist  
 Shacklethorne Auction  
+Hell's Island  
+Henry's Rock  
 
 Heists with partial support (not fully tested):  
 Diamond Heist  
@@ -60,12 +62,10 @@ Aftershock
 Goat Simulator  
 Meltdown  
 Ukrainian Job  
+Border Crossing  
 
 Heists with no support (completely untested):  
-Border Crossing  
 Border Crystals  
 San Martin Bank  
 Breakfast In Tijuana  
-Hell's Island  
-Henry's Rock  
-Brooklyn 10-10  
+Brooklyn 10-10
