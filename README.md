@@ -1,7 +1,7 @@
 # payday2-vtc
 Various Text Changes, now with 100% more changes, and 75% less text!
 
-Heists with full support (fully tested):  
+**Heists with full support (fully tested):**  
 - Golden Grin (missing Dentist's loot)  
 - Heat Street  
 - Bank Heist (all variants)  
@@ -37,7 +37,7 @@ Heists with full support (fully tested):
 - Diamond Heist  
 - The Diamond  
 
-Heists with partial support (not fully tested):  
+**Heists with partial support (not fully tested):  **
 - Biker Heist  
 - Panic Room  
 - Undercover  
@@ -65,7 +65,7 @@ Heists with partial support (not fully tested):
 - Ukrainian Job  
 - Border Crossing  
 
-Heists with no support (completely untested):  
+**Heists with no support (completely untested):  **
 - Border Crystals  
 - San Martin Bank  
 - Breakfast In Tijuana  
