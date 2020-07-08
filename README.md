@@ -3,7 +3,6 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 
 Heists with full support (fully tested):  
 Golden Grin (missing Dentist's loot)  
-Train Heist  
 Heat Street  
 Bank Heist (all variants)  
 No Mercy  
@@ -25,10 +24,15 @@ Scarface Mansion
 Four Stores  
 Mallcrasher  
 Nightclub  
-Armored Transport (truck heists)  
+Armored Transport DLC  
 Stealing Xmas  
 Santa's Workshop  
 Framing Frame  
+Safehouse Nightmare  
+Yacht Heist  
+Shacklethorne Auction  
+Hell's Island  
+Henry's Rock  
 
 Heists with partial support (not fully tested):  
 Diamond Heist  
@@ -58,15 +62,10 @@ Aftershock
 Goat Simulator  
 Meltdown  
 Ukrainian Job  
+Border Crossing  
 
 Heists with no support (completely untested):  
-Border Crossing  
 Border Crystals  
 San Martin Bank  
 Breakfast In Tijuana  
-Safehouse Nightmare (probably fine?)  
-Hell's Island  
-Henry's Rock  
-Shacklethorne Auction  
-Brooklyn 10-10  
-Yacht Heist  
+Brooklyn 10-10
