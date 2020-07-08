@@ -40,8 +40,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_st_activate_spec = "Use",
 		menu_st_max_perk_deck = "Unlock All",
 
-		menu_clear_progress = "Delete Savefile",  --Reset Progress
-		menu_clear_progress_help = "Deletes your savefile. Only do this if you're 100% sure this is what you want to do.",  --Reset Progress
+		menu_reset_account = "Delete Save Data",  --Reset Progress
+		menu_reset_account_help = "Deletes your save data. Only do this if you're 100% sure this is what you want to do.",  --Reset Progress
 		dialog_are_you_sure_you_want_to_clear_progress = "This process is irreversible. It will delete everything that you currently have and start you back at level 0, infamy 0. Are you 100% certain you want to do this?",
 
 
@@ -90,8 +90,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_resume_game = "Resume",
 		menu_restart_game = "Restart",
 		menu_players_list = "Players",
-		menu_end_game = "Quit",
-		menu_abort_mission = "Quit Heist",
+		menu_end_game = "Main Menu",
+		dialog_are_you_sure_you_want_to_leave_game = "Are you sure you want to return to the main menu?\n\nYou will leave your current lobby (if in one).",
+		menu_abort_mission = "Exit Heist",
+		dialog_abort_mission_text = "Are you sure you want to exit the current heist?\n\nYou and your crew will be returned to the lobby where you can pick another heist.",
 		
 		--CRIME.NET SIDEBAR--
 		cn_crime_spree = "Crime Spree",
@@ -210,6 +212,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cs_suspend_spree = "Exit",
 		menu_cs_get_rewards = "End Spree",
 
+		menu_victory_goto_next_stage ="Next Day",
 		menu_victory_goto_payday = "Card Drop",
 		
 		
@@ -265,8 +268,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--Generic Interactions
 		hud_int_equipment_drill = "$BTN_INTERACT Place Drill",
 		debug_interact_saw = "$BTN_INTERACT Place Saw",
-		hud_int_equipment_no_keycard = "Need Keycard",
-		hud_int_equipment_keycard = "$BTN_INTERACT Use Keycard",
+		hud_int_equipment_no_keycard = "",
+		hud_int_equipment_keycard = "$BTN_INTERACT Insert Keycard",
 		hud_int_pickup_keycard = "$BTN_INTERACT Take Keycard",
 		hud_int_pick_lock = "$BTN_INTERACT Pick Lock",
 		hud_int_hold_pickup_lance = "$BTN_INTERACT Pickup Drill",
@@ -296,7 +299,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_money_wrap_take_money = "$BTN_INTERACT Bag Money",
 		debug_interact_gold_pile_take_money = "$BTN_INTERACT Bag Gold",
 		hud_int_hold_grab_the_bag = "$BTN_INTERACT Pickup Bag",
-		hud_int_hold_grab_the_painting = "$BTN_INTERACT Bag Painting",
+		hud_int_hold_grab_the_painting = "$BTN_INTERACT Pickup Painting",
 		hud_int_cut_glass = "$BTN_INTERACT Cut Glass",
 		debug_interact_temp_interact_box_press = "$BTN_INTERACT Interact",
 		hud_int_type_in_password = "$BTN_INTERACT Type Password",
@@ -304,21 +307,21 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_take_jewelry = "$BTN_INTERACT Take Jewelry",
 		hud_int_equipment_shaped_charge = "$BTN_INTERACT Place C4",
 		debug_interact_gas = "$BTN_INTERACT Place Gas",
-		debug_interact_equipment_gas = "",
+		debug_interact_equipment_gas = "Need Gas",
 		hud_int_hold_take_gas = "$BTN_INTERACT Take Gas",
 		debug_interact_c4_bag = "$BTN_INTERACT Take C4",
 		debug_interact_c4 = "$BTN_INTERACT Place C4",
-		debug_interact_equipment_c4 = "",
+		debug_interact_equipment_c4 = "Need C4",
 		hud_int_disable_alarm_pager = "$BTN_INTERACT Answer Pager",
 		hud_int_dispose_corpse = "$BTN_INTERACT Bag Corpse",
 		hud_int_take_diamonds_dah = "$BTN_INTERACT Bag Diamonds",
 		debug_interact_equipment_crowbar = "Need Crowbar",
-		debug_interact_equipment_saw = "",
+		debug_interact_equipment_saw = "Need Saw",
 		debug_interact_saw_jammed = "$BTN_INTERACT Fix Saw",
 		hud_int_hold_take_saw = "$BTN_INTERACT Take Saw",
 		hud_int_hold_crack_crate = "$BTN_INTERACT Open Crate",
 		hud_int_hold_born_untie = "$BTN_INTERACT Set Free",
-		hud_int_use_ecm_jammer = "$BTN_INTERACT Use ECM",
+		hud_int_use_ecm_jammer = "$BTN_INTERACT Place ECM",
 		hud_int_invisible_interaction_open = "$BTN_INTERACT Open",
 		hud_int_tape_loop = "$BTN_INTERACT Loop Camera",
 		hud_int_hold_take_painting = "$BTN_INTERACT Bag Painting",
@@ -358,13 +361,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_take_crowbar = "$BTN_INTERACT Take Crowbar",
 		hud_int_hold_take_artifact = "$BTN_INTERACT Bag Artifact",
 		hud_int_hold_cut = "$BTN_INTERACT Cut",
-		hud_int_timelock_panel = "$BTN_INTERACT Use Keycard",
+		hud_int_timelock_panel = "$BTN_INTERACT Insert Keycard",
 		debug_interact_trade = "$BTN_INTERACT Trade",
 		debug_interact_revive = "$BTN_INTERACT Revive",
 		debug_interact_numpad = "$BTN_INTERACT Enter Code",
 		hud_int_hold_take_necklace = "$BTN_INTERACT Pickup Necklace",
 		hud_int_grab_server = "$BTN_INTERACT Take Server",
-		hint_usb_stick = "",
+		hint_usb_stick = "Need USB",
 		hud_int_press_activate = "$BTN_INTERACT Activate",
 		hud_int_equipment_drill_upgrade = "$BTN_INTERACT Upgrade Drill",
 		hud_int_equipment_lance_upgrade = "$BTN_INTERACT Upgrade Drill",
@@ -374,6 +377,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_c4_diffusible = "$BTN_INTERACT Defuse C4",
 		hud_int_place_flare = "$BTN_INTERACT Light Flare",
 		hud_int_use_flare = "$BTN_INTERACT Light Flare",
+		hud_equipment_need_glass_cutter = "",
 
 		--DEPLOYABLES--
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
@@ -392,9 +396,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_cas_open_door = "$BTN_INTERACT Open Door",
 		hud_cas_close_door = "$BTN_INTERACT Close Door",
 		hud_int_hold_play_slots = "$BTN_INTERACT Play Slots",
-		hud_int_hold_moon_attach_winch = "$BTN_INTERACT Attach Winch",
+		hud_int_hold_moon_attach_winch = "$BTN_INTERACT Attach Hook",
 		hud_open_cas_securityroom_door = "$BTN_INTERACT Open Door",
-		--hud_take_??? = "$BTN_INTERACT Bag Coffer",
+		--hud_take_??? = "$BTN_INTERACT Pickup Coffer",
 		hud_open_cas_briefcase = "$BTN_INTERACT Open Briefcase",
 		hud_take_casino_chips = "$BTN_INTERACT Take Chips",
 		hud_int_search_blueprints = "$BTN_INTERACT Search",
@@ -405,7 +409,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_insert_usb = "$BTN_INTERACT Insert USB",
 		hud_int_take_bottle = "$BTN_INTERACT Take Bottle",
 		hud_int_pour_drink = "$BTN_INTERACT Pour Drink",
-		hud_insert_hotel_room_key = "$BTN_INTERACT Use Keycard",
+		hud_insert_hotel_room_key = "$BTN_INTERACT Insert Keycard",
 		hud_place_sleeping_gass = "$BTN_INTERACT Use Gas",
 		hud_cas_security_door = "$BTN_INTERACT Pick Lock",
 		hud_disable_lasers = "$BTN_INTERACT Disable Lasers",
@@ -426,10 +430,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_take_watertank = "$BTN_INTERACT Pickup Water Tank",
 		hud_cas_open_compartment = "$BTN_INTERACT Open Compartment",
 		hud_stop_drill = "$BTN_INTERACT Stop BFD",
-		hint_no_bfd_tool = "Tool required",
+		hint_no_bfd_tool = "Need Tool",
 		hud_fix_bfd_drill = "$BTN_INTERACT Fix BFD",
-		hint_no_data_usb_key = "",
-		hint_no_usb_key = "",
+		hint_no_data_usb_key = "Need USB",
+		hint_no_usb_key = "Need USB",
+		hud_int_hold_pick_up = "$BTN_INTERACT Take",
+		hud_int_press_interaction_close = "$BTN_INTERACT Close",
 
 		--Aftershock
 		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe",
@@ -486,9 +492,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--Stealing Xmas
 		hud_int_hold_search_computer = "$BTN_INTERACT Search Computer",
-		hud_int_hold_take_shoes = "$BTN_INTERACT Bag Heels",
-		hud_int_hold_take_toy = "$BTN_INTERACT Bag Toy",
+		hud_int_hold_take_shoes = "$BTN_INTERACT Pickup Shoes",
+		hud_int_hold_take_toy = "$BTN_INTERACT Pickup Toy",
 		hud_int_hold_open_shopping_bag = "$BTN_INTERACT Open Bag",
+		hud_int_pickup_tablet = "$BTN_INTERACT Take Tablet",
+		hud_int_pickup_phone = "$BTN_INTERACT Take Phone",
+		hud_int_hold_take_expensive_wine = "$BTN_INTERACT Pickup Wine",
 		
 		--Hoxton Breakout
 		hud_int_hold_move_car = "$BTN_INTERACT Move Car",
@@ -508,7 +517,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_search_files = "$BTN_INTERACT Search",
 		
 		--Car Shop
-		hud_equipment_need_car_keys = "",
+		hud_equipment_need_car_keys = "Need Keys",
 		hud_int_hold_unlock_car = "$BTN_INTERACT Unlock Car",
 		
 		--Lab Rats
@@ -559,14 +568,14 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_set_up_sentry = "$BTN_INTERACT Place Sentry",
 		hud_int_hold_take_blood_sample = "$BTN_INTERACT Take Sample",
 		hud_int_insert_blood_sample = "$BTN_INTERACT Test Sample",
-		hint_no_blood_sample = "",
+		hint_no_blood_sample = "Need Sample",
 		hud_int_hold_take_blood_valid_sample = "$BTN_INTERACT Take Sample",
 		hud_int_call_elevator = "$BTN_INTERACT Call Elevator",
 		hud_int_hold_stash_vial = "$BTN_INTERACT Stash Sample",
 		hud_int_hold_breach = "$BTN_INTERACT Breach",
 
 		--Prison Nightmare
-		press_insert_keycard = "$BTN_INTERACT Use Keycard",
+		press_insert_keycard = "$BTN_INTERACT Insert Keycard",
 		hud_int_hold_pull_switch = "$BTN_INTERACT Pull Switch",
 		
 		--Biker Heist
@@ -581,7 +590,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_pku_breaching_charges = "$BTN_INTERACT Pickup Charges",
 		hud_int_hold_plant_breaching_charge = "$BTN_INTERACT Plant Charge",
 		hud_int_hold_place_breaching_detonator = "$BTN_INTERACT Place Detonator",
-		hud_int_open_panicroom = "$BTN_INTERACT Use Keycard",
+		hud_int_open_panicroom = "$BTN_INTERACT Insert Keycard",
 		hud_int_hold_take_prototype = "$BTN_INTERACT Bag Prototype",
 		hud_int_hold_unlock_display_ares = "Ares",
 		hud_int_hold_unlock_display_demeter = "Demeter",
@@ -597,8 +606,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hack_timelock = "$BTN_INTERACT Hack Timelock",
 		
 		--Panic Room
-		debug_interact_equiptment_apartment_key = "",
-		hud_int_take_chavez_keys = "$BTN_INTERACT Take Keys",
+		debug_interact_equiptment_apartment_key = "Need Key",
+		hud_int_take_chavez_keys = "$BTN_INTERACT Take Key",
 		debug_interact_apartment_key = "$BTN_INTERACT Use Key",
 		hud_int_hold_take_toothbrush = "$BTN_INTERACT Pickup Toothbrush",
 		debug_interact_apartment_helicopter = "$BTN_INTERACT Attach Magnet",
@@ -624,7 +633,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--Diamond Store
 		hud_int_numpad_keycard = "$BTN_INTERACT Disable Alarm",
-		hud_int_numpad_no_keycard = "Need Keycard",
+		hud_int_numpad_no_keycard = "",
 
 		--Heat Street
 		debug_interact_embassy_door = "$BTN_INTERACT Open Door",
@@ -656,11 +665,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_relay_locke = "$BTN_INTERACT Relay Locke",
 		hud_int_hold_bypass_firewall = "$BTN_INTERACT Bypass Firewall",
 		hud_int_hold_take_pardons = "$BTN_INTERACT Take Pardon",
+		hud_int_hold_pull_lever = "$BTN_INTERACT Pull Lever",
 
 		--Breaking Feds
 		hud_int_hold_hack_barrier = "$BTN_INTERACT Hack Barrier",
 		hud_int_hold_turn_off_light = "$BTN_INTERACT Turn Off Lights",
-		hud_int_hold_take_box = "$BTN_INTERACT Bag Coffer",
+		hud_int_hold_take_box = "$BTN_INTERACT Pickup Coffer",
 		hud_take_stapler = "$BTN_INTERACT Take Stapler",
 		hud_int_press_place_stapler = "$BTN_INTERACT Place Stapler",
 		hud_int_hold_disable_alarm = "$BTN_INTERACT Disable Alarm",
@@ -681,6 +691,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_german_folder = "$BTN_INTERACT Take Folder",
 		hud_int_hold_disassemble_turret = "$BTN_INTERACT Bag Turret",
 		hud_int_hold_pack_shells = "$BTN_INTERACT Bag Shells",
+		hud_int_take_confidential_folder_event = "$BTN_INTERACT Take Folder",
 
 		--Boiling Point
 		hud_int_fire_missiles = "$BTN_INTERACT Fire Missiles",
@@ -692,7 +703,78 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_pku_briefcase = "$BTN_INTERACT Take Briefcase",
 
 		--Big Oil
+		hud_int_take_confidential_folder = "$BTN_INTERACT Take Intel",
+		hud_int_hold_take_blueprints = "$BTN_INTERACT Take Blueprints",
 		hud_int_hold_take_reaktor = "$BTN_INTERACT Pickup Engine",
+
+		--Framing Frame
+		hud_int_answer_phone = "$BTN_INTERACT Answer Phone",
+		debug_interact_move_bookshelf = "$BTN_INTERACT Move Shelf",
+		hud_int_hold_hack_numpad = "$BTN_INTERACT Hack Keypad",
+		hud_int_old_wine = "$BTN_INTERACT Pickup Wine",
+		hud_int_hold_take_hdd = "$BTN_INTERACT Take HDD",
+		hud_int_use_computer = "$BTN_INTERACT Take Laptop",
+		hud_int_hold_use_computer = "$BTN_INTERACT Place Laptop",
+		hud_int_hold_use_device = "$BTN_INTERACT Place Device",
+
+		--Yacht Heist
+		hud_int_search_fridge = "$BTN_INTERACT Search Fridge",
+		hud_int_search_steel_cabinet = "$BTN_INTERACT Search Cabinet",
+		hud_int_search_cart = "$BTN_INTERACT Search Cart",
+		hud_int_search_drawers = "$BTN_INTERACT Search Drawers",
+		hud_int_search_drawer = "$BTN_INTERACT Search Drawer",
+		hud_int_search_luggage = "$BTN_INTERACT Search Luggage",
+		hud_int_search_shower = "$BTN_INTERACT Search Shower",
+		hud_int_search_cigar_boxes = "$BTN_INTERACT Search Cigar Boxes",
+		hud_int_search_capsule = "$BTN_INTERACT Search Capsule",
+		hud_int_search_bookshelf = "$BTN_INTERACT Search Bookshelf",
+		hud_int_open_window = "$BTN_INTERACT Open Window",
+		hud_int_close_window = "$BTN_INTERACT Close Window",
+		hud_int_hack_server_room = "$BTN_INTERACT Hack Laptop",
+		hud_int_turn_off = "$BTN_INTERACT Turn Off",
+
+		--Shacklethorne Auction
+		hud_int_press_pay_respects = "$BTN_INTERACT Pay Respects",
+		hud_int_hold_to_place_device = "$BTN_INTERACT Place Device",
+		hud_int_hold_turn_off_power = "$BTN_INTERACT Turn Off",
+		hud_int_hold_to_take_tablet = "$BTN_INTERACT Pickup Tablet",
+
+		--Firestarter
+		hud_int_take_camera = "$BTN_INTERACT Take Camera",
+
+		--Hell's Island
+		hud_int_pickup_asset = "$BTN_INTERACT Take Keys",
+
+		--Safehouse Nightmare
+		hud_int_trick_treat = "$BTN_INTERACT Trick or Treat?",
+
+		--Henry's Rock
+		hud_int_hold_add_compound_a = "$BTN_INTERACT Compound A",
+		hint_no_compound_a = "",
+		hud_int_hold_add_compound_b = "$BTN_INTERACT Compound B",
+		hint_no_compound_b = "",
+		hud_int_hold_add_compound_c = "$BTN_INTERACT Compound C",
+		hint_no_compound_c = "",
+		hud_int_hold_add_compound_d = "$BTN_INTERACT Compound D",
+		hint_no_compound_d = "",
+		hud_int_hold_mix_concoction = "$BTN_INTERACT Mix Compounds",
+		hud_int_hold_take_concoction = "$BTN_INTERACT Take Mixture",
+		hud_int_need_concoction_paste = "",
+		hud_int_equipment_concoction = "Volatile Mixture",
+		hud_int_hold_ignite_concoction = "$BTN_INTERACT Ignite Mixture",
+		hud_int_hold_search_documents = "$BTN_INTERACT Search Documents",
+		hud_int_hold_move_crane = "$BTN_INTERACT Move Crane",
+		hud_int_hold_aim_laser = "$BTN_INTERACT Aim Laser",
+		hud_int_hold_take_battery = "$BTN_INTERACT Pickup Battery",
+		hold_interact_charge_gun = "$BTN_INTERACT Charge Laser",
+		hud_int_press_fire_laser = "$BTN_INTERACT Fire Laser",
+		hud_int_hold_remove_battery = "$BTN_INTERACT Remove Battery",
+
+		--Border Crossing
+		hud_int_remove_tarp = "$BTN_INTERACT Move Tarp",
+		hud_int_mex_pickup_murky_uniform = "$BTN_INTERACT Take Uniform",
+		hud_int_hold_bag_ro_armor = "$BTN_INTERACT Bag Armor",
+		hud_int_unlock_gate = "$BTN_INTERACT Unlock Gate",
 
 		--Holdout
 		debug_interact_trade_hostage_skm = "$BTN_INTERACT Trade",
@@ -761,7 +843,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_pick_up = "$BTN_INTERACT Take",
 		hud_int_touch_book = "$BTN_INTERACT Touch Book",
 		hud_int_use_device = "$BTN_INTERACT Use Device",
-		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close",
+		hud_int_press_interaction_open = "$BTN_INTERACT Open",
 		hud_chill_access_sidejobs = "$BTN_INTERACT View Trophies",
 
 		
@@ -810,6 +892,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_carry_coke = "Cocaine",
 		hud_carry_cage_bag = "Cage",
 		hud_carry_expensive_wine = "Wine",
+		hud_carry_old_wine = "Wine",
 		hud_carry_turret = "Turret",
 		hud_carry_weapons = "Rifles",
 		hud_carry_weapon = "Rifles",
