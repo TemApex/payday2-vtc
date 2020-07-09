@@ -36,6 +36,18 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 - Brooklyn 10-10  
 - Diamond Heist  
 - The Diamond  
+- Hoxton Revenge  
+- Ukrainian Job  
+- Big Bank  
+- Brooklyn Bank  
+- Alaskan Deal  
+- Election Day  
+- Big Oil  
+- Watchdogs  
+- Border Crystals  
+- Firestarter  
+- Meltdown  
+- Aftershock  
 
 **Heists with partial support (not fully tested):**
 - Biker Heist  
@@ -46,26 +58,12 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 - Green Bridge  
 - Slaughterhouse  
 - Rats  
-- Firestarter  
-- Watchdogs  
-- Alaskan Deal  
 - Beneath The Mountain  
-- Brooklyn Bank  
 - Bomb: Dockyard  
 - Bomb: Forest  
 - Hotline Miami  
 - Hoxton Breakout  
-- Hoxton Revenge  
-- Big Bank  
-- Big Oil  
-- Election Day  
-- Aftershock  
 - Goat Simulator  
-- Meltdown  
-- Ukrainian Job  
 - Border Crossing  
-
-**Heists with no support (completely untested):**
-- Border Crystals  
 - San Martin Bank  
 - Breakfast In Tijuana  
