@@ -1,7 +1,7 @@
 # payday2-vtc
 Various Text Changes, now with 100% more changes, and 75% less text!
 
-**Partially supported (not fully tested):**
+**Unfinished heists:**
 - Biker Heist  
 - Panic Room  
 - Undercover  
