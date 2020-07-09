@@ -48,6 +48,7 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 - Firestarter  
 - Meltdown  
 - Aftershock  
+- Rats  
 
 **Heists with partial support (not fully tested):**
 - Biker Heist  
@@ -57,7 +58,6 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 - First World Bank   
 - Green Bridge  
 - Slaughterhouse  
-- Rats  
 - Beneath The Mountain  
 - Bomb: Dockyard  
 - Bomb: Forest  
