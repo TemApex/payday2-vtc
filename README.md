@@ -3,11 +3,8 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 
 **Unfinished Heists:**
 - Biker Heist  
-- Panic Room  
 - Counterfeit  
 - First World Bank   
-- Green Bridge  
-- Slaughterhouse  
 - Hotline Miami  
 - Border Crossing  
 - San Martin Bank  
