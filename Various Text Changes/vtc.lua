@@ -286,7 +286,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_stash_planks_pickup = "$BTN_INTERACT Take Planks",
 		debug_interact_stash_planks = "$BTN_INTERACT Use Planks",
 		debug_interact_money_wrap_single_bundle_take_money = "$BTN_INTERACT Take Money",
-		debug_interact_being_revived = "Being Revived",
+		debug_interact_being_revived = "",
 		hud_starting_heist = "Masking Up",
 		hud_int_barrier_numpad = "$BTN_INTERACT Activate Barrier",
 		debug_interact_gage_assignment_take = "$BTN_INTERACT Take Package",
@@ -368,7 +368,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_revive = "$BTN_INTERACT Revive",
 		debug_interact_numpad = "$BTN_INTERACT Enter Code",
 		hud_int_hold_take_necklace = "$BTN_INTERACT Pickup Necklace",
-		hud_int_grab_server = "$BTN_INTERACT Pickup Server",
+		hud_int_grab_server = "$BTN_INTERACT Take Server",
 		hint_usb_stick = "Need USB",
 		hud_int_press_activate = "$BTN_INTERACT Activate",
 		hud_int_equipment_drill_upgrade = "$BTN_INTERACT Upgrade Drill",
@@ -465,7 +465,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		--Slaughterhouse
 		hud_int_hold_start_crane = "$BTN_INTERACT Start Crane",
-		hud_int_hold_ignite_trap = "$BTN_INTERACT Ignite Trap",
+		hud_int_hold_ignite_trap = "$BTN_INTERACT Ignite Gas",
+		hud_int_hold_take_pig = "$BTN_INTERACT Pickup Pig",
 
 		--Goat Simulator
 		hud_int_hold_grab_goat = "$BTN_INTERACT Pickup Goat",
@@ -597,6 +598,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--Prison Nightmare
 		press_insert_keycard = "$BTN_INTERACT Insert Keycard",
 		hud_int_hold_pull_switch = "$BTN_INTERACT Pull Switch",
+
+		--First World Bank
+		hud_int_hold_close_shutters = "$BTN_INTERACT Close Shutters",
+		hud_int_hold_open_shutters = "$BTN_INTERACT Open Shutters",
+		debug_interact_copy_machine = "$BTN_INTERACT Open Copy Machine",
+		debug_interact_equipment_thermite = "",
+		hud_int_take_envelope = "$BTN_INTERACT Take Envelope",
 		
 		--Biker Heist
 		hud_int_hold_born_take_bike_part = "$BTN_INTERACT Pickup Part",
@@ -634,6 +642,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		--Wolf Pack
 		debug_interact_crowbar = "$BTN_INTERACT Breach",
+		debug_interact_hold_to_breach = "$BTN_INTERACT Breach",
 		debug_interact_interaction_ball = "$BTN_INTERACT Pull Hose",
 		hud_int_take_paper_roll = "$BTN_INTERACT Take Roll",
 		hud_int_take_printer_ink = "$BTN_INTERACT Take Ink",
@@ -824,7 +833,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_equipment_concoction = "Volatile Mixture",
 		hud_int_hold_ignite_concoction = "$BTN_INTERACT Ignite Mixture",
 		hud_int_hold_search_documents = "$BTN_INTERACT Search Documents",
-		hud_int_hold_move_crane = "$BTN_INTERACT Move Crane",
+		hud_int_hold_move_crane = "$BTN_INTERACT Start Crane",
 		hud_int_hold_aim_laser = "$BTN_INTERACT Aim Laser",
 		hud_int_hold_take_battery = "$BTN_INTERACT Pickup Battery",
 		hold_interact_charge_gun = "$BTN_INTERACT Charge Laser",
