@@ -2,8 +2,6 @@
 Various Text Changes, now with 100% more changes, and 75% less text!
 
 **Unfinished Heists:**
-- Biker Heist  
-- Hotline Miami  
 - Border Crossing  
 - San Martin Bank  
 - Breakfast In Tijuana  
@@ -18,6 +16,5 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 
 **Unfixable Issues:**
 - Dentist's loot in Golden Grin is unchanged.
-- The elevators in Golden Grin say "OPEN" when trying to close them.
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".
-- Sangres' weapon case in the safehouse says "OPEN" when trying to close it.
+- The chrome skull in Biker Heist Day 1 says "PICKUP" instead of "TAKE".

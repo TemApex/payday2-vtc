@@ -273,7 +273,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_pickup_keycard = "$BTN_INTERACT Take Keycard",
 		hud_int_pick_lock = "$BTN_INTERACT Pick Lock",
 		hud_int_hold_pickup_lance = "$BTN_INTERACT Pickup Drill",
-		debug_interact_intimidate = "$BTN_INTERACT Take Hostage",
+		debug_interact_intimidate = "$BTN_INTERACT Tie Civilian",
 		debug_interact_hostage_move = "$BTN_INTERACT Stand Up",
 		debug_interact_hostage_stay = "$BTN_INTERACT Sit Down",
 		debug_interact_equipment_cable_tie = "",
@@ -307,11 +307,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_take_jewelry = "$BTN_INTERACT Take Jewelry",
 		hud_int_equipment_shaped_charge = "$BTN_INTERACT Place Charge",
 		debug_interact_gas = "$BTN_INTERACT Place Gas",
-		debug_interact_equipment_gas = "Need Gas",
+		debug_interact_equipment_gas = "",
 		hud_int_hold_take_gas = "$BTN_INTERACT Take Gas",
 		debug_interact_c4_bag = "$BTN_INTERACT Take C4",
 		debug_interact_c4 = "$BTN_INTERACT Place C4",
-		debug_interact_equipment_c4 = "Need C4",
+		debug_interact_equipment_c4 = "",
 		hud_int_disable_alarm_pager = "$BTN_INTERACT Answer Pager",
 		hud_int_dispose_corpse = "$BTN_INTERACT Bag Corpse",
 		hud_int_take_diamonds_dah = "$BTN_INTERACT Pickup Diamonds",
@@ -438,7 +438,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_no_data_usb_key = "Need USB",
 		hint_no_usb_key = "Need USB",
 		hud_int_hold_pick_up = "$BTN_INTERACT Take",
-		hud_int_press_interaction_close = "$BTN_INTERACT Close",
+		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close",
 
 		--Aftershock
 		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe",
@@ -492,6 +492,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_remove_cover = "$BTN_INTERACT Remove Cover",
 		hud_int_hold_cut_cable = "$BTN_INTERACT Cut Cable",
 		hud_int_hold_activate_sprinklers = "$BTN_INTERACT Activate Sprinklers",
+		hud_int_equipment_barcode_opa_locka = "Barcode (Shaw)",
+		hud_int_equipment_barcode_isles_beach = "Barcode (Foggy Bottom)",
+		hud_int_equipment_barcode_brickell = "Barcode (George Town)",
+		hud_int_equipment_barcode_downtown = "Barcode (Downtown)",
+		hud_int_equipment_barcode_edgewater = "Barcode (West End)",
+		hud_int_hold_disarm_bomb = "$BTN_INTERACT Disarm Bomb",
 
 		--Alaskan Deal
 		hud_generator_start = "$BTN_INTERACT Start Generator",
@@ -613,6 +619,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_release_hatch = "$BTN_INTERACT Release Hatch",
 		hud_int_hold_open_case = "$BTN_INTERACT Open Case",
 		hud_int_hold_take_helmet = "$BTN_INTERACT Pickup Helmet",
+		hud_int_hold_born_search_tools = "$BTN_INTERACT Search",
+		hud_int_hold_hand_over_tool = "$BTN_INTERACT Give Tool",
+		hud_born_plug_in_powercord = "$BTN_INTERACT Plug In",
 		
 		--Beneath The Mountain
 		hud_int_hold_pku_breaching_charges = "$BTN_INTERACT Pickup Charges",
@@ -705,7 +714,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_take_stapler = "$BTN_INTERACT Take Stapler",
 		hud_int_press_place_stapler = "$BTN_INTERACT Place Stapler",
 		hud_int_hold_disable_alarm = "$BTN_INTERACT Disable Alarm",
-		hud_open_cas_elevator = "$BTN_INTERACT Open Elevator",
+		hud_open_cas_elevator = "$BTN_INTERACT Open/Close Elevator",
 		hud_int_press_take_elevator = "$BTN_INTERACT Ride Elevator",
 		hud_int_press_take_chimichanga = "$BTN_INTERACT Take Chimichanga",
 		hud_int_press_place_chimichanga = "$BTN_INTERACT Place Chimichanga",
@@ -931,7 +940,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_pick_up = "$BTN_INTERACT Take",
 		hud_int_touch_book = "$BTN_INTERACT Touch Book",
 		hud_int_use_device = "$BTN_INTERACT Use Device",
-		hud_int_press_interaction_open = "$BTN_INTERACT Open",
+		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close",
 		hud_chill_access_sidejobs = "$BTN_INTERACT View Trophies",
 
 		
