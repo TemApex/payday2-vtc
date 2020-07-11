@@ -8,7 +8,7 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 
 **Fixable Issues:**
 - The interaction for opening the coffers is probably unchanged.
-- The interaction for taking the parts out of the coffers are probably unchanged.
+- The interaction for taking the parts out of the coffers is probably unchanged.
 - Lots of multiplayer strings (or strings more common in multiplayer) are currently unchanged.
 - Lots of "You require X item" strings are unchanged.
 
