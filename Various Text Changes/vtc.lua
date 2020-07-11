@@ -706,6 +706,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_bypass_firewall = "$BTN_INTERACT Bypass Firewall",
 		hud_int_hold_take_pardons = "$BTN_INTERACT Take Pardon",
 		hud_int_hold_pull_lever = "$BTN_INTERACT Pull Lever",
+		hud_action_placing_mayan_gold_bar = "$BTN_INTERACT Place Gold",
+		hud_int_equipment_no_mayan_gold = "Need Gold",
+		hud_action_taking_uno_gold = "$BTN_INTERACT Take Gold",
+		hud_int_hold_pku_uno_gold = "$BTN_INTERACT Pickup Gold",
+		hud_int_equipment_mayan_gold_bar = "Mayan Gold",
 
 		--Breaking Feds
 		hud_int_hold_hack_barrier = "$BTN_INTERACT Hack Barrier",
@@ -714,7 +719,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_take_stapler = "$BTN_INTERACT Take Stapler",
 		hud_int_press_place_stapler = "$BTN_INTERACT Place Stapler",
 		hud_int_hold_disable_alarm = "$BTN_INTERACT Disable Alarm",
-		hud_open_cas_elevator = "$BTN_INTERACT Open/Close Elevator",
+		hud_open_cas_elevator = "$BTN_INTERACT Open/Close",
 		hud_int_press_take_elevator = "$BTN_INTERACT Ride Elevator",
 		hud_int_press_take_chimichanga = "$BTN_INTERACT Take Chimichanga",
 		hud_int_press_place_chimichanga = "$BTN_INTERACT Place Chimichanga",
@@ -893,7 +898,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_custody_in = "BLEEDOUT",
 		hud_civilian_killed_title = "Civilian Killed",
 		hud_civilian_killed_message = "-$AMOUNT",
-		
+
+
 		--SAFEHOUSE INTERACTIONS--
 		hud_int_talk_butler = "$BTN_INTERACT Talk",
 		hud_int_talk_wild = "$BTN_INTERACT Talk",
@@ -921,7 +927,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		hud_press_play_music = "$BTN_INTERACT Play",
 		hud_press_stop_music = "$BTN_INTERACT Stop",
-		hud_press_new_paintjob = "$BTN_INTERACT Paint Van",
+		hud_press_new_paintjob = "$BTN_INTERACT Change Van",
 		hud_press_answering_play = "$BTN_INTERACT Play Message",
 		hud_int_hold_to_help_turtle = "$BTN_INTERACT Help Turtle",
 		hud_hold_bet_slotmachine_chl = "$BTN_INTERACT Play Slots ($10,000)",
@@ -942,7 +948,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_use_device = "$BTN_INTERACT Use Device",
 		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close",
 		hud_chill_access_sidejobs = "$BTN_INTERACT View Trophies",
-
+		hud_hold_burn_offshore_money = "$BTN_INTERACT Burn Offshore",
+		hud_int_assemble_device = "$BTN_INTERACT Assemble Device",
 		
 		
 		--HUD HINTS--
