@@ -11,6 +11,7 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 - The interaction for taking the parts out of the coffers are probably unchanged.
 - Lots of multiplayer strings (or strings more common in multiplayer) are currently unchanged.
 - Lots of "You require X item" strings are unchanged.
+- The secret is missing interactions for picking up the bag of Mayan gold, taking Mayan gold, and placing Mayan gold.
 
 **Unfixable Issues:**
 - Dentist's loot in Golden Grin is unchanged.
