@@ -214,7 +214,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		menu_victory_goto_next_stage ="Next Day",
 		menu_victory_goto_payday = "Card Drop",
-		
+		menu_victory_retry_stage = "Retry",
+		menu_es_calculating_experience = "Calculating...",
 		
 		--PREPLANNING--
 		menu_preplanning_enter = "Preplanning",
@@ -668,6 +669,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_stash_server_cord = "$BTN_INTERACT Plug In",
 		debug_interact_stash_server = "$BTN_INTERACT Connect Server",
 		hud_man_apply_tape = "$BTN_INTERACT Tape Up",
+		hud_equipment_need_paper_roll = "",
+		hud_equipment_need_printer_ink = "",
 
 		--Diamond Store
 		hud_int_numpad_keycard = "$BTN_INTERACT Disable Alarm",
@@ -776,6 +779,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_take_lance_part = "$BTN_INTERACT Take Drill Part",
 		hud_int_equipment_huge_lance = "$BTN_INTERACT Start The Beast",
 		hud_int_equipment_huge_lance_jammed = "$BTN_INTERACT Fix The Beast",
+		hud_int_equipment_no_lance_part = "",
 
 		--Framing Frame
 		hud_int_answer_phone = "$BTN_INTERACT Answer Phone",
@@ -862,10 +866,15 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--San Martin Bank
 		hud_int_take_tape = "$BTN_INTERACT Take Tape",
+		hud_int_take_fingerprint = "$BTN_INTERACT Take Fingerprint",
+		hud_int_hold_open_door = "$BTN_INTERACT Open Door",
 		hud_int_hold_cut_wire_grey = "$BTN_INTERACT Cut Wire",
 		hud_int_hold_take_faberge_egg = "$BTN_INTERACT Pickup Egg",
 		hud_int_hold_take_treasure = "$BTN_INTERACT Pickup Treasure",
 		hud_int_take_record_tape = "$BTN_INTERACT Take Tape",
+		hud_int_hold_start_new_hack = "$BTN_INTERACT Hack",
+		hud_int_restore_power = "$BTN_INTERACT Turn On Power",
+		hud_int_activate_flare = "$BTN_INTERACT Deploy Smoke",
 
 		--Breakfast In Tijuana
 		hud_int_pku_medal = "$BTN_INTERACT Take Medal",
@@ -877,6 +886,20 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hold_pex_burn = "$BTN_INTERACT Burn Evidence",
 		hud_hold_placing_the_breacher = "$BTN_INTERACT Start Breaching",
 		hud_press_pex_give_keys = "$BTN_INTERACT Give Keys",
+		hud_hold_take_unloaded_card = "$BTN_INTERACT Take RFID Tag",
+		hud_hold_take_loaded_card = "$BTN_INTERACT Code RFID Tag",
+		hud_hold_use_evidance_tag = "$BTN_INTERACT Open Door",
+		hud_int_hold_destroy_evidence = "$BTN_INTERACT Destroy Evidence",
+		hud_int_pickup_cutter = "$BTN_INTERACT Take Bolt Cutter",
+		hud_int_hold_take_police_uniform = "$BTN_INTERACT Take Uniform",
+		hud_int_hand_over_uniform = "$BTN_INTERACT Give Uniform",
+		hud_int_hold_place_evidance = "$BTN_INTERACT Place Evidence",
+		hud_int_pku_flammable_liquid = "$BTN_INTERACT Take Fluid",
+		hud_equipment_flammable_liquid = "Lighter Fluid",
+		hud_hold_set_burnable_liquid = "$BTN_INTERACT Pour Fluid",
+		hud_int_hold_turn_off_sprinklers = "$BTN_INTERACT Turn Off Sprinklers",
+		hud_int_armory_hack = "$BTN_INTERACT Hack",
+		hud_hold_hook_car = "$BTN_INTERACT Attach Hook",
 
 		--Holdout
 		debug_interact_trade_hostage_skm = "$BTN_INTERACT Trade",
@@ -1003,6 +1026,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_carry_weapon_scar = "Rifles",
 		hud_carry_robot_toy = "Toy",
 		hud_carry_shoes = "High Heels",
+		hud_carry_hydraulic_opener = "Door Breaker",
 		
 		
 		--OPTIONS--
@@ -1052,9 +1076,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_choose_mask_mod = "Apply",
 		bm_menu_btn_customize_mask = "Create",
 		bm_menu_btn_buy_new_mask = "Buy Mask",
-		bm_menu_empty_mask_slot = "- EMPTY -",
+		bm_menu_empty_mask_slot = "Empty",
 		bm_menu_btn_buy_new_weapon = "Buy Weapon",
-		bm_menu_empty_weapon_slot = "- EMPTY -",
+		bm_menu_empty_weapon_slot = "Empty",
 		bm_menu_primaries = "1",
 		bm_menu_secondaries = "2",
 		bm_menu_btn_remove_mask = "Remove",  --Characters
@@ -1080,7 +1104,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_customize_player_style = "Customize",
 		bm_menu_btn_equip_suit_variation = "Equip",
 		bm_menu_btn_preview_suit_variation = "Preview",
-		
+		bm_menu_locked_weapon_slot = "Locked",
+		bm_menu_buy_btn_weapon_slot = "Unlock",
+		bm_menu_locked_mask_slot = "Locked",
+		bm_menu_buy_btn_mask_slot = "Unlock",
+
 		menu_preferred_character_title = "Character Hierarchy",
 		bm_menu_btn_clear_preferred = "Reset",
 		bm_menu_btn_swap_preferred_slots = "Swap",

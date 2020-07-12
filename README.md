@@ -1,11 +1,6 @@
 # payday2-vtc
 Various Text Changes, now with 100% more changes, and 75% less text!
 
-**Unfinished Heists:**
-- Border Crossing  
-- San Martin Bank  
-- Breakfast In Tijuana  
-
 **Fixable Issues:**
 - The interaction for opening the coffers is probably unchanged.
 - The interaction for taking the parts out of the coffers is probably unchanged.
