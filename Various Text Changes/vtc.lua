@@ -1105,9 +1105,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_equip_suit_variation = "Equip",
 		bm_menu_btn_preview_suit_variation = "Preview",
 		bm_menu_locked_weapon_slot = "Locked",
-		bm_menu_buy_btn_weapon_slot = "Unlock",
+		bm_menu_btn_buy_weapon_slot = "Unlock",
 		bm_menu_locked_mask_slot = "Locked",
-		bm_menu_buy_btn_mask_slot = "Unlock",
+		bm_menu_btn_buy_mask_slot = "Unlock",
 
 		menu_preferred_character_title = "Character Hierarchy",
 		bm_menu_btn_clear_preferred = "Reset",
