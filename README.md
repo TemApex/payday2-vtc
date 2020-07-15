@@ -8,6 +8,5 @@ Various Text Changes, now with 100% more changes, and 75% less text!
 - Lots of "You require X item" strings are unchanged.
 
 **Unfixable Issues:**
-- Dentist's loot in Golden Grin is unchanged.
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".
 - The chrome skull in Biker Heist Day 1 says "PICKUP" instead of "TAKE".
