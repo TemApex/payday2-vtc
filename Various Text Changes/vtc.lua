@@ -383,6 +383,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_use_flare = "$BTN_INTERACT Light Flare",
 		hud_equipment_need_glass_cutter = "",
 		debug_interact_free = "$BTN_INTERACT Free",
+		debug_interact_temp_interact_box = "$BTN_INTERACT Interact",
 
 		--DEPLOYABLES--
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
@@ -441,6 +442,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_no_usb_key = "Need USB",
 		hud_int_hold_pick_up = "$BTN_INTERACT Take",
 		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close",
+		hud_unpack_turret = "$BTN_INTERACT Unpack Turret",
 
 		--Aftershock
 		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe",
@@ -489,6 +491,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_connect_equip = "$BTN_INTERACT Connect Cable",
 		hud_int_hold_start_motor = "$BTN_INTERACT Start Engine",
 		hud_int_hold_read_barcode = "$BTN_INTERACT Read Barcode",
+		hud_int_hold_activate_reader = "$BTN_INTERACT Reactivate",
 		hud_int_hold_barcode = "$BTN_INTERACT Take Barcode",
 		hud_int_hold_open_circuitbreaker = "$BTN_INTERACT Open Breaker",
 		hud_int_hold_remove_cover = "$BTN_INTERACT Remove Cover",
@@ -515,12 +518,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_pickup_tablet = "$BTN_INTERACT Take Tablet",
 		hud_int_pickup_phone = "$BTN_INTERACT Take Phone",
 		hud_int_hold_take_expensive_wine = "$BTN_INTERACT Pickup Wine",
+		hud_int_hold_take_vr_headset = "$BTN_INTERACT Pickup Headset",
 
 		--Election Day
 		hud_int_hold_resume_upload = "$BTN_INTERACT Resume Upload",
 		hud_int_hold_place_gps_tracker = "$BTN_INTERACT Place Tracker",
 		hud_int_hold_close_crate = "$BTN_INTERACT Close Crate",
-		hud_int_fork_lift_sound = "$BTN_INTERACT Start Forklift",
+		hud_int_fork_lift_sound = "$BTN_INTERACT Turn On Forklift",
 		
 		--Hoxton Breakout
 		hud_int_hold_move_car = "$BTN_INTERACT Move Car",
@@ -530,6 +534,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_use_bridge = "$BTN_INTERACT Make Bridge",
 		hud_int_take_ticket = "$BTN_INTERACT Take Ticket",
 		hud_int_keyboard_hox_1 = "$BTN_INTERACT Lower Bollards",
+		hud_int_remove_stinger = "$BTN_INTERACT Remove Stinger",
 		hud_int_hold_remove_armor_plating = "$BTN_INTERACT Remove Armor",
 		hud_int_use_ticket = "$BTN_INTERACT Use Ticket",
 		hud_int_invisible_interaction_close = "$BTN_INTERACT Close",
@@ -585,6 +590,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_open_lid = "$BTN_INTERACT Open",
 		hud_int_hold_take_yayo = "$BTN_INTERACT Bag Cocaine",
 		hud_int_hold_attach_magnet = "$BTN_INTERACT Attach Magnet",
+		hud_int_hold_unfold_ladder = "$BTN_INTERACT Unfold Ladder",
 		
 		--Shadow Raid
 		debug_interact_sewer_manhole = "$BTN_INTERACT Open Manhole",
@@ -624,6 +630,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_born_search_tools = "$BTN_INTERACT Search",
 		hud_int_hold_hand_over_tool = "$BTN_INTERACT Give Tool",
 		hud_born_plug_in_powercord = "$BTN_INTERACT Plug In",
+		hud_int_hold_born_soda = "$BTN_INTERACT Take Soda",
+		hud_int_hold_hand_over_soda = "$BTN_INTERACT Give Soda",
 		
 		--Beneath The Mountain
 		hud_int_hold_pku_breaching_charges = "$BTN_INTERACT Pickup Charges",
@@ -653,6 +661,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		--Wolf Pack
 		debug_interact_crowbar = "$BTN_INTERACT Breach",
+		debug_interact_crowbar2 = "$BTN_INTERACT Breach",
 		debug_interact_hold_to_breach = "$BTN_INTERACT Breach",
 		debug_interact_interaction_ball = "$BTN_INTERACT Pull Hose",
 		hud_int_take_paper_roll = "$BTN_INTERACT Take Roll",
@@ -735,12 +744,23 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_glass_cutter = "$BTN_INTERACT Place Cutter",
 		hud_int_hold_take_circle_cutter = "$BTN_INTERACT Take Cutter",
 		hud_int_hold_place_laptop = "$BTN_INTERACT Place Laptop",
+		hud_int_are_turn_on_tv = "$BTN_INTERACT Turn On TV",
+		hud_int_press_for_info = "$BTN_INTERACT Play Audio",
+		hud_int_hold_take_fire_extinguisher = "$BTN_INTERACT Take Fire Extinguisher",
+		hud_int_hold_extinguish_fire = "$BTN_INTERACT Put Out Fire",
 
 		--Armored Transport
 		hud_int_german_folder = "$BTN_INTERACT Take Folder",
 		hud_int_hold_disassemble_turret = "$BTN_INTERACT Bag Turret",
 		hud_int_hold_pack_shells = "$BTN_INTERACT Bag Shells",
 		hud_int_take_confidential_folder_event = "$BTN_INTERACT Take Folder",
+
+		--Murky Station
+		hud_hold_remove_screw = "$BTN_INTERACT Unscrew",
+
+		--GO Bank
+		hud_int_bank_note = "$BTN_INTERACT Search",
+		hud_int_hold_pickup_boards = "$BTN_INTERACT Take Planks",
 
 		--Boiling Point
 		hud_int_fire_missiles = "$BTN_INTERACT Fire Missiles",
@@ -750,6 +770,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hold_turn_of_gas = "$BTN_INTERACT Stop Gas",
 		hud_hold_start_scanning = "$BTN_INTERACT Activate Scanner",
 		hud_int_hold_pku_briefcase = "$BTN_INTERACT Take Briefcase",
+		hud_hold_removing_hand = "$BTN_INTERACT Take Hand",
+		hud_hold_scan_hand = "$BTN_INTERACT Scan Hand",
 
 		--Big Oil
 		hud_int_take_confidential_folder = "$BTN_INTERACT Take Intel",
@@ -781,6 +803,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_equipment_huge_lance = "$BTN_INTERACT Start The Beast",
 		hud_int_equipment_huge_lance_jammed = "$BTN_INTERACT Fix The Beast",
 		hud_int_equipment_no_lance_part = "",
+		hud_int_hold_assemble_thermite = "$BTN_INTERACT Place Thermite",
+		hud_int_hold_ignite_thermite = "$BTN_INTERACT Ignite",
 
 		--Framing Frame
 		hud_int_answer_phone = "$BTN_INTERACT Answer Phone",
