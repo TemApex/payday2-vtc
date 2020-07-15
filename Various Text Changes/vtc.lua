@@ -630,8 +630,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_born_search_tools = "$BTN_INTERACT Search",
 		hud_int_hold_hand_over_tool = "$BTN_INTERACT Give Tool",
 		hud_born_plug_in_powercord = "$BTN_INTERACT Plug In",
-		hud_int_hold_born_soda = "$BTN_INTERACT Take Soda",
-		hud_int_hold_hand_over_soda = "$BTN_INTERACT Give Soda",
+		hud_int_hold_born_soda = "$BTN_INTERACT Take Cola",
+		hud_int_hold_hand_over_soda = "$BTN_INTERACT Give Cola",
 		
 		--Beneath The Mountain
 		hud_int_hold_pku_breaching_charges = "$BTN_INTERACT Pickup Charges",
