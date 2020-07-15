@@ -216,6 +216,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_victory_goto_payday = "Card Drop",
 		menu_victory_retry_stage = "Retry",
 		menu_es_calculating_experience = "Calculating...",
+		victory_client_waiting_for_server = "Waiting For Host",
 		
 		--PREPLANNING--
 		menu_preplanning_enter = "Preplanning",
