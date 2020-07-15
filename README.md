@@ -1,5 +1,5 @@
 # payday2-vtc
-Various Text Changes, now with 100% more changes, and 75% less text!
+Various Text Changes, now with way more changes and a lot less text!
 
 **Fixable Issues:**
 - The interaction for opening the coffers is probably unchanged.
