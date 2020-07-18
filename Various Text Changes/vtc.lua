@@ -202,7 +202,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_asset_gage_assignment = "Gage Packages",
 		
 		menu_asset_risklevel_6 = "Death Sentence",
-		menu_asset_risklevel_5 = "Deathwish",
+		menu_asset_risklevel_5 = "Death Wish",
 		menu_asset_risklevel_4 = "Mayhem",
 		menu_asset_risklevel_3 = "Overkill",
 		menu_asset_risklevel_2 = "Very Hard",
@@ -286,7 +286,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_access_camera = "$BTN_INTERACT View Cameras",
 		debug_interact_equipment_stash_planks = "",
 		debug_interact_stash_planks_pickup = "$BTN_INTERACT Take Planks",
-		debug_interact_stash_planks = "$BTN_INTERACT Use Planks",
+		debug_interact_stash_planks = "$BTN_INTERACT Board Up",
 		debug_interact_money_wrap_single_bundle_take_money = "$BTN_INTERACT Take Money",
 		debug_interact_being_revived = "",
 		hud_starting_heist = "Masking Up",
@@ -332,7 +332,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		present_obtained_mission_equipment_title = "Item Obtained:",
 		debug_interact_circuit_breaker = "$BTN_INTERACT Use Circuit Breaker",
 		hud_int_setup_zipline = "$BTN_INTERACT Setup Zipline",
-		hud_int_use_zipline = "$BTN_INTERACT Use Zipline",
+		hud_int_use_zipline = "$BTN_INTERACT Ride Zipline",
 		mission_objective_activated = "New Objective",
 		hud_int_hold_take_handcuffs = "$BTN_INTERACT Take Handcuffs",
 		debug_interact_grenade_crate_take_grenades = "$BTN_INTERACT Take Throwable",
@@ -355,9 +355,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_big_computer_hackable = "$BTN_INTERACT Hack",
 		hud_int_need_thermite_paste = "",
 		hud_int_take_thermite_paste = "$BTN_INTERACT Take Paste",
-		hud_int_hold_ignite_thermite_paste = "$BTN_INTERACT Use Paste",
+		hud_int_hold_ignite_thermite_paste = "$BTN_INTERACT Ignite Paste",
 		hud_int_take_thermal_paste = "$BTN_INTERACT Take Paste",
-		hud_int_hold_ignite_thermal_paste = "$BTN_INTERACT Use Paste",
+		hud_int_hold_ignite_thermal_paste = "$BTN_INTERACT Ignite Paste",
 		debug_interact_thermite = "$BTN_INTERACT Place Thermite",
 		hud_int_take_thermite = "$BTN_INTERACT Take Thermite",
 		hud_int_hack_box = "$BTN_INTERACT Hack Electrical Box",
@@ -416,7 +416,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_take_bottle = "$BTN_INTERACT Take Bottle",
 		hud_int_pour_drink = "$BTN_INTERACT Pour Drink",
 		hud_insert_hotel_room_key = "$BTN_INTERACT Insert Keycard",
-		hud_place_sleeping_gass = "$BTN_INTERACT Use Gas",
+		hud_place_sleeping_gass = "$BTN_INTERACT Place Gas",
 		hud_cas_security_door = "$BTN_INTERACT Pick Lock",
 		hud_disable_lasers = "$BTN_INTERACT Disable Lasers",
 		hud_int_try_keys = "$BTN_INTERACT Try Key",
@@ -579,7 +579,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_raise_balloon = "$BTN_INTERACT Raise Balloon",
 		
 		--Scarface Mansion
-		hud_int_insert_flash_dive = "$BTN_INTERACT Use USB",
+		hud_int_insert_flash_dive = "$BTN_INTERACT Insert USB",
 		hud_int_hack_laptop = "$BTN_INTERACT Hack Laptop",
 		hud_take_usb_key = "$BTN_INTERACT Take USB",
 		hud_int_hold_rewire_fuse_box = "$BTN_INTERACT Cut Wires",
@@ -655,7 +655,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--Panic Room
 		debug_interact_equiptment_apartment_key = "Need Key",
 		hud_int_take_chavez_keys = "$BTN_INTERACT Take Key",
-		debug_interact_apartment_key = "$BTN_INTERACT Use Key",
+		debug_interact_apartment_key = "$BTN_INTERACT Unlock Door",
 		hud_int_hold_take_toothbrush = "$BTN_INTERACT Pickup Toothbrush",
 		debug_interact_apartment_helicopter = "$BTN_INTERACT Attach Magnet",
 		
@@ -760,7 +760,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--GO Bank
 		hud_int_bank_note = "$BTN_INTERACT Search",
-		hud_int_hold_pickup_boards = "$BTN_INTERACT Take Planks",
+		hud_int_hold_pickup_boards = "$BTN_INTERACT Take Boards",
+		hud_equipment_boards = "Boards",
+		hud_equipment_need_boards = "",
 
 		--Boiling Point
 		hud_int_fire_missiles = "$BTN_INTERACT Fire Missiles",
@@ -793,10 +795,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_big_computer_server = "$BTN_INTERACT Access Computer",
 		hud_int_big_computer_unhackable = "",
 		hud_int_timelock_numpad = "$BTN_INTERACT Start Timelock",
-		hud_int_use_scanner = "$BTN_INTERACT Use Scanner",
+		hud_int_use_scanner = "$BTN_INTERACT Scan Thumb",
 		hud_int_enter_code = "$BTN_INTERACT Enter Code",
 		debug_interact_money_printed_take_money = "$BTN_INTERACT Take Money",
-		hud_int_use_phone_signal_bus = "$BTN_INTERACT Use Phone",
+		hud_int_use_phone_signal_bus = "$BTN_INTERACT Signal Bus",
 		hud_int_crane_left = "$BTN_INTERACT Move Crane",
 		hud_int_crane_release = "$BTN_INTERACT Release Crane",
 		hud_int_take_lance_part = "$BTN_INTERACT Take Drill Part",
@@ -1008,10 +1010,37 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_convert_enemy_failed = "Convert failed",
 		hud_hint_new_mask = "Mask unlocked",
 		hint_been_electrocuted = "Being electrocuted",
-		hint_cant_stand_up = "Can't stand up",
+		hint_cant_stand_up = "Can't stand",
 		hint_full_bodybags = "Max bodybags",
 		hint_sentry_set_ap_rounds = "Using AP rounds",
 		hint_sentry_normal_ammo = "Using normal rounds",
+
+		--ALARM--
+		hud_hint_cam_criminal = "Alert: Camera detected a player",
+		hud_hint_cam_dead_body = "Alert: Camera detected a corpse",
+		hud_hint_cam_hostage = "Alert: Camera detected a hostage",
+		hud_hint_cam_glass = "Alert: Camera detected broken glass",
+		hud_hint_cam_drill = "Alert: Camera detected a drill",
+		hud_hint_cam_distress = "Alert: Camera detected suspicious activity",
+
+		hud_hint_civ_criminal = "Alert: Civilian detected a player",
+		hud_hint_civ_dead_body = "Alert: Civilian detected a corpse",
+		hud_hint_civ_hostage = "Alert: Civilian detected a hostage",
+		hud_hint_civ_glass = "Alert: Civilian detected broken glass",
+		hud_hint_civ_drill = "Alert: Civilian detected a drill",
+		hud_hint_civ_distress = "Alert: Civilian detected suspicious activity",
+
+		hud_hint_cop_criminal = "Alert: Guard detected a player",
+		hud_hint_cop_dead_body = "Alert: Guard detected a corpse",
+		hud_hint_cop_hostage = "Alert: Guard detected a hostage",
+		hud_hint_cop_glass = "Alert: Guard detected broken glass",
+		hud_hint_cop_drill = "Alert: Guard detected a drill",
+		hud_hint_cop_distress = "Alert: Guard detected suspicious activity",
+
+		hud_hint_alarm_civ  = "Alert: Civilian pressed panic button",
+		hud_hint_blame_missing = "Alert: Someone saw suspicious activity",
+		hud_hint_blame_csgo_gunfire = "Alert: Neighbors called police",
+		hud_hint_mot_criminal = "Alert: Lasers with tripped",
 		
 		--TICKER--
 		hud_casing_mode_ticker = "CASING MODE",
