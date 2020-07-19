@@ -318,7 +318,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_dispose_corpse = "$BTN_INTERACT Bag Corpse",
 		hud_int_take_diamonds_dah = "$BTN_INTERACT Pickup Diamonds",
 		debug_interact_equipment_crowbar = "Need Crowbar",
-		debug_interact_equipment_saw = "Need Saw",
+		debug_interact_equipment_saw = "",
 		debug_interact_saw_jammed = "$BTN_INTERACT Fix Saw",
 		hud_int_hold_take_saw = "$BTN_INTERACT Take Saw",
 		hud_int_hold_crack_crate = "$BTN_INTERACT Open Crate",
@@ -371,7 +371,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_numpad = "$BTN_INTERACT Enter Code",
 		hud_int_hold_take_necklace = "$BTN_INTERACT Pickup Necklace",
 		hud_int_grab_server = "$BTN_INTERACT Take Server",
-		hint_usb_stick = "Need USB",
+		hint_usb_stick = "",
 		hud_int_press_activate = "$BTN_INTERACT Activate",
 		hud_int_equipment_drill_upgrade = "$BTN_INTERACT Upgrade Drill",
 		hud_int_equipment_lance_upgrade = "$BTN_INTERACT Upgrade Drill",
@@ -436,10 +436,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_take_watertank = "$BTN_INTERACT Pickup Water Tank",
 		hud_cas_open_compartment = "$BTN_INTERACT Open Compartment",
 		hud_stop_drill = "$BTN_INTERACT Stop BFD",
-		hint_no_bfd_tool = "Need Tool",
+		hint_no_bfd_tool = "",
 		hud_fix_bfd_drill = "$BTN_INTERACT Fix BFD",
-		hint_no_data_usb_key = "Need USB",
-		hint_no_usb_key = "Need USB",
+		hint_no_data_usb_key = "",
+		hint_no_usb_key = "",
 		hud_int_hold_pick_up = "$BTN_INTERACT Take",
 		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close",
 		hud_unpack_turret = "$BTN_INTERACT Unpack Turret",
@@ -548,7 +548,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_use_files = "$BTN_INTERACT Slide Files",
 		
 		--Car Shop
-		hud_equipment_need_car_keys = "Need Keys",
+		hud_equipment_need_car_keys = "",
 		hud_int_hold_unlock_car = "$BTN_INTERACT Unlock Car",
 		
 		--Lab Rats
@@ -603,7 +603,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_set_up_sentry = "$BTN_INTERACT Place Sentry",
 		hud_int_hold_take_blood_sample = "$BTN_INTERACT Take Sample",
 		hud_int_insert_blood_sample = "$BTN_INTERACT Test Sample",
-		hint_no_blood_sample = "Need Sample",
+		hint_no_blood_sample = "",
 		hud_int_hold_take_blood_valid_sample = "$BTN_INTERACT Take Sample",
 		hud_int_call_elevator = "$BTN_INTERACT Call Elevator",
 		hud_int_hold_stash_vial = "$BTN_INTERACT Stash Sample",
@@ -653,7 +653,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hack_timelock = "$BTN_INTERACT Hack Timelock",
 		
 		--Panic Room
-		debug_interact_equiptment_apartment_key = "Need Key",
+		debug_interact_equiptment_apartment_key = "",
 		hud_int_take_chavez_keys = "$BTN_INTERACT Take Key",
 		debug_interact_apartment_key = "$BTN_INTERACT Unlock Door",
 		hud_int_hold_take_toothbrush = "$BTN_INTERACT Pickup Toothbrush",
@@ -720,7 +720,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_take_pardons = "$BTN_INTERACT Take Pardon",
 		hud_int_hold_pull_lever = "$BTN_INTERACT Pull Lever",
 		hud_action_placing_mayan_gold_bar = "$BTN_INTERACT Place Gold",
-		hud_int_equipment_no_mayan_gold = "Need Gold",
+		hud_int_equipment_no_mayan_gold = "",
 		hud_action_taking_uno_gold = "$BTN_INTERACT Take Gold",
 		hud_int_hold_pku_uno_gold = "$BTN_INTERACT Pickup Gold",
 		hud_int_equipment_mayan_gold_bar = "Mayan Gold",
@@ -907,7 +907,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_pku_medal = "$BTN_INTERACT Take Medal",
 		hud_equipment_evidance_find_a_tag = "",
 		hud_hold_pick_up_breaching_device = "$BTN_INTERACT Pickup Door Breaker",
-		hud_equipment_need_bolt_cutter = "Need Bolt Cutter",
+		hud_equipment_need_bolt_cutter = "",
 		hud_int_hold_cut_chains = "$BTN_INTERACT Cut Chains",
 		hud_equipment_find_burnable_liquid = "",
 		hud_hold_pex_burn = "$BTN_INTERACT Burn Evidence",
@@ -1040,11 +1040,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_alarm_civ  = "Alert: Civilian pressed panic button",
 		hud_hint_blame_missing = "Alert: Someone saw suspicious activity",
 		hud_hint_blame_csgo_gunfire = "Alert: Neighbors called police",
-		hud_hint_mot_criminal = "Alert: Lasers with tripped",
+		hud_hint_mot_criminal = "Alert: Lasers were tripped",
 		
 		--TICKER--
 		hud_casing_mode_ticker = "CASING MODE",
-		hud_assault_assault = "ASSAULT",
+		hud_assault_assault = "ASSAULT IN PROGRESS",
 		hud_casing_mode_ticker_clean = "CIVILIAN MODE",
 		
 		
