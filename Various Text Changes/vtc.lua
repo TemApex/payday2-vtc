@@ -217,6 +217,26 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_victory_retry_stage = "Retry",
 		menu_es_calculating_experience = "Calculating...",
 		victory_client_waiting_for_server = "Waiting For Host",
+		debug_mission_end_continue = "Continue",
+
+		--STATS SCREEN--
+		--Crew Stats
+		victory_time_played = "Final Time",
+		victory_most_downs = "Most Downs",
+		victory_best_accuracy = "Most Accurate",
+		victory_best_killer = "Most Kills",
+		victory_best_special = "Most Specials Killed",
+		victory_group_total_downed = "Total Downs",
+		victory_group_hit_accuracy = "Crew Accuracy",
+		victory_criminals_finished = "Surviving Players",
+		--Personal Stats
+		victory_total_downed = "Total Downs",
+		victory_hit_accuracy = "Accuracy",
+		victory_total_kills = "Total Kills",
+		victory_total_specials_kills = "Specials Killed",
+		victory_total_head_shots = "Headshots",
+		victory_favourite_weapon = "Favorite Weapon",
+		victory_civilians_killed_penalty = "Civilians Killed",
 		
 		--PREPLANNING--
 		menu_preplanning_enter = "Preplanning",
@@ -384,6 +404,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_equipment_need_glass_cutter = "",
 		debug_interact_free = "$BTN_INTERACT Free",
 		debug_interact_temp_interact_box = "$BTN_INTERACT Interact",
+		hud_instruct_throw_bag = "",
 
 		--DEPLOYABLES--
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
@@ -409,12 +430,14 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_take_casino_chips = "$BTN_INTERACT Take Chips",
 		hud_int_search_blueprints = "$BTN_INTERACT Search",
 		hud_int_hold_scan_blueprints = "$BTN_INTERACT Scan Blueprints",
+		hint_no_blueprints = "",
 		hud_int_send_blueprints = "$BTN_INTERACT Send Blueprints",
 		hud_int_copy_data_usb = "$BTN_INTERACT Copy Guest List",
 		hud_take_usb_key_data = "$BTN_INTERACT Take USB",
 		hud_insert_usb = "$BTN_INTERACT Insert USB",
 		hud_int_take_bottle = "$BTN_INTERACT Take Bottle",
 		hud_int_pour_drink = "$BTN_INTERACT Pour Drink",
+		hint_no_bottle = "",
 		hud_insert_hotel_room_key = "$BTN_INTERACT Insert Keycard",
 		hud_place_sleeping_gass = "$BTN_INTERACT Place Gas",
 		hud_cas_security_door = "$BTN_INTERACT Pick Lock",
@@ -608,6 +631,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_call_elevator = "$BTN_INTERACT Call Elevator",
 		hud_int_hold_stash_vial = "$BTN_INTERACT Stash Sample",
 		hud_int_hold_breach = "$BTN_INTERACT Breach",
+		hint_dropped_blood_sample = "Blood sample destroyed",
 
 		--Prison Nightmare
 		press_insert_keycard = "$BTN_INTERACT Insert Keycard",
@@ -731,6 +755,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_take_box = "$BTN_INTERACT Pickup Coffer",
 		hud_take_stapler = "$BTN_INTERACT Take Stapler",
 		hud_int_press_place_stapler = "$BTN_INTERACT Place Stapler",
+		hud_hint_need_stapler = "",
 		hud_int_hold_disable_alarm = "$BTN_INTERACT Disable Alarm",
 		hud_open_cas_elevator = "$BTN_INTERACT Open/Close",
 		hud_int_press_take_elevator = "$BTN_INTERACT Ride Elevator",
@@ -789,6 +814,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hack_ship_control = "$BTN_INTERACT Hack Computer",
 		hud_int_hold_remove_ladder = "$BTN_INTERACT Pickup Ladder",
 		hud_int_take_chainsaw = "$BTN_INTERACT Take Chainsaw",
+		hint_no_chainsaw = "",
 		hud_int_hold_cut_tree = "$BTN_INTERACT Cut Tree",
 
 		--Big Bank
@@ -1012,8 +1038,36 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_been_electrocuted = "Being electrocuted",
 		hint_cant_stand_up = "Can't stand",
 		hint_full_bodybags = "Max bodybags",
+		hint_full_ammo = "Max ammo",
+		hint_full_grenades = "Max throwables",
+		hint_full_health = "Full health/downs",
+		hint_max_special_equipment = "Can't pick up",
 		hint_sentry_set_ap_rounds = "Using AP rounds",
 		hint_sentry_normal_ammo = "Using normal rounds",
+		hud_hint_tut_throw = "",
+		hud_hint_zipline_no_bag = "Need a bag",
+		hint_ability_no_grenade_pickup = "No grenades equipped",
+		hud_hint_carry_block = "Already carrying something",
+		hint_body_bag_limit_reached = "Out of bodybags",
+		hud_hint_health_beserking = "Sorry...",
+		hint_nea_sentry_gun = "Not enough ammo",
+		hud_hint_phoneline_jammed = "Phone is jammed",
+		hint_full_keycard = "Already have keycard",
+
+		--Custody, down, reviving, etc
+		hint_teammate_downed = "$TEAMMATE is down",
+		hint_you_helped_up = "You revived $TEAMMATE",
+		hint_teammate_helpedup = "$HELPER revived $TEAMMATE",
+		hint_teammate_revived = "$HELPER traded $TEAMMATE",
+		hint_you_revived = "You traded $TEAMMATE",
+		hint_you_rescued = "You uncuffed $TEAMMATE",
+		hint_teammate_rescued = "$HELPER uncuffed $TEAMMATE",
+		hint_teammate_dead = "$TEAMMATE is in custody",
+		hint_teammate_arrested = "$TEAMMATE was cuffed",
+		hint_you_were_helpedup = "$HELPER revived you",
+		hint_you_were_rescued = "$HELPER uncuffed you",
+		hint_you_were_revived = "$HELPER traded you",
+		hint_trade_offered = "Hostage trade available",
 
 		--ALARM--
 		hud_hint_cam_criminal = "Alert: Camera detected a player",
@@ -1022,6 +1076,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cam_glass = "Alert: Camera detected broken glass",
 		hud_hint_cam_drill = "Alert: Camera detected a drill",
 		hud_hint_cam_distress = "Alert: Camera detected suspicious activity",
+		hud_hint_cam_c4 = "Alert: Camera heard an explosion",
+		hud_hint_cam_vault = "Alert: Camera detected an open vault",
+		hud_hint_cam_tripmine = "Alert: Camera detected a tripmine",
+		hud_hint_cam_sentry_gun = "Alert: Camera detected a sentry",
+		hud_hint_cam_broken_cam = "Alert: Camera detected... a broken camera?", --if you can trigger this on a vanilla heist send me a screenshot
 
 		hud_hint_civ_criminal = "Alert: Civilian detected a player",
 		hud_hint_civ_dead_body = "Alert: Civilian detected a corpse",
@@ -1029,6 +1088,14 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_civ_glass = "Alert: Civilian detected broken glass",
 		hud_hint_civ_drill = "Alert: Civilian detected a drill",
 		hud_hint_civ_distress = "Alert: Civilian detected suspicious activity",
+		hud_hint_civ_c4 = "Alert: Civilian heard an explosion",
+		hud_hint_civ_computer = "Alert: Civilian detected a hacked computer",
+		hud_hint_civ_ecm_jammer = "Alert: Civilian was affected by feedback",
+		hud_hint_civ_voting = "Alert: Civilian detected a broken voting machine",
+		hud_hint_civ_gunfire = "Alert: Civilian heard gunfire",
+		hud_hint_civ_broken_cam = "Alert: Civilian detected a broken camera", --thank fuck this is unused
+		hud_hint_civ_sentry_gun = "Alert: Civilian detected a sentry",
+		hud_hint_civ_body_bag = "Alert: Civilian detected a bodybag",
 
 		hud_hint_cop_criminal = "Alert: Guard detected a player",
 		hud_hint_cop_dead_body = "Alert: Guard detected a corpse",
@@ -1036,15 +1103,34 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cop_glass = "Alert: Guard detected broken glass",
 		hud_hint_cop_drill = "Alert: Guard detected a drill",
 		hud_hint_cop_distress = "Alert: Guard detected suspicious activity",
+		hud_hint_cop_c4 = "Alert: Guard heard an explosion",
+		hud_hint_cop_computer = "Alert: Guard detected a hacked computer",
+		hud_hint_cop_broken_cam = "Alert: Guard detected a broken camera",
+		hud_hint_cop_gunfire = "Alert: Guard detected gunfire",
+		hud_hint_cop_ecm_jammer = "Alert: Guard was affected by feedback",
+		hud_hint_cop_sentry_gun = "Alert: Guard detected a sentry",
+		hud_hint_cop_body_bag = "Alert: Guard detected a bodybag",
+		hud_hint_cop_vault = "Alert: Guard detected an open vault",
+		hud_hint_cop_saw = "Alert: Guard detected a saw",
 
 		hud_hint_alarm_civ  = "Alert: Civilian pressed panic button",
 		hud_hint_blame_missing = "Alert: Someone saw suspicious activity",
 		hud_hint_blame_csgo_gunfire = "Alert: Neighbors called police",
 		hud_hint_mot_criminal = "Alert: Lasers were tripped",
+		hud_hint_alarm_pager_hang_up = "Alert: Pager was released",
+		hud_hint_alarm_pager_bluff_failed = "Alert: Pager limit reached",
+		hud_hint_alarm_pager_not_answered = "Alert: Pager wasn't answered",
+		hud_hint_alert_explosion = "Alert: An explosion was detected",
+		hud_hint_blame_blackmailer = "Alert: Blackmailer called police",
+		hud_hint_met_criminal = "Alert: Metal detector was triggered",
+		hud_hint_blame_gensec = "Alert: GenSec called the police",
+		hud_hint_blame_police = "Alert: Police were called",
+
 		
 		--TICKER--
 		hud_casing_mode_ticker = "CASING MODE",
 		hud_assault_assault = "ASSAULT IN PROGRESS",
+		hud_assault_vip = "WINTERS IN PROGRESS",
 		hud_casing_mode_ticker_clean = "CIVILIAN MODE",
 		
 		
