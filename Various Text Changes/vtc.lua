@@ -471,6 +471,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe",
 		hud_int_hold_pku_knife = "$BTN_INTERACT Take Knife",
 
+		--Stealth Tutorial
+		hud_int_grab_code = "$BTN_INTERACT Take Code",
+
 		--Cursed Kill Room
 		hud_int_hold_to_choose_mask = "$BTN_INTERACT Choose Mask",
 		hud_int_hold_take_mask = "$BTN_INTERACT Take Mask",
