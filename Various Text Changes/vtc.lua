@@ -732,7 +732,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_cut_wire_green = "$BTN_INTERACT Cut Green Wire",
 		hud_int_hold_cut_wire_blue = "$BTN_INTERACT Cut Blue Wire",
 		hud_int_hold_cut_wire_yellow = "$BTN_INTERACT Cut Yellow Wire",
-		hud_int_hold_remove_painting = "$BTN_INTERACT Remove Painting",
+		hud_int_hold_remove_painting = "$BTN_INTERACT Move Painting",
 		hud_int_hold_search_clues = "$BTN_INTERACT Search Laptop",
 		hud_int_hold_search_usb_key = "$BTN_INTERACT Search",
 		hud_int_hold_insert_usb = "$BTN_INTERACT Insert USB",
