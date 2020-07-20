@@ -8,7 +8,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--SAFEHOUSE--
 		menu_cn_chill_combat_defend = "Defend",  --Defend Safehouse
-		menu_cn_chill_combat_ignore_defend = "Ignore",  --Defend Safehouse
+		menu_cn_chill_combat_ignore_defend = "Ignore",
 
 
 		--INFAMY--
@@ -29,10 +29,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 
 		--LOBBY--
-		menu_waiting_is_ready = "[X]",  --Lobby Ready String
-		menu_waiting_is_not_ready = "[  ]", --Lobby Not Ready String
+		menu_waiting_is_ready = "[X]",  --Lobby Ready
+		menu_waiting_is_not_ready = "[  ]", --Lobby Not Ready
 
-		cn_menu_community = "",  --Community heist
+		cn_menu_community = "",  --Community tag
 
 		menu_specialization = "Perks",  --Perk Decks
 		menu_st_skilltree = "Skills",  --Skill Trees
@@ -61,15 +61,15 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_start_the_game = "",  --If you have the Fast.net mod or the freecam mod this hides the debug button
 		
 		menu_player_inventory = "Loadout",  --New Inventory
-		menu_player_inventory_help = "Opens the loadout. Contains weapons, skills, and perks.",  --New Inventory
-		menu_player_column_one_title = "Player",  --New Inventory
-		menu_player_column_two_title = "Weapons",  --New Inventory
-		menu_player_column_three_title = "Items & Skills",  --New Inventory
-		menu_button_hide = "[X]",  --New Inventory
-		menu_button_show = "[  ]",  --New Inventory
+		menu_player_inventory_help = "Opens the loadout. Contains weapons, skills, and perks.",
+		menu_player_column_one_title = "Player",
+		menu_player_column_two_title = "Weapons",
+		menu_player_column_three_title = "Items & Skills",
+		menu_button_hide = "[X]",
+		menu_button_show = "[  ]",
 		bm_menu_btn_sell_tradeable = "Sell",
 		
-		menu_choose_new_contract = "Pick a heist to start the game.",  --CRIME.NET
+		menu_choose_new_contract = "Pick a heist to start the game.",
 		
 		menu_visit_community = "Steam Community",
 		menu_crew_management = "AI Loadout",
@@ -82,9 +82,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_option_default = "Reset Options",
 		menu_option_default_help = "Resets all of your options to the defaults.",
 		dialog_default_options_message = "This will reset all of your settings to the default. Are you sure you want to do this?",
-		menu_visit_fbi_files = "Open FBI Files",  --Characters
-		menu_visit_fbi_files_help = "Opens the FBI files in the Steam overlay.",  --Characters
-		menu_custom_safehouse = "Safe House",  --Characters
+		menu_visit_fbi_files = "Open FBI Files",
+		menu_visit_fbi_files_help = "Opens the FBI files in the Steam overlay.",
+		menu_custom_safehouse = "Safe House",
 		
 		--PAUSE SCREEN--
 		menu_resume_game = "Resume",
@@ -972,6 +972,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_enter = "ENTER",
 		
 		hud_custody_in = "BLEEDOUT",
+		hud_uncuffed_in = "BREAKOUT",
 		hud_civilian_killed_title = "Civilian Killed",
 		hud_civilian_killed_message = "-$AMOUNT",
 
@@ -1044,7 +1045,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_max_special_equipment = "Can't pick up",
 		hint_sentry_set_ap_rounds = "Using AP rounds",
 		hint_sentry_normal_ammo = "Using normal rounds",
-		hud_hint_tut_throw = "",
 		hud_hint_zipline_no_bag = "Need a bag",
 		hint_ability_no_grenade_pickup = "No grenades equipped",
 		hud_hint_carry_block = "Already carrying something",
@@ -1053,6 +1053,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_nea_sentry_gun = "Not enough ammo",
 		hud_hint_phoneline_jammed = "Phone is jammed",
 		hint_full_keycard = "Already have keycard",
+		hud_gage_assignment_progress = "$peer_name found $assignment ($remaining left)",
 
 		--Custody, down, reviving, etc
 		hint_teammate_downed = "$TEAMMATE is down",
@@ -1078,9 +1079,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cam_distress = "Alert: Camera detected suspicious activity",
 		hud_hint_cam_c4 = "Alert: Camera heard an explosion",
 		hud_hint_cam_vault = "Alert: Camera detected an open vault",
-		hud_hint_cam_tripmine = "Alert: Camera detected a tripmine",
 		hud_hint_cam_sentry_gun = "Alert: Camera detected a sentry",
 		hud_hint_cam_broken_cam = "Alert: Camera detected... a broken camera?", --if you can trigger this on a vanilla heist send me a screenshot
+		hud_hint_body_bag = "Alert: Camera detected a bodybag", --unused? seems like a bug
+		hud_hint_cam_saw = "Alert: Camera detected a saw",
 
 		hud_hint_civ_criminal = "Alert: Civilian detected a player",
 		hud_hint_civ_dead_body = "Alert: Civilian detected a corpse",
@@ -1091,11 +1093,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_civ_c4 = "Alert: Civilian heard an explosion",
 		hud_hint_civ_computer = "Alert: Civilian detected a hacked computer",
 		hud_hint_civ_ecm_jammer = "Alert: Civilian was affected by feedback",
-		hud_hint_civ_voting = "Alert: Civilian detected a broken voting machine",
 		hud_hint_civ_gunfire = "Alert: Civilian heard gunfire",
-		hud_hint_civ_broken_cam = "Alert: Civilian detected a broken camera", --thank fuck this is unused
-		hud_hint_civ_sentry_gun = "Alert: Civilian detected a sentry",
 		hud_hint_civ_body_bag = "Alert: Civilian detected a bodybag",
+		hud_hint_civ_saw = "Alert: Civilian detected a saw",
 
 		hud_hint_cop_criminal = "Alert: Guard detected a player",
 		hud_hint_cop_dead_body = "Alert: Guard detected a corpse",
@@ -1106,7 +1106,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cop_c4 = "Alert: Guard heard an explosion",
 		hud_hint_cop_computer = "Alert: Guard detected a hacked computer",
 		hud_hint_cop_broken_cam = "Alert: Guard detected a broken camera",
-		hud_hint_cop_gunfire = "Alert: Guard detected gunfire",
+		hud_hint_cop_gunfire = "Alert: Guard heard gunfire",
 		hud_hint_cop_ecm_jammer = "Alert: Guard was affected by feedback",
 		hud_hint_cop_sentry_gun = "Alert: Guard detected a sentry",
 		hud_hint_cop_body_bag = "Alert: Guard detected a bodybag",
@@ -1117,14 +1117,15 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_blame_missing = "Alert: Someone saw suspicious activity",
 		hud_hint_blame_csgo_gunfire = "Alert: Neighbors called police",
 		hud_hint_mot_criminal = "Alert: Lasers were tripped",
-		hud_hint_alarm_pager_hang_up = "Alert: Pager was released",
+		hud_hint_alarm_pager_hang_up = "Alert: Pager was dropped",
 		hud_hint_alarm_pager_bluff_failed = "Alert: Pager limit reached",
 		hud_hint_alarm_pager_not_answered = "Alert: Pager wasn't answered",
-		hud_hint_alert_explosion = "Alert: An explosion was detected",
+		hud_hint_alert_explosion = "Alert: An explosion was heard",
 		hud_hint_blame_blackmailer = "Alert: Blackmailer called police",
 		hud_hint_met_criminal = "Alert: Metal detector was triggered",
 		hud_hint_blame_gensec = "Alert: GenSec called the police",
 		hud_hint_blame_police = "Alert: Police were called",
+		hud_hint_alarm_glass = "Alert: Alarmed glass broke",
 
 		
 		--TICKER--
@@ -1176,22 +1177,22 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		--INVENTORY--
 		bm_menu_grenades = "Consumable",
-		bm_menu_deployables = "Deployable",  --Characters
-		bm_menu_characters = "Characters",  --Characters
-		menu_preferred_character = "Character",  --Characters
-		menu_preferred_character_lobby_error = "You cannot change character while in a lobby.",  --Characters
+		bm_menu_deployables = "Deployable",
+		bm_menu_characters = "Characters",
+		menu_preferred_character = "Character",
+		menu_preferred_character_lobby_error = "You cannot change character while in a lobby.",
 
-		menu_lobby_player_slot_available = "",  --Characters
+		menu_lobby_player_slot_available = "",
 
-		menu_steam_inventory = "Steam Inventory",  --Microtransactions
-		menu_steam_inventory_help = "The inventory contains all items handled by Steam.",  --Microtransactions
-		bm_menu_btn_open_container = "Open",  --Characters
-		bm_menu_inventory_tradable_all = "All",  --Characters
-		bm_menu_inventory_tradable_safes = "Safes",  --Characters
+		menu_steam_inventory = "Steam Inventory",
+		menu_steam_inventory_help = "The inventory contains all items handled by Steam.",
+		bm_menu_btn_open_container = "Open",
+		bm_menu_inventory_tradable_all = "All",
+		bm_menu_inventory_tradable_safes = "Safes",
 		bm_menu_btn_sell_tradable = "Sell",
-		bm_menu_inventory_tradable_weapon_skins = "Weapon Skins",  --Characters
-		bm_menu_inventory_tradable_weapon_drills = "Drills",  --Characters
-		bm_menu_inventory_tradable_armor_skins = "Armor Skins",  --Characte
+		bm_menu_inventory_tradable_weapon_skins = "Weapon Skins",
+		bm_menu_inventory_tradable_weapon_drills = "Drills",
+		bm_menu_inventory_tradable_armor_skins = "Armor Skins",
 		bm_menu_mod_preview = "Preview",
 		bm_menu_buy_mask_title = "Mask Inventory",
 		bm_menu_btn_buy_tradable = "Buy Skin",
@@ -1203,15 +1204,15 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_clear_mod_preview = "Reset Preview",
 		bm_menu_btn_stop_preview_weapon_cosmetic = "Preview Without Skin",
 		menu_steam_market_title = "Item Collections",
-		bm_menu_btn_preview_weapon_cosmetic = "Preview",  --Characters
-		bm_menu_btn_preview = "Preview",  --Characters
-		bm_menu_btn_preview_mask = "Preview",  --Characters
-		bm_menu_btn_preview_melee_weapon = "Preview", --Characters
-		bm_menu_btn_preview_grenade = "Preview",  --Characters
-		bm_menu_btn_mod = "Modify",  --Characters
-		bm_menu_btn_mod_mask = "Modify",  --Characters
-		bm_menu_btn_sell = "Sell",  --Characters
-		bm_menu_btn_sell_mask = "Sell",  --Characters
+		bm_menu_btn_preview_weapon_cosmetic = "Preview",
+		bm_menu_btn_preview = "Preview",
+		bm_menu_btn_preview_mask = "Preview",
+		bm_menu_btn_preview_melee_weapon = "Preview",
+		bm_menu_btn_preview_grenade = "Preview",
+		bm_menu_btn_mod = "Modify",
+		bm_menu_btn_mod_mask = "Modify",
+		bm_menu_btn_sell = "Sell",
+		bm_menu_btn_sell_mask = "Sell",
 		bm_menu_btn_buy_selected_mask = "Buy",
 		bm_menu_btn_choose_mask_mod = "Apply",
 		bm_menu_btn_customize_mask = "Create",
@@ -1221,23 +1222,23 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_empty_weapon_slot = "Empty",
 		bm_menu_primaries = "1",
 		bm_menu_secondaries = "2",
-		bm_menu_btn_remove_mask = "Remove",  --Characters
-		bm_menu_btn_equip_mask = "Equip",  --Characters
-		bm_menu_btn_equip_weapon = "Equip",  --Characters
-		bm_menu_btn_equip_melee_weapon = "Equip",  --Characters
-		bm_menu_btn_equip_grenade = "Equip",  --Characters
-		bm_menu_btn_equip_deployable = "Equip",  --Characters
-		bm_menu_btn_equip_primary_deployable = "Equip [1]",  --Characters
-		bm_menu_btn_equip_secondary_deployable = "Equip [2]",  --Characters
+		bm_menu_btn_remove_mask = "Remove",
+		bm_menu_btn_equip_mask = "Equip",
+		bm_menu_btn_equip_weapon = "Equip",
+		bm_menu_btn_equip_melee_weapon = "Equip",
+		bm_menu_btn_equip_grenade = "Equip",
+		bm_menu_btn_equip_deployable = "Equip",
+		bm_menu_btn_equip_primary_deployable = "Equip [1]",
+		bm_menu_btn_equip_secondary_deployable = "Equip [2]",
 		bm_menu_btn_unequip_deployable = "Remove",
-		bm_menu_btn_equip_armor = "Equip",  --Characters
+		bm_menu_btn_equip_armor = "Equip",
 		bm_menu_btn_customize_armor = "Skins",
 		bm_askn_none = "Default",
-		bm_menu_btn_move_weapon = "Move",  --Characters
-		bm_menu_btn_move_mask = "Move",  --Characters
-		bm_menu_equipped = "[X]",  --Characters
-		bm_menu_customize_weapon = "Skins",  --Characters
-		mel_modify_weapon = "Modify",  --Characters
+		bm_menu_btn_move_weapon = "Move",
+		bm_menu_btn_move_mask = "Move",
+		bm_menu_equipped = "[X]",
+		bm_menu_customize_weapon = "Skins",
+		mel_modify_weapon = "Modify",
 		bm_menu_stats_max_detection = "",
 		bm_menu_stats_detection = "",
 		bm_menu_stats_min_detection = "",
@@ -1256,17 +1257,17 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		loading_trivia_96 = "Various Text Changes was first uploaded in September of 2015. Development stopped during Crimefest, but two years later it recieved a surprise update. Updates were restarted again in 2020.",
 
-		bm_armor_level_1 = "Suit",  --Characters
-		bm_armor_level_2 = "LBV",  --Characters
-		bm_armor_level_3 = "Vest",  --Characters
-		bm_armor_level_4 = "Heavy Vest",  --Characters
-		bm_armor_level_5 = "Flak",  --Characters
-		bm_armor_level_6 = "CTV",  --Characters
-		bm_armor_level_7 = "ICTV",  --Characters
+		bm_armor_level_1 = "Suit",
+		bm_armor_level_2 = "LBV",
+		bm_armor_level_3 = "Vest",
+		bm_armor_level_4 = "Heavy Vest",
+		bm_armor_level_5 = "Flak",
+		bm_armor_level_6 = "CTV",
+		bm_armor_level_7 = "ICTV",
 
-		menu_ti_steam_buy_drills_title = "Buy Drills",  --Characters
-		menu_ti_steam_open_safe_title = "Safe Preview",  --Characters
-		menu_ti_steam_open_container = "Open",  --Characters
+		menu_ti_steam_buy_drills_title = "Buy Drills",
+		menu_ti_steam_open_safe_title = "Safe Preview",
+		menu_ti_steam_open_container = "Open",
 
 		menu_description = "Briefing",
 		menu_assets = "Assets",
@@ -1275,11 +1276,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_jukebox = "Music",
 
 		bm_msk_character_locked = "Default",  --Default Mask
-		bm_msk_character_locked_desc = "Equips the default mask for the character you are playing as.",  --Default Mask
+		bm_msk_character_locked_desc = "Equips the default mask for the character you are playing as.",
 
 		prop_timer_gui_malfunction = "//ERROR//",  --Drill Broke Top Text
-		prop_timer_gui_error = "//UNKNOWN//",  --Drill Broke Timer Text
+		prop_timer_gui_error = "//UNKNOWN//",  --Drill Broke Timer
 		prop_timer_hack_ipad_gui_working = "HACKING IN PROGRESS",
+		prop_timer_upload_gui_working = "UPLOAD IN PROGRESS",
+		prop_computer_gui_analyzing = "ANALYSIS IN PROGRESS",
 
 		hud_offshore_account = "Offshore",  --Offshore Name
 
