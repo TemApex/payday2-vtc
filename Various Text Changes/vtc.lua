@@ -525,7 +525,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_activate_sprinklers = "$BTN_INTERACT Activate Sprinklers",
 		hud_int_equipment_barcode_opa_locka = "Barcode (Shaw)",
 		hud_int_equipment_barcode_isles_beach = "Barcode (Foggy Bottom)",
-		hud_int_equipment_barcode_brickell = "Barcode (George Town)",
+		hud_int_equipment_barcode_brickell = "Barcode (Georgetown)",
 		hud_int_equipment_barcode_downtown = "Barcode (Downtown)",
 		hud_int_equipment_barcode_edgewater = "Barcode (West End)",
 		hud_int_hold_disarm_bomb = "$BTN_INTERACT Disarm Bomb",
