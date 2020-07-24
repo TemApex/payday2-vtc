@@ -16,4 +16,4 @@ If someone else wants to make a mod that adds new strings for anything that's un
 **Notes:**
 - This mod does not play nicely with PDTH HUD. Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a border to interactions might also look strange, but will function normally.
 - As much as I wanted to remove certain hint messages entirely ("You can't stand up here"), it causes problems with the default HUD and some (maybe all) custom HUDs. If a hint message is empty it still creates a box for the empty text, for this reason I've chosen to simplify all the hints instead.
-- There are alarm reasons for cameras, civs, and guards detecting body bags but the game doesn't use them. Despite this I've changed them anyway.
+- There are alarm reasons for cameras, civs, and guards detecting body bags but the game doesn't use them (seems like a bug). Despite this I've changed them anyway.
