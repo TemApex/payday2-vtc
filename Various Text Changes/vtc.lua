@@ -10,7 +10,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cn_chill_combat_defend = "Defend",  --Defend Safehouse
 		menu_cn_chill_combat_ignore_defend = "Ignore",
 
-
 		--INFAMY--
 		menu_infamy_name_root = "The Infamous",  --Infamy I
 		menu_infamy_name_ghost = "The Assassin",  --Infamy Ghost
@@ -27,7 +26,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_infamy_name_punk = "The Inventor",  --Infamy Steampunk Mask
 		menu_infamy_name_xp = "XP Boost",  --Infamy XP Bonus
 
-
 		--LOBBY--
 		menu_waiting_is_ready = "[X]",  --Lobby Ready
 		menu_waiting_is_not_ready = "[  ]", --Lobby Not Ready
@@ -43,7 +41,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_reset_account = "Delete Save Data",  --Reset Progress
 		menu_reset_account_help = "Deletes your save data. Only do this if you're 100% sure this is what you want to do.",  --Reset Progress
 		dialog_are_you_sure_you_want_to_clear_progress = "This process is irreversible. It will delete everything that you currently have and start you back at level 0, infamy 0. Are you 100% certain you want to do this?",
-
 
 		--MENU BUTTONS--
 		fast_net_title = "Play Online (Lobby Browser)",  --FAST.NET
@@ -124,6 +121,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_mutators = "Mutators",
 		menu_mutators_desc = "",
 		menu_mutators_achievement_disabled = "Achievement / trophy progress is disabled.",
+		menu_mutators_reduction = "Cash reduced by $cash_reduction%.\nXP reduced by $exp_reduction%.\nCleaner costs are disabled.",
+		menu_mutators_incompatibilities = "Mutator is incompatible with:\n$mutators",
+		dialog_mutators_active_text = "The host has enabled mutators. Do you want to play with mutators enabled?",
 		menu_skirmish_map_selection = "Location",
 		menu_skirmish_pick_heist = "",
 
@@ -143,7 +143,29 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cs_cant_afford = "Not enough Continental Coins.",
 		menu_cs_rooms_help_hover_no_upgrade = "Room fully upgraded",
 		menu_cs_rooms_help_hover = "Room is upgradeable",
+		
 		menu_cn_filters_sidebar = "Lobby Filters",
+		
+		--Crime.net Filters
+		menu_lobby_filters = "Lobby Filters",
+		menu_toggle_server_state_lobby = "Lobbies Only",
+		menu_toggle_mutated_lobby = "Allow Mutators",
+		menu_toggle_one_down_lobbies = "Allow One Down",
+		menu_max_lobbies_filter = "Max Servers",
+		menu_diff_filter = "Difficulty",
+		menu_job_id_filter = "Heist Filter",
+		menu_kicking_allowed_filter = "Kick / Restart Mode",
+		dialog_reset_filters = "Reset",
+		menu_apply_settings = "Apply",
+
+		--Lobby Settings
+		menu_cn_game_settings = "",
+		menu_friends_only_game = "Friends Only",
+		menu_private_game = "Invite Only",
+		menu_drop_in_on = "Auto Drop-In",
+		menu_drop_in_prompt = "Host Confirm",
+		menu_drop_in_stealth_prompt = "Confirm (Stealth)",
+
 		menu_cn_legend_risk = "Difficulty",
 		menu_cn_legend_mutated = "Mutators",
 		menu_cn_legend_host = "Heist",
@@ -152,7 +174,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_risk = "Difficulty",
 		menu_new = "",
 		menu_permission = "Privacy",
-		menu_kicking_allowed_option = "Kick Mode",
+		menu_kicking_allowed_option = "Kick / Restart Mode",
 		menu_kick_server = "Host",
 		menu_kick_vote = "Vote",
 		menu_kick_disabled = "Disabled",
@@ -168,7 +190,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		cn_menu_dlc = "",
 		menu_mutators_reset_all = "Reset All",
 		menu_toggle_ai = "AI Teammates",
-		
 		
 		--LOBBY 2: ELECTRIC BOOGALOO--
 		menu_lobby_menu_state_lobby = "",
@@ -202,12 +223,20 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_asset_gage_assignment = "Gage Packages",
 		
 		menu_asset_risklevel_6 = "Death Sentence",
+		menu_risk_sm_wish = "Death Sentence. 14x reward multiplier.",
 		menu_asset_risklevel_5 = "Death Wish",
+		menu_risk_elite = "Death Wish. 13x reward multiplier.",
 		menu_asset_risklevel_4 = "Mayhem",
+		menu_risk_easy_wish = "Mayhem. 11x reward multiplier.",
 		menu_asset_risklevel_3 = "Overkill",
+		menu_risk_special = "Overkill. 10x reward multiplier.",
 		menu_asset_risklevel_2 = "Very Hard",
+		menu_risk_fbi = "Very Hard. 5x reward multiplier.",
 		menu_asset_risklevel_1 = "Hard",
+		menu_risk_swat = "Hard. 2x reward multiplier.",
 		menu_asset_risklevel_0 = "Normal",
+		menu_risk_pd = "Normal. 1x reward multiplier.",
+		menu_stat_job_completed = "\nCompleted $stat times.",
 
 		menu_cs_suspend_spree = "Exit",
 		menu_cs_get_rewards = "End Spree",
@@ -242,6 +271,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_preplanning_enter = "Preplanning",
 		menu_preplanning_title = "",
 		menu_item_preplanning_help = "Help",
+		menu_pp_total_cost = "Cost: $money",
 		menu_pp_sub_voting = "Required",
 		menu_pp_sub_place = "Optional",
 		menu_pp_sub_info = "Info",
@@ -284,7 +314,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_casino_title_stats = "Drop Chance",
 		menu_casino_cost_fee = "Base Cost",
 		menu_cn_casino_pay_accept = "Yes",
-		
 		
 		--INTERACTIONS--
 		--Generic Interactions
@@ -979,7 +1008,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_civilian_killed_title = "Civilian Killed",
 		hud_civilian_killed_message = "-$AMOUNT",
 
-
 		--SAFEHOUSE INTERACTIONS--
 		hud_int_talk_butler = "$BTN_INTERACT Talk",
 		hud_int_talk_wild = "$BTN_INTERACT Talk",
@@ -1030,7 +1058,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_chill_access_sidejobs = "$BTN_INTERACT View Trophies",
 		hud_hold_burn_offshore_money = "$BTN_INTERACT Burn Offshore",
 		hud_int_assemble_device = "$BTN_INTERACT Assemble Device",
-		
 		
 		--HUD HINTS--
 		hint_been_tasered = "Being tased",
@@ -1130,13 +1157,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_blame_police = "Alert: Police were called",
 		hud_hint_alarm_glass = "Alert: Alarmed glass broke",
 
-		
 		--TICKER--
 		hud_casing_mode_ticker = "CASING MODE",
 		hud_assault_assault = "ASSAULT IN PROGRESS",
 		hud_assault_vip = "WINTERS IN PROGRESS",
 		hud_casing_mode_ticker_clean = "CIVILIAN MODE",
-		
 		
 		--BAG TYPES--
 		hud_carry_lance_bag = "Thermal Drill",
@@ -1172,11 +1197,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_carry_shoes = "High Heels",
 		hud_carry_hydraulic_opener = "Door Breaker",
 		
-		
 		--OPTIONS--
 		menu_controller_normal = "Normal",
 		menu_controller_vehicle = "Vehicle",
-		
 		
 		--INVENTORY--
 		bm_menu_grenades = "Consumable",
