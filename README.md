@@ -16,6 +16,6 @@ If someone else wants to make a mod that adds new strings for anything that's un
 
 **Notes:**
 - [TldQ's Sentry Health Display](http://pd2mods.z77.fr/sentry_health_display.html) has a broken ammo counter, for some reason. This could probably do with some investigation and a fix (if it's an issue with VTC, otherwise it's out of my hands) but for now it's something to keep in mind.
-- This mod does not play nicely with PDTH HUD. Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a border to interactions might also look strange, but will function normally.
+- This mod does not play nicely with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a border to interactions might also look strange, but will function normally.
 - As much as I wanted to remove certain hint messages entirely ("You can't stand up here"), it causes problems with the default HUD and some (maybe all) custom HUDs. If a hint message is empty it still creates a box for the empty text, for this reason I've chosen to simplify all the hints instead.
 - There are alarm reasons for cameras, civs, and guards detecting body bags but the game doesn't use them (seems like a bug). Despite this I've changed them anyway.
