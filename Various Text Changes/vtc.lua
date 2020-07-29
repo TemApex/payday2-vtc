@@ -668,6 +668,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--Prison Nightmare
 		press_insert_keycard = "$BTN_INTERACT Insert Keycard",
 		hud_int_hold_pull_switch = "$BTN_INTERACT Pull Switch",
+		hud_int_hold_repair_wheel = "$BTN_INTERACT Restart Timer",
 
 		--First World Bank
 		hud_int_hold_close_shutters = "$BTN_INTERACT Close Shutters",
