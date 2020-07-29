@@ -263,7 +263,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		victory_hit_accuracy = "Accuracy",
 		victory_total_kills = "Total Kills",
 		victory_total_specials_kills = "Specials Killed",
-		victory_total_head_shots = "Headshots",
+		victory_total_head_shots = "Headshot Kills",
 		victory_favourite_weapon = "Favorite Weapon",
 		victory_civilians_killed_penalty = "Civilians Killed",
 		
