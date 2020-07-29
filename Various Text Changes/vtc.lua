@@ -159,7 +159,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_apply_settings = "Apply",
 
 		--Lobby Settings
-		menu_cn_game_settings = "",
+		menu_cn_game_settings = "Settings",
 		menu_friends_only_game = "Friends Only",
 		menu_private_game = "Invite Only",
 		menu_drop_in_on = "Auto Drop-In",
