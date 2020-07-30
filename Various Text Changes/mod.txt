@@ -10,7 +10,7 @@
 	"updates" : [
 		{
 			"identifier": "vtc",
-			"revision": 47,
+			"revision": 48,
 			"host": {
 				"meta": "https://github.com/TemApex/payday2-vtc/raw/master/meta.json"
 			}

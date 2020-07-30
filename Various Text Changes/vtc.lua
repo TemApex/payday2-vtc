@@ -1088,7 +1088,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--Custody, down, reviving, etc
 		hint_teammate_downed = "$TEAMMATE is down",
-		hint_you_helped_up = "You revived $TEAMMATE",
+		hint_you_helpedup = "You revived $TEAMMATE",
 		hint_teammate_helpedup = "$HELPER revived $TEAMMATE",
 		hint_teammate_revived = "$HELPER traded $TEAMMATE",
 		hint_you_revived = "You traded $TEAMMATE",
