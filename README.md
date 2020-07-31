@@ -2,10 +2,9 @@
 Various Text Changes, now with way more changes and a lot less text!
 
 **Fixable Issues:**
-- The safe house interactions related to opening and taking the parts out of the coffers are unchanged.
-- Non-host strings are (probably) unchanged. There aren't many of these, though.
-- Lots of heist specific "You require X item" strings are unchanged.
-- I've noticed a few unchanged hints, but these are super low priority and don't really matter.
+- Strings that only appear for clients are unchanged. There aren't many of these, though.
+- Lots of heist specific "You require X item" strings are unchanged. These are low priority.
+- I've noticed a few unchanged hints, but these are super low priority.
 
 **Unfixable Issues:**
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".

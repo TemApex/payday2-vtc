@@ -143,6 +143,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cs_cant_afford = "Not enough Continental Coins.",
 		menu_cs_rooms_help_hover_no_upgrade = "Room fully upgraded",
 		menu_cs_rooms_help_hover = "Room is upgradeable",
+
+		menu_sm_claim_rewards_goto_next = "Claim Rewards",
 		
 		menu_cn_filters_sidebar = "Lobby Filters",
 		
@@ -759,6 +761,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_search_toilet = "$BTN_INTERACT Search Toilet",
 		hud_int_hold_take_medallion = "$BTN_INTERACT Take Medallion",
 		hud_int_hold_cut_tarp = "$BTN_INTERACT Cut Tarp",
+		hud_connect_which_hook_brb = "$BTN_INTERACT Attach Hook",
 
 		--White House
 		hud_int_hold_cut_wire_red = "$BTN_INTERACT Cut Red Wire",
@@ -1058,6 +1061,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close",
 		hud_chill_access_sidejobs = "$BTN_INTERACT View Trophies",
 		hud_hold_burn_offshore_money = "$BTN_INTERACT Burn Offshore",
+		hud_int_press_use_medallion = "$BTN_INTERACT Open Coffer",
+		hud_int_hold_remove_parts = "$BTN_INTERACT Remove Parts",
 		hud_int_assemble_device = "$BTN_INTERACT Assemble Device",
 		
 		--HUD HINTS--
