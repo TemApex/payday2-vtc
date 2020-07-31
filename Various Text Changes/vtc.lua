@@ -1062,7 +1062,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_chill_access_sidejobs = "$BTN_INTERACT View Trophies",
 		hud_hold_burn_offshore_money = "$BTN_INTERACT Burn Offshore",
 		hud_int_press_use_medallion = "$BTN_INTERACT Open Coffer",
-		hud_int_hold_remove_parts = "$BTN_INTERACT Move Parts",
+		hud_int_hold_remove_parts = "$BTN_INTERACT Remove Parts",
 		hud_int_assemble_device = "$BTN_INTERACT Assemble Device",
 		
 		--HUD HINTS--
