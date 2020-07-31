@@ -3,17 +3,17 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--INFAMY--
 		menu_infamy_name_root = "The Infamous",  --Infamy I
 		menu_infamy_name_ghost = "The Assassin",  --Infamy Ghost
-		menu_infamy_name_mastermind = "The Plague",  --Infamy Mastermind
+		menu_infamy_name_mastermind = "The Doctor",  --Infamy Mastermind
 		menu_infamy_name_technician = "The Ingenious",  --Infamy Technician
-		menu_infamy_name_enforcer = "The Slaughterhouse",  --Infamy Enforcer
-		menu_infamy_name_balaclava = "The Classic",  --Infamy Balaclava
-		menu_infamy_name_pain = "The Bane",  --Infamy Bane Mask
-		menu_infamy_name_hood = "The Dishonored",  --Infamy Dishonored Mask
-		menu_infamy_name_daft = "The Punk",  --Infamy Daft Punk
-		menu_infamy_name_destroyer = "The Apocalypse",  --Infamy Anubis Mask
-		menu_infamy_name_lurker = "The Hellspawn",  --Infamy Demon Mask
-		menu_infamy_name_ranger = "The Jaws of Crime",  --Infamy Archery Mask
-		menu_infamy_name_punk = "The Inventor",  --Infamy Steampunk Mask
+		menu_infamy_name_enforcer = "The Butcher",  --Infamy Enforcer
+		menu_infamy_name_balaclava = "The Thug",  --Infamy Balaclava
+		menu_infamy_name_pain = "The Bane",  --Infamy Venger Mask
+		menu_infamy_name_hood = "The Wraith",  --Infamy Kamul Mask
+		menu_infamy_name_daft = "The Punk",  --Infamy Android Mask
+		menu_infamy_name_destroyer = "The Conqueror",  --Infamy Demonshank Mask
+		menu_infamy_name_lurker = "The Lurker",  --Infamy Lurker Mask
+		menu_infamy_name_ranger = "The Ranger",  --Infamy Heister Sentry Mask
+		menu_infamy_name_punk = "The Inventor",  --Infamy The Being Mask
 		menu_infamy_name_xp = "XP Boost",  --Infamy XP Bonus
 
 		--LOBBY--
