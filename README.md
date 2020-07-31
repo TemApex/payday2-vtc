@@ -2,7 +2,6 @@
 Various Text Changes, now with way more changes and a lot less text!
 
 **Fixable Issues:**
-- There are probably still a few interactions I've missed. Please report these if you find them.
 - Strings that only appear for clients are unchanged. There aren't many of these, though.
 - Lots of heist specific "You require X item" strings are unchanged. These are low priority.
 - I've noticed a few unchanged hints, but these are super low priority.
@@ -15,6 +14,7 @@ These issues could be fixed by adding new strings to the game, but the purpose o
 If someone else wants to make a mod that adds new strings for anything that's unfixable then go for it. I won't be doing this myself though.
 
 **Notes:**
+- There are probably still a few interactions I've missed. Please report these if you find them.
 - This mod does not play nicely with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a background to interactions might also look strange, but will function normally.
 - As much as I wanted to remove certain hint messages ("You can't stand up here"), it causes problems with the default HUD and some (maybe all) custom HUDs. For this reason I've simplified all the hints instead.
 - There are alarm reasons for cameras, civs, and guards detecting body bags but the vanilla game doesn't use them (seems like a bug). Despite this I've changed them anyway, but you won't see them unless Overkill or another mod fixes it.
