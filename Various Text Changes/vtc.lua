@@ -19,23 +19,22 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--LOBBY--
 		savefile_saving = "Saving",
 		hud_offshore_account = "Offshore",  --Offshore Name
-		menu_waiting_is_ready = "[X]",  --Lobby Ready
-		menu_waiting_is_not_ready = "[  ]", --Lobby Not Ready
+		menu_waiting_is_ready = "[X]",  --Heist Ready
+		menu_waiting_is_not_ready = "[  ]", --Heist Not Ready
 		menu_lobby_player_slot_available = "",
-		menu_description = "Briefing", --this used to work and should still work in theory, but it doesn't.
+		menu_description = "Briefing", --this used to work and should still work in theory, but doesn't
 		menu_assets = "Assets",
 		menu_loadout = "Loadout",
 		menu_team_loadout = "Crew",
 		menu_jukebox = "Music",
 		hud_skip_blackscreen = "$BTN_ACCEPT",  --Hold to skip intro
-		menu_lobby_menu_state_lobby = "",
+		menu_lobby_menu_state_lobby = "", --removes the "READY" text while in the main menu lobby because who gives a shit if someone isn't doing anything
 		menu_edit_game_settings = "Lobby Settings",
 		menu_reputation_permission = "Level Limit",
 		menu_toggle_drop_in = "Drop-in",
 		menu_toggle_auto_kick = "Auto-kick",
 		menu_lobby_menu_state_options = "Options",
 		menu_invite_friends = "Invite",
-		menu_story_missions = "Missions",
 		menu_loading_progress = "$prog%",
 		menu_ghost_bonus = "Stealth Bonus: $exp_bonus%",
 		menu_jukebox_playlist_all = "Random",
@@ -73,7 +72,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_asset_risklevel_0 = "Normal",
 		menu_risk_pd = "Normal. 1x reward multiplier.",
 		menu_stat_job_completed = "\nCompleted $stat times.",
-		--these multipliers are based on the PAYDAY multiplier, so aren't 100% accurate
+		--these multipliers are based on the PAYDAY multiplier, so aren't 100% accurate but are close enough
 
 		menu_cs_suspend_spree = "Exit",
 		menu_cs_get_rewards = "End Spree",
@@ -81,7 +80,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_victory_goto_next_stage ="Next Day",
 		menu_victory_goto_payday = "Card Drop",
 		menu_victory_retry_stage = "Retry",
-		menu_es_calculating_experience = "Calculating...", --if you remove this the continue button never appears
+		menu_es_calculating_experience = "Calculating...", --if you remove this the continue button doesn't appear, so you have to press enter
 		victory_client_waiting_for_server = "Waiting For Host",
 		debug_mission_end_continue = "Continue",
 		loading_trivia_96 = "Various Text Changes was first uploaded in September of 2015. Development stopped during Crimefest at V2, but it received some updates two years later, ending at V5.23. Two more years later, in 2020, VTC6 finally released.",
@@ -89,6 +88,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--MENU BUTTONS--
 		fast_net_title = "Play Online (Lobby Browser)",  --FAST.NET
 		fast_net_friends_title = "Play Online (Friend Browser)",  --FAST.NET Friends
+		--is FAST.NET even a thing anymore? Does anyone care about this compatibility?
 		
 		menu_crimenet = "Play Online",  --CRIME.NET
 		menu_crimenet_help = "Play online with other players.",  --CRIME.NET Description
@@ -98,9 +98,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_quickplay_option_default = "Default Settings",
 		menu_cn_quickplay = "Find Game",
 		
-		menu_debug = "",  --If you have the Fast.net mod or the freecam mod this hides the debug button
-		debug_start_the_game = "",  --If you have the Fast.net mod or the freecam mod this hides the debug button
-		
+		menu_debug = "",  --If you have the Fast.net mod or the (old) freecam mod this hides the debug button
+		debug_start_the_game = "",  --If you have the Fast.net mod or the (old) freecam mod this hides the debug button
+
 		menu_player_inventory = "Loadout",  --New Inventory
 		menu_player_inventory_help = "Opens the loadout. Contains weapons, skills, and perks.",
 		
@@ -123,11 +123,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_steam_inventory = "Steam Inventory",
 		menu_steam_inventory_help = "The inventory contains all items handled by Steam.",
 
-		--They added new strings for this? Why? It used to be menu_clear_progress. Why did they add new strings instead of rewriting the old ones? But the dialog string is the old one. What?
 		menu_reset_account = "Delete Save Data",  --Reset Progress
 		menu_reset_account_help = "Deletes your save data. Only do this if you're 100% sure this is what you want to do.",  --Reset Progress
 		dialog_are_you_sure_you_want_to_clear_progress = "This process is irreversible.\n\nYour loadout will be wiped and you will be reset to infamy 0, level 0.\n\nAre you 100% certain you want to do this?",
-		
+		--They added new strings for this? Why? It used to be menu_clear_progress. Why did they add new strings instead of rewriting the old ones? But the dialog string is the old one. What?
+
 		--PAUSE SCREEN--
 		menu_resume_game = "Resume",
 		menu_restart_game = "Restart",
@@ -163,12 +163,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cn_gage_assignment = "Gage Packages",
 		menu_gage_assignment_introduction_title = "Assignment",
 		menu_gage_assignment_summary_title = "Progress",
-		menu_gage_assignment_video_title = "Footage",
+		menu_gage_assignment_video_title = "Footage", --why does this exist
 		menu_gage_assignment_title = "Gage Packages",
 		menu_mutators = "Mutators",
 		menu_mutators_desc = "",
 		menu_mutators_achievement_disabled = "Achievement / trophy progress is disabled.",
-		menu_mutators_reduction = "Cash reduced by $cash_reduction%.\nXP reduced by $exp_reduction%.\nCleaner costs are disabled.",
+		menu_mutators_reduction = "Cash reduced by $cash_reduction%.\nXP reduced by $exp_reduction%.\nCleaner costs are disabled.", --this is SO MUCH CLEANER than the original text holy shit
 		menu_mutators_incompatibilities = "This mutator is incompatible with:\n$mutators",
 		menu_mutators_reset = "Reset",
 		dialog_mutators_active_text = "Mutators are enabled. Do you want to play with mutators?",
@@ -193,7 +193,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cs_rooms_help_hover_no_upgrade = "Room fully upgraded",
 		menu_cs_rooms_help_hover = "Room is upgradeable",
 
-		menu_sm_claim_rewards_goto_next = "Claim Rewards",
+		menu_story_missions = "Missions",
+		menu_sm_claim_rewards_goto_next = "Claim Rewards", --why is the default message so long
 		
 		menu_cn_filters_sidebar = "Lobby Filters",
 		
@@ -210,12 +211,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_apply_settings = "Apply",
 
 		--Lobby Settings
-		menu_cn_game_settings = "Settings", --if you remove this the 'Mods' tab disappears
+		menu_cn_game_settings = "Settings", --if you remove this the 'Mods' tab also disappears from Crime.net
 		menu_friends_only_game = "Friends Only",
 		menu_private_game = "Invite Only",
-		menu_drop_in_on = "Auto Drop-In",
+		menu_drop_in_on = "Auto Drop-In", --More accurate than "on"
 		menu_drop_in_prompt = "Host Confirm",
-		menu_drop_in_stealth_prompt = "Confirm (Stealth)",
+		menu_drop_in_stealth_prompt = "Confirm (Stealth)", --I struggled for a while to get something short enough but informative enough for this
 
 		menu_cn_legend_risk = "Difficulty",
 		menu_cn_legend_mutated = "Mutators",
@@ -225,7 +226,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_risk = "Difficulty",
 		menu_new = "", 
 		menu_permission = "Privacy",
-		menu_kicking_allowed_option = "Kick / Restart Mode",
+		menu_kicking_allowed_option = "Kick / Restart Mode", --Kick Mode is shorter but it also effects how restarts are handled argh
 		menu_kick_server = "Host",
 		menu_kick_vote = "Vote",
 		menu_kick_disabled = "Disabled",
@@ -238,8 +239,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_back = "BACK",
 		
 		cn_menu_community = "",  --Community tag
-		menu_ultimate_edition_short = "",
-		cn_menu_dlc = "",
+		menu_ultimate_edition_short = "", --UE tag (deprecated?)
+		cn_menu_dlc = "", --DLC tag
 		menu_mutators_reset_all = "Reset All",
 		menu_toggle_ai = "AI Teammates",
 
@@ -293,7 +294,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_pp_asset_kenaz_zeppelin_escape = "Blimp",
 		menu_pp_asset_kenaz_van_escape = "Van",
 		
-		
 		--CASINO--
 		menu_casino_title_main = "Offshore Casino",
 		menu_casino_choice_bet = "Place Bet",
@@ -314,6 +314,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_instruct_mask_on = "",  --Prompt telling you how to mask up
 		hud_suspicion_detected = "- ALERTED -",  --Someone has detected you
 		hud_instruct_throw_bag = "",
+		hud_custody_in = "BLEEDOUT",
+		hud_uncuffed_in = "BREAKOUT",
 
 		--INTERACTIONS--
 		--Generic Interactions
@@ -439,14 +441,14 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--DEPLOYABLES--
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
 		debug_interact_ammo_bag_take_ammo = "$BTN_INTERACT Take Ammo",
-		hud_int_equipment_normal_mode_trip_mine = "Switch to Explosive",
-		hud_int_equipment_sensor_mode_trip_mine = "Switch to Sensor",
-		hud_int_equipment_ecm_feedback = "$BTN_INTERACT ECM Feedback",
+		hud_int_equipment_normal_mode_trip_mine = "Switch to Explosive", --Yep, no key indicator. Not a mistake.
+		hud_int_equipment_sensor_mode_trip_mine = "Switch to Sensor", --It makes it easier to instantly tell what you're interacting with
+		hud_int_equipment_ecm_feedback = "$BTN_INTERACT ECM Feedback", --More important in stealth with sensor mines really, but still
 		debug_interact_bodybags_bag_take_bodybag = "$BTN_INTERACT Take Bodybag",
 		hud_interact_pickup_sentry_gun = "$BTN_INTERACT Pickup Sentry Gun",
-		hud_interact_sentry_gun_switch_fire_mode = "Change Ammo Type ($AMMO_LEFT%)",
+		hud_interact_sentry_gun_switch_fire_mode = "Change Ammo Type ($AMMO_LEFT%)", --You don't really need it for these. Could change in future though
 
-		--Golden Grin, AKA "The Most Interactions In The Game"
+		--Golden Grin, AKA "How Many Interactions Can We Shove In One Heist"
 		hud_cas_take_gear = "$BTN_INTERACT Take Gear",
 		hud_cas_open_guitar_case = "$BTN_INTERACT Open Case",
 		hud_take_sleeping_gas = "$BTN_INTERACT Take Gas",
@@ -455,7 +457,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_play_slots = "$BTN_INTERACT Play Slots",
 		hud_int_hold_moon_attach_winch = "$BTN_INTERACT Attach Hook",
 		hud_open_cas_securityroom_door = "$BTN_INTERACT Open Door",
-		["hud_take_???"] = "$BTN_INTERACT Pickup Coffer",
+		["hud_take_???"] = "$BTN_INTERACT Pickup Coffer", --thanks to Phantom for fixing this, as simple as it is
 		hud_open_cas_briefcase = "$BTN_INTERACT Open Briefcase",
 		hud_take_casino_chips = "$BTN_INTERACT Take Chips",
 		hud_int_search_blueprints = "$BTN_INTERACT Search",
@@ -493,6 +495,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_fix_bfd_drill = "$BTN_INTERACT Fix BFD",
 		hint_no_data_usb_key = "",
 		hint_no_usb_key = "",
+		hud_open_cas_elevator = "$BTN_INTERACT Open/Close",
 		hud_int_hold_pick_up = "$BTN_INTERACT Take",
 		hud_unpack_turret = "$BTN_INTERACT Unpack Turret",
 
@@ -641,7 +644,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_hack_ipad_jammed = "$BTN_INTERACT Reboot",
 		hud_int_hold_open_coke = "$BTN_INTERACT Search Coke",
 		hud_mil_hold_remove_bug = "$BTN_INTERACT Take Recorder",
-		hud_int_hold_phone_office = "$BTN_INTERACT Call Office",
+		hud_int_hold_phone_office = "$BTN_INTERACT Call Office", --don't let go like I did.
 		hud_int_hold_open_lid = "$BTN_INTERACT Open",
 		hud_int_hold_take_yayo = "$BTN_INTERACT Bag Cocaine",
 		hud_int_hold_attach_magnet = "$BTN_INTERACT Attach Magnet",
@@ -674,10 +677,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_open_shutters = "$BTN_INTERACT Open Shutters",
 		debug_interact_copy_machine = "$BTN_INTERACT Open Copy Machine",
 		debug_interact_equipment_thermite = "",
-		hud_int_take_envelope = "$BTN_INTERACT Take Envelope",
+		hud_int_take_envelope = "$BTN_INTERACT Take Envelope", --let's be real you're not taking this
 		
 		--Biker Heist
-		hud_int_hold_born_take_bike_part = "$BTN_INTERACT Pickup Part",
+		hud_int_hold_born_take_bike_part = "$BTN_INTERACT Pickup Part", --used for chrome skull as well. not much I can do
 		hud_int_hold_born_receive_item_blow_torch = "$BTN_INTERACT Take Blowtorch",
 		hud_int_hold_hand_over_chrome_skull = "$BTN_INTERACT Give Skull",
 		hud_int_hold_release_hatch = "$BTN_INTERACT Release Hatch",
@@ -693,7 +696,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_pku_breaching_charges = "$BTN_INTERACT Pickup Charges",
 		hud_int_hold_plant_breaching_charge = "$BTN_INTERACT Plant Charge",
 		hud_int_hold_place_breaching_detonator = "$BTN_INTERACT Place Detonator",
-		hud_int_open_panicroom = "$BTN_INTERACT Insert Keycard",
+		hud_int_open_panicroom = "$BTN_INTERACT Insert Keycard", --it definitely is not a panic room
 		hud_int_hold_take_prototype = "$BTN_INTERACT Pickup Prototype",
 		hud_int_hold_unlock_display_ares = "Ares",
 		hud_int_hold_unlock_display_demeter = "Demeter",
@@ -715,10 +718,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_take_toothbrush = "$BTN_INTERACT Pickup Toothbrush",
 		debug_interact_apartment_helicopter = "$BTN_INTERACT Attach Magnet",
 		
-		--Wolf Pack
+		--Wolf Pack Heists
 		debug_interact_crowbar = "$BTN_INTERACT Breach",
 		debug_interact_crowbar2 = "$BTN_INTERACT Breach",
-		debug_interact_hold_to_breach = "$BTN_INTERACT Breach",
+		debug_interact_hold_to_breach = "$BTN_INTERACT Breach", --fuck yeah, THREE breach interactions
 		debug_interact_interaction_ball = "$BTN_INTERACT Pull Hose", --wtf does ball mean?
 		hud_int_take_paper_roll = "$BTN_INTERACT Take Roll",
 		hud_int_take_printer_ink = "$BTN_INTERACT Take Ink",
@@ -743,7 +746,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_numpad_no_keycard = "",
 
 		--Heat Street
-		debug_interact_embassy_door = "$BTN_INTERACT Open Door",
+		debug_interact_embassy_door = "$BTN_INTERACT Open Door", --embassy?
 		hud_int_take_missing_animal_poster = "$BTN_INTERACT Take Poster",
 		debug_interact_open_trunk = "$BTN_INTERACT Open Trunk",
 		hud_int_hold_pick_up_turtle = "$BTN_INTERACT Take Turtle",
@@ -775,7 +778,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_relay_locke = "$BTN_INTERACT Relay Locke",
 		hud_int_hold_bypass_firewall = "$BTN_INTERACT Bypass Firewall",
 		hud_int_hold_take_pardons = "$BTN_INTERACT Take Pardon",
-		hud_int_hold_pull_lever = "$BTN_INTERACT Pull Lever",
+		hud_int_hold_pull_lever = "$BTN_INTERACT Pull Lever", --oh yeah, you best believe I changed the secret stuff
 		hud_action_placing_mayan_gold_bar = "$BTN_INTERACT Place Gold",
 		hud_int_equipment_no_mayan_gold = "",
 		hud_action_taking_uno_gold = "$BTN_INTERACT Take Gold",
@@ -790,7 +793,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_place_stapler = "$BTN_INTERACT Place Stapler",
 		hud_hint_need_stapler = "",
 		hud_int_hold_disable_alarm = "$BTN_INTERACT Disable Alarm",
-		hud_open_cas_elevator = "$BTN_INTERACT Open/Close",
 		hud_int_press_take_elevator = "$BTN_INTERACT Ride Elevator",
 		hud_int_press_take_chimichanga = "$BTN_INTERACT Take Chimichanga",
 		hud_int_press_place_chimichanga = "$BTN_INTERACT Place Chimichanga",
@@ -836,7 +838,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--Big Oil
 		hud_int_take_confidential_folder = "$BTN_INTERACT Take Intel",
 		hud_int_hold_take_blueprints = "$BTN_INTERACT Take Blueprints",
-		hud_int_hold_take_reaktor = "$BTN_INTERACT Pickup Engine",
+		hud_int_hold_take_reaktor = "$BTN_INTERACT Pickup Engine", --their inner swedes came out with this one
 
 		--Bomb Heists
 		hud_pku_manifest = "$BTN_INTERACT Take Manifest",
@@ -874,7 +876,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_old_wine = "$BTN_INTERACT Pickup Wine",
 		hud_int_hold_take_hdd = "$BTN_INTERACT Take HDD",
 		hud_int_use_computer = "$BTN_INTERACT Take Laptop",
-		hud_int_hold_use_computer = "$BTN_INTERACT Use Computer",
+		hud_int_hold_use_computer = "$BTN_INTERACT Use Computer", --I'd change this to "Place Laptop" but it's also used by some other computers that you hack, so
 		hud_int_hold_use_device = "$BTN_INTERACT Place Device",
 
 		--Yacht Heist
@@ -944,7 +946,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_fire_laser = "$BTN_INTERACT Fire Laser",
 		hud_int_hold_remove_battery = "$BTN_INTERACT Remove Battery",
 
-		--Border Crossing
+		--Border Crossing (this heist sucks)
 		hud_int_remove_tarp = "$BTN_INTERACT Move Tarp",
 		hud_int_mex_pickup_murky_uniform = "$BTN_INTERACT Take Uniform",
 		hud_int_hold_bag_ro_armor = "$BTN_INTERACT Bag Armor",
@@ -964,7 +966,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--Breakfast In Tijuana
 		hud_int_pku_medal = "$BTN_INTERACT Take Medal",
-		hud_equipment_evidance_find_a_tag = "",
+		hud_equipment_evidance_find_a_tag = "", --they really spelt it "evidance"
 		hud_hold_pick_up_breaching_device = "$BTN_INTERACT Pickup Door Breaker",
 		hud_equipment_need_bolt_cutter = "",
 		hud_int_hold_cut_chains = "$BTN_INTERACT Cut Chains",
@@ -974,12 +976,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_press_pex_give_keys = "$BTN_INTERACT Give Keys",
 		hud_hold_take_unloaded_card = "$BTN_INTERACT Take RFID Tag",
 		hud_hold_take_loaded_card = "$BTN_INTERACT Code RFID Tag",
-		hud_hold_use_evidance_tag = "$BTN_INTERACT Open Door",
+		hud_hold_use_evidance_tag = "$BTN_INTERACT Open Door", --and again
 		hud_int_hold_destroy_evidence = "$BTN_INTERACT Destroy Evidence",
 		hud_int_pickup_cutter = "$BTN_INTERACT Take Bolt Cutter",
 		hud_int_hold_take_police_uniform = "$BTN_INTERACT Take Uniform",
 		hud_int_hand_over_uniform = "$BTN_INTERACT Give Uniform",
-		hud_int_hold_place_evidance = "$BTN_INTERACT Place Evidence",
+		hud_int_hold_place_evidance = "$BTN_INTERACT Place Evidence", --make that three times
 		hud_int_pku_flammable_liquid = "$BTN_INTERACT Take Fluid",
 		hud_equipment_flammable_liquid = "Lighter Fluid",
 		hud_hold_set_burnable_liquid = "$BTN_INTERACT Pour Fluid",
@@ -990,7 +992,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--Holdout
 		debug_interact_trade_hostage_skm = "$BTN_INTERACT Trade",
 		
-		--Keypad
+		--Keypad buttons. No interact key indicators because it looks stupid and you know what to press
 		hud_int_press_0  = "0",
 		hud_int_press_01 = "1",
 		hud_int_press_02 = "2",
@@ -1003,11 +1005,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_09 = "9",
 		hud_int_press_clear = "RESET",
 		hud_int_press_enter = "ENTER",
-		
-		hud_custody_in = "BLEEDOUT",
-		hud_uncuffed_in = "BREAKOUT",
-		hud_civilian_killed_title = "Civilian Killed",
-		hud_civilian_killed_message = "-$AMOUNT",
 
 		--SAFEHOUSE INTERACTIONS--
 		hud_int_talk_butler = "$BTN_INTERACT Talk",
@@ -1061,7 +1058,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_remove_parts = "$BTN_INTERACT Remove Parts",
 		hud_int_assemble_device = "$BTN_INTERACT Assemble Device",
 		
-		--HUD HINTS--
+		--HINTS--
 		hint_been_tasered = "Being tased",
 		hud_hint_clean_block_interact = "Find your equipment",
 		hud_hint_mask_off_block_interact = "Mask up",
@@ -1087,6 +1084,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_full_keycard = "Already have keycard",
 		hud_sentry_not_enough_ammo_to_place = "Not enough ammo",
 		hud_gage_assignment_progress = "$peer_name found $assignment ($remaining left)",
+		hud_civilian_killed_title = "Civilian Killed",
+		hud_civilian_killed_message = "-$AMOUNT",
 
 		--Custody, down, reviving, etc
 		hint_teammate_downed = "$TEAMMATE is down",
@@ -1103,7 +1102,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_you_were_revived = "$HELPER traded you",
 		hint_trade_offered = "Hostage trade available",
 
-		--ALARM--
+		--ALARM REASONS--
 		hud_hint_cam_criminal = "Alert: Camera detected a player",
 		hud_hint_cam_dead_body = "Alert: Camera detected a corpse",
 		hud_hint_cam_hostage = "Alert: Camera detected a hostage",
@@ -1171,7 +1170,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_carry_person = "Corpse",
 		hud_carry_cloaker_cocaine = "Cloakaine",
 		hud_carry_box = "Coffer",
-		["hud_carry_???"] = "Coffer",
+		["hud_carry_???"] = "Coffer", --thanks to Phantom for fixing this, as simple as it is
 		hud_carry_giant_toothbrush = "Giant Toothbrush",
 		hud_carry_yayo = "Cocaine",
 		hud_carry_vr_headset = "VR Headset",
