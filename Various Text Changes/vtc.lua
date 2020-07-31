@@ -47,6 +47,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		cn_menu_decline_contract = "Back",
 		cn_menu_accept_contract = "Play",
 		menu_end_crime_spree = "End Spree",
+		menu_choose_new_contract = "Pick a heist to start the game.",
 		
 		menu_l_lootscreen = "Card Drop",
 		menu_l_choose_card_local = "",
@@ -103,17 +104,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		menu_player_inventory = "Loadout",  --New Inventory
 		menu_player_inventory_help = "Opens the loadout. Contains weapons, skills, and perks.",
-		
-		menu_choose_new_contract = "Pick a heist to start the game.",
-		
 		menu_visit_community = "Steam Community",
-		menu_crew_management = "AI Loadout",
-		
-		menu_visit_gamehub_help = "Opens the PAYDAY 2 Steam Community page in the Steam overlay.",
-		menu_content_updates = "Announcements",
-		menu_content_updates_help = "View the Steam announcements.",
-		menu_skilltree = "Skills / Perks",
-		menu_skilltree_help = "Allows you to unlock and equip skills / perks.",
+		menu_visit_community_help = "Opens the PAYDAY 2 Steam Community page in the Steam overlay.",
 		menu_option_default = "Reset Options",
 		menu_option_default_help = "Resets all of your options to the defaults.",
 		dialog_default_options_message = "This will reset all of your settings to the default. Are you sure you want to do this?",
@@ -1213,6 +1205,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_deployables = "Deployable",
 		bm_menu_characters = "Characters",
 		menu_preferred_character = "Character",
+		menu_crew_management = "AI Loadout",
+		bm_menu_ability = "Ability",
+		bm_menu_skill = "Boost",
 		menu_preferred_character_lobby_error = "You cannot change character while in a lobby.",
 		bm_menu_mod_preview = "Preview",
 		bm_menu_buy_mask_title = "Mask Inventory",
@@ -1239,8 +1234,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_empty_mask_slot = "Empty",
 		bm_menu_btn_buy_new_weapon = "Buy Weapon",
 		bm_menu_empty_weapon_slot = "Empty",
-		bm_menu_primaries = "1",
-		bm_menu_secondaries = "2",
+		bm_menu_primaries = "[1]",
+		bm_menu_secondaries = "[2]",
 		bm_menu_btn_remove_mask = "Remove",
 		bm_menu_btn_equip_mask = "Equip",
 		bm_menu_btn_equip_weapon = "Equip",
