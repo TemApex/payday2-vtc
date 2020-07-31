@@ -1,15 +1,5 @@
 Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 	LocalizationManager:add_localized_strings({
-		hud_instruct_mask_on = "",  --Put on mask prompt
-		hud_skip_blackscreen = "$BTN_ACCEPT",  --Hold to skip intro
-		hud_suspicion_detected = "- ALERTED -",  --Detection
-
-		savefile_saving = "Saving",
-
-		--SAFEHOUSE--
-		menu_cn_chill_combat_defend = "Defend",  --Defend Safehouse
-		menu_cn_chill_combat_ignore_defend = "Ignore",
-
 		--INFAMY--
 		menu_infamy_name_root = "The Infamous",  --Infamy I
 		menu_infamy_name_ghost = "The Assassin",  --Infamy Ghost
@@ -27,173 +17,17 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_infamy_name_xp = "XP Boost",  --Infamy XP Bonus
 
 		--LOBBY--
+		savefile_saving = "Saving",
+		hud_offshore_account = "Offshore",  --Offshore Name
 		menu_waiting_is_ready = "[X]",  --Lobby Ready
 		menu_waiting_is_not_ready = "[  ]", --Lobby Not Ready
-
-		cn_menu_community = "",  --Community tag
-
-		menu_specialization = "Perks",  --Perk Decks
-		menu_st_skilltree = "Skills",  --Skill Trees
-		
-		menu_st_activate_spec = "Use",
-		menu_st_max_perk_deck = "Unlock All",
-
-		menu_reset_account = "Delete Save Data",  --Reset Progress
-		menu_reset_account_help = "Deletes your save data. Only do this if you're 100% sure this is what you want to do.",  --Reset Progress
-		dialog_are_you_sure_you_want_to_clear_progress = "This process is irreversible. It will delete everything that you currently have and start you back at level 0, infamy 0. Are you 100% certain you want to do this?",
-
-		--MENU BUTTONS--
-		fast_net_title = "Play Online (Lobby Browser)",  --FAST.NET
-		fast_net_friends_title = "Play Online (Friend Browser)",  --FAST.NET Friends
-		
-		menu_crimenet = "Play Online",  --CRIME.NET
-		menu_crimenet_help = "Play online with other players.",  --CRIME.NET Description
-		menu_crimenet_offline = "Play Offline",  --CRIME.NET Offline
-		menu_crimenet_offline_help = "Play offline with bots.",  --CRIME.NET Offline Description
-		menu_quickplay_settings_mutators = "Mutators",
-		menu_quickplay_option_default = "Default Settings",
-		menu_cn_quickplay = "Find Game",
-		
-		menu_debug = "",  --If you have the Fast.net mod or the freecam mod this hides the debug button
-		debug_start_the_game = "",  --If you have the Fast.net mod or the freecam mod this hides the debug button
-		
-		menu_player_inventory = "Loadout",  --New Inventory
-		menu_player_inventory_help = "Opens the loadout. Contains weapons, skills, and perks.",
-		menu_player_column_one_title = "Player",
-		menu_player_column_two_title = "Weapons",
-		menu_player_column_three_title = "Items & Skills",
-		menu_button_hide = "[X]",
-		menu_button_show = "[  ]",
-		bm_menu_btn_sell_tradeable = "Sell",
-		
-		menu_choose_new_contract = "Pick a heist to start the game.",
-		
-		menu_visit_community = "Steam Community",
-		menu_crew_management = "AI Loadout",
-		
-		menu_visit_gamehub_help = "Opens the PAYDAY 2 Steam Community page in the Steam overlay.",
-		menu_content_updates = "Announcements",
-		menu_content_updates_help = "View the Steam announcements.",
-		menu_skilltree = "Skills / Perks",
-		menu_skilltree_help = "Allows you to unlock and equip skills / perks.",
-		menu_option_default = "Reset Options",
-		menu_option_default_help = "Resets all of your options to the defaults.",
-		dialog_default_options_message = "This will reset all of your settings to the default. Are you sure you want to do this?",
-		menu_visit_fbi_files = "Open FBI Files",
-		menu_visit_fbi_files_help = "Opens the FBI files in the Steam overlay.",
-		menu_custom_safehouse = "Safe House",
-		
-		--PAUSE SCREEN--
-		menu_resume_game = "Resume",
-		menu_restart_game = "Restart",
-		menu_players_list = "Players",
-		menu_end_game = "Main Menu",
-		dialog_are_you_sure_you_want_to_leave_game = "Are you sure you want to return to the main menu?\n\nYou will leave your current lobby (if in one).",
-		menu_abort_mission = "Exit Heist",
-		dialog_abort_mission_text = "Are you sure you want to exit the current heist?\n\nYou and your crew will be returned to the lobby where you can pick another heist.",
-		
-		--CRIME.NET SIDEBAR--
-		cn_crime_spree = "Crime Spree",
-		menu_cn_shortcuts = "Close Navigation",
-		menu_cn_short = "Tutorials",
-		menu_contact_info_short = "Tutorials",
-		short_basics_header = "Choose A Tutorial",
-		short_basics_desc = "Learn the basics of stealth or loud gameplay.",
-		
-		heist_short1 = "Stealth",
-		heist_short2 = "Loud",
-		
-		menu_cn_story_missions = "Missions",
-		menu_cn_chill = "Safe House",
-		menu_cn_chill_combat = "Safe House Raid",
-		menu_chill_combat_under_attack = "- SAFE HOUSE RAID -",
-		menu_chill_combat_under_attack_desc = "",
-		menu_cn_premium_buy = "Heist Select",
-		menu_cn_premium_buy_accept = "Play",
-		menu_contract_broker = "Heist Select",
-		menu_cn_contact_info = "Character Profiles",
-		menu_cn_casino = "Offshore Casino",
-		menu_cn_gage_assignment = "Gage Packages",
-		menu_gage_assignment_introduction_title = "Assignment",
-		menu_gage_assignment_summary_title = "Progress",
-		menu_gage_assignment_video_title = "Footage",
-		menu_gage_assignment_title = "Gage Packages",
-		menu_mutators = "Mutators",
-		menu_mutators_desc = "",
-		menu_mutators_achievement_disabled = "Achievement / trophy progress is disabled.",
-		menu_mutators_reduction = "Cash reduced by $cash_reduction%.\nXP reduced by $exp_reduction%.\nCleaner costs are disabled.",
-		menu_mutators_incompatibilities = "Mutator is incompatible with:\n$mutators",
-		dialog_mutators_active_text = "The host has enabled mutators. Do you want to play with mutators enabled?",
-		menu_skirmish_map_selection = "Location",
-		menu_skirmish_pick_heist = "",
-
-		daily_discord_objective = "Finish 3 heists with a converted cop.",
-		
-		menu_filter_time = "Heist Length",
-		
-		menu_cs_enter_safehouse = "Enter",
-		menu_cs_map = "Map",
-		menu_cs_change_floor = "Floor",
-		menu_cs_top_floor = "Upstairs",
-		menu_cs_ground_floor = "Downstairs",
-		menu_trophy_display_all = "Display All",
-		menu_trophy_displayed = "Displayed",
-		menu_trophy_hide_all = "Hide All",
-		menu_trophy_not_displayed = "Hidden",
-		menu_cs_cant_afford = "Not enough Continental Coins.",
-		menu_cs_rooms_help_hover_no_upgrade = "Room fully upgraded",
-		menu_cs_rooms_help_hover = "Room is upgradeable",
-
-		menu_sm_claim_rewards_goto_next = "Claim Rewards",
-		
-		menu_cn_filters_sidebar = "Lobby Filters",
-		
-		--Crime.net Filters
-		menu_lobby_filters = "Lobby Filters",
-		menu_toggle_server_state_lobby = "Lobbies Only",
-		menu_toggle_mutated_lobby = "Allow Mutators",
-		menu_toggle_one_down_lobbies = "Allow One Down",
-		menu_max_lobbies_filter = "Max Servers",
-		menu_diff_filter = "Difficulty",
-		menu_job_id_filter = "Heist Filter",
-		menu_kicking_allowed_filter = "Kick / Restart Mode",
-		dialog_reset_filters = "Reset",
-		menu_apply_settings = "Apply",
-
-		--Lobby Settings
-		menu_cn_game_settings = "Settings",
-		menu_friends_only_game = "Friends Only",
-		menu_private_game = "Invite Only",
-		menu_drop_in_on = "Auto Drop-In",
-		menu_drop_in_prompt = "Host Confirm",
-		menu_drop_in_stealth_prompt = "Confirm (Stealth)",
-
-		menu_cn_legend_risk = "Difficulty",
-		menu_cn_legend_mutated = "Mutators",
-		menu_cn_legend_host = "Heist",
-		menu_cn_legend_join = "Public Lobby",
-		menu_cn_legend_friends = "Friend Lobby",
-		menu_risk = "Difficulty",
-		menu_new = "",
-		menu_permission = "Privacy",
-		menu_kicking_allowed_option = "Kick / Restart Mode",
-		menu_kick_server = "Host",
-		menu_kick_vote = "Vote",
-		menu_kick_disabled = "Disabled",
-		
-		menu_contact_info_title = "Character Profiles",
-		
-		menu_cs_upgrade_max = "This room is fully upgraded.",
-		menu_unlock_condition = "Requirement:",
-		
-		menu_back = "BACK",
-		
-		menu_ultimate_edition_short = "",
-		cn_menu_dlc = "",
-		menu_mutators_reset_all = "Reset All",
-		menu_toggle_ai = "AI Teammates",
-		
-		--LOBBY 2: ELECTRIC BOOGALOO--
+		menu_lobby_player_slot_available = "",
+		menu_description = "Briefing", --this used to work and should still work in theory, but it doesn't.
+		menu_assets = "Assets",
+		menu_loadout = "Loadout",
+		menu_team_loadout = "Crew",
+		menu_jukebox = "Music",
+		hud_skip_blackscreen = "$BTN_ACCEPT",  --Hold to skip intro
 		menu_lobby_menu_state_lobby = "",
 		menu_edit_game_settings = "Lobby Settings",
 		menu_reputation_permission = "Level Limit",
@@ -239,6 +73,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_asset_risklevel_0 = "Normal",
 		menu_risk_pd = "Normal. 1x reward multiplier.",
 		menu_stat_job_completed = "\nCompleted $stat times.",
+		--these multipliers are based on the PAYDAY multiplier, so aren't 100% accurate
 
 		menu_cs_suspend_spree = "Exit",
 		menu_cs_get_rewards = "End Spree",
@@ -246,9 +81,167 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_victory_goto_next_stage ="Next Day",
 		menu_victory_goto_payday = "Card Drop",
 		menu_victory_retry_stage = "Retry",
-		menu_es_calculating_experience = "Calculating...",
+		menu_es_calculating_experience = "Calculating...", --if you remove this the continue button never appears
 		victory_client_waiting_for_server = "Waiting For Host",
 		debug_mission_end_continue = "Continue",
+		loading_trivia_96 = "Various Text Changes was first uploaded in September of 2015. Development stopped during Crimefest at V2, but it received some updates two years later, ending at V5.23. Two more years later, in 2020, VTC6 finally released.",
+
+		--MENU BUTTONS--
+		fast_net_title = "Play Online (Lobby Browser)",  --FAST.NET
+		fast_net_friends_title = "Play Online (Friend Browser)",  --FAST.NET Friends
+		
+		menu_crimenet = "Play Online",  --CRIME.NET
+		menu_crimenet_help = "Play online with other players.",  --CRIME.NET Description
+		menu_crimenet_offline = "Play Offline",  --CRIME.NET Offline
+		menu_crimenet_offline_help = "Play offline with bots.",  --CRIME.NET Offline Description
+		menu_quickplay_settings_mutators = "Mutators",
+		menu_quickplay_option_default = "Default Settings",
+		menu_cn_quickplay = "Find Game",
+		
+		menu_debug = "",  --If you have the Fast.net mod or the freecam mod this hides the debug button
+		debug_start_the_game = "",  --If you have the Fast.net mod or the freecam mod this hides the debug button
+		
+		menu_player_inventory = "Loadout",  --New Inventory
+		menu_player_inventory_help = "Opens the loadout. Contains weapons, skills, and perks.",
+		
+		menu_choose_new_contract = "Pick a heist to start the game.",
+		
+		menu_visit_community = "Steam Community",
+		menu_crew_management = "AI Loadout",
+		
+		menu_visit_gamehub_help = "Opens the PAYDAY 2 Steam Community page in the Steam overlay.",
+		menu_content_updates = "Announcements",
+		menu_content_updates_help = "View the Steam announcements.",
+		menu_skilltree = "Skills / Perks",
+		menu_skilltree_help = "Allows you to unlock and equip skills / perks.",
+		menu_option_default = "Reset Options",
+		menu_option_default_help = "Resets all of your options to the defaults.",
+		dialog_default_options_message = "This will reset all of your settings to the default. Are you sure you want to do this?",
+		menu_visit_fbi_files = "Open FBI Files",
+		menu_visit_fbi_files_help = "Opens the FBI files in the Steam overlay.",
+		menu_custom_safehouse = "Safe House",
+		menu_steam_inventory = "Steam Inventory",
+		menu_steam_inventory_help = "The inventory contains all items handled by Steam.",
+
+		--They added new strings for this? Why? It used to be menu_clear_progress. Why did they add new strings instead of rewriting the old ones? But the dialog string is the old one. What?
+		menu_reset_account = "Delete Save Data",  --Reset Progress
+		menu_reset_account_help = "Deletes your save data. Only do this if you're 100% sure this is what you want to do.",  --Reset Progress
+		dialog_are_you_sure_you_want_to_clear_progress = "This process is irreversible.\n\nYour loadout will be wiped and you will be reset to infamy 0, level 0.\n\nAre you 100% certain you want to do this?",
+		
+		--PAUSE SCREEN--
+		menu_resume_game = "Resume",
+		menu_restart_game = "Restart",
+		menu_players_list = "Players",
+		menu_end_game = "Main Menu",
+		dialog_are_you_sure_you_want_to_leave_game = "Are you sure you want to return to the main menu?\n\nYou will leave your current lobby (if in one).",
+		menu_abort_mission = "Exit Heist",
+		dialog_abort_mission_text = "Are you sure you want to exit the current heist?\n\nYou and your crew will be returned to the lobby where you can pick another heist.",
+		
+		--CRIME.NET SIDEBAR--
+		cn_crime_spree = "Crime Spree",
+		menu_cn_shortcuts = "Close Navigation",
+		menu_cn_short = "Tutorials",
+		menu_contact_info_short = "Tutorials",
+		short_basics_header = "Choose A Tutorial",
+		short_basics_desc = "Learn the basics of stealth or loud gameplay.",
+		
+		heist_short1 = "Stealth",
+		heist_short2 = "Loud",
+		
+		menu_cn_story_missions = "Missions",
+		menu_cn_chill = "Safe House",
+		menu_cn_chill_combat = "Safe House Raid",
+		menu_chill_combat_under_attack = "- SAFE HOUSE RAID -",
+		menu_cn_chill_combat_defend = "Defend",
+		menu_cn_chill_combat_ignore_defend = "Ignore",
+		menu_chill_combat_under_attack_desc = "",
+		menu_cn_premium_buy = "Heist Select",
+		menu_cn_premium_buy_accept = "Play",
+		menu_contract_broker = "Heist Select",
+		menu_cn_contact_info = "Character Profiles",
+		menu_cn_casino = "Offshore Casino",
+		menu_cn_gage_assignment = "Gage Packages",
+		menu_gage_assignment_introduction_title = "Assignment",
+		menu_gage_assignment_summary_title = "Progress",
+		menu_gage_assignment_video_title = "Footage",
+		menu_gage_assignment_title = "Gage Packages",
+		menu_mutators = "Mutators",
+		menu_mutators_desc = "",
+		menu_mutators_achievement_disabled = "Achievement / trophy progress is disabled.",
+		menu_mutators_reduction = "Cash reduced by $cash_reduction%.\nXP reduced by $exp_reduction%.\nCleaner costs are disabled.",
+		menu_mutators_incompatibilities = "This mutator is incompatible with:\n$mutators",
+		menu_mutators_reset = "Reset",
+		dialog_mutators_active_text = "Mutators are enabled. Do you want to play with mutators?",
+		menu_skirmish_map_selection = "Location",
+		menu_skirmish_pick_heist = "",
+
+		--This daily job has a typo. It originally said "3 heist" instead of "3 heists". Yep.
+		daily_discord_objective = "Finish 3 heists with a converted cop.",
+		
+		menu_filter_time = "Heist Length",
+		
+		menu_cs_enter_safehouse = "Enter",
+		menu_cs_map = "Map",
+		menu_cs_change_floor = "Floor",
+		menu_cs_top_floor = "Upstairs",
+		menu_cs_ground_floor = "Downstairs",
+		menu_trophy_display_all = "Display All",
+		menu_trophy_displayed = "Displayed",
+		menu_trophy_hide_all = "Hide All",
+		menu_trophy_not_displayed = "Hidden",
+		menu_cs_cant_afford = "Not enough Continental Coins.",
+		menu_cs_rooms_help_hover_no_upgrade = "Room fully upgraded",
+		menu_cs_rooms_help_hover = "Room is upgradeable",
+
+		menu_sm_claim_rewards_goto_next = "Claim Rewards",
+		
+		menu_cn_filters_sidebar = "Lobby Filters",
+		
+		--Crime.net Filters
+		menu_lobby_filters = "Lobby Filters",
+		menu_toggle_server_state_lobby = "Lobbies Only",
+		menu_toggle_mutated_lobby = "Allow Mutators",
+		menu_toggle_one_down_lobbies = "Allow One Down",
+		menu_max_lobbies_filter = "Max Servers",
+		menu_diff_filter = "Difficulty",
+		menu_job_id_filter = "Heist Filter",
+		menu_kicking_allowed_filter = "Kick / Restart Mode",
+		dialog_reset_filters = "Reset",
+		menu_apply_settings = "Apply",
+
+		--Lobby Settings
+		menu_cn_game_settings = "Settings", --if you remove this the 'Mods' tab disappears
+		menu_friends_only_game = "Friends Only",
+		menu_private_game = "Invite Only",
+		menu_drop_in_on = "Auto Drop-In",
+		menu_drop_in_prompt = "Host Confirm",
+		menu_drop_in_stealth_prompt = "Confirm (Stealth)",
+
+		menu_cn_legend_risk = "Difficulty",
+		menu_cn_legend_mutated = "Mutators",
+		menu_cn_legend_host = "Heist",
+		menu_cn_legend_join = "Public Lobby",
+		menu_cn_legend_friends = "Friend Lobby",
+		menu_risk = "Difficulty",
+		menu_new = "", 
+		menu_permission = "Privacy",
+		menu_kicking_allowed_option = "Kick / Restart Mode",
+		menu_kick_server = "Host",
+		menu_kick_vote = "Vote",
+		menu_kick_disabled = "Disabled",
+		
+		menu_contact_info_title = "Character Profiles",
+		
+		menu_cs_upgrade_max = "This room is fully upgraded.",
+		menu_unlock_condition = "Requirement:",
+		
+		menu_back = "BACK",
+		
+		cn_menu_community = "",  --Community tag
+		menu_ultimate_edition_short = "",
+		cn_menu_dlc = "",
+		menu_mutators_reset_all = "Reset All",
+		menu_toggle_ai = "AI Teammates",
 
 		--STATS SCREEN--
 		--Crew Stats
@@ -317,6 +310,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_casino_cost_fee = "Base Cost",
 		menu_cn_casino_pay_accept = "Yes",
 		
+		--HUD--
+		hud_instruct_mask_on = "",  --Prompt telling you how to mask up
+		hud_suspicion_detected = "- ALERTED -",  --Someone has detected you
+		hud_instruct_throw_bag = "",
+
 		--INTERACTIONS--
 		--Generic Interactions
 		hud_int_equipment_drill = "$BTN_INTERACT Mount Drill",
@@ -338,7 +336,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_equipment_stash_planks = "",
 		debug_interact_stash_planks_pickup = "$BTN_INTERACT Take Planks",
 		debug_interact_stash_planks = "$BTN_INTERACT Board Up",
-		debug_interact_money_wrap_single_bundle_take_money = "$BTN_INTERACT Take Money",
+		debug_interact_money_wrap_single_bundle_take_money = "$BTN_INTERACT Take Money", --why is this so long
 		debug_interact_being_revived = "",
 		hud_starting_heist = "Masking Up",
 		hud_int_barrier_numpad = "$BTN_INTERACT Activate Barrier",
@@ -421,7 +419,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_revive = "$BTN_INTERACT Revive",
 		debug_interact_numpad = "$BTN_INTERACT Enter Code",
 		hud_int_hold_take_necklace = "$BTN_INTERACT Pickup Necklace",
-		hud_int_grab_server = "$BTN_INTERACT Take Server",
+		hud_int_grab_server = "$BTN_INTERACT Take Server", --in Counterfeit it's Take, in HoxOut it's Pickup. Flip a coin, fuck you.
 		hint_usb_stick = "",
 		hud_int_press_activate = "$BTN_INTERACT Activate",
 		hud_int_equipment_drill_upgrade = "$BTN_INTERACT Upgrade Drill",
@@ -435,7 +433,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_equipment_need_glass_cutter = "",
 		debug_interact_free = "$BTN_INTERACT Free",
 		debug_interact_temp_interact_box = "$BTN_INTERACT Interact",
-		hud_instruct_throw_bag = "",
+		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close", --hud_int_open_slash_close exists, use it for Sangres' revolver case instead of this.
+		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close", --I had to change this to open/close because they used ONLY the open interaction for Sangres' weapon case
 
 		--DEPLOYABLES--
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
@@ -445,9 +444,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_equipment_ecm_feedback = "$BTN_INTERACT ECM Feedback",
 		debug_interact_bodybags_bag_take_bodybag = "$BTN_INTERACT Take Bodybag",
 		hud_interact_pickup_sentry_gun = "$BTN_INTERACT Pickup Sentry Gun",
-		hud_interact_sentry_gun_switch_fire_mode = "Switch Fire Mode",
+		hud_interact_sentry_gun_switch_fire_mode = "Change Ammo Type ($AMMO_LEFT%)",
 
-		--Golden Grin
+		--Golden Grin, AKA "The Most Interactions In The Game"
 		hud_cas_take_gear = "$BTN_INTERACT Take Gear",
 		hud_cas_open_guitar_case = "$BTN_INTERACT Open Case",
 		hud_take_sleeping_gas = "$BTN_INTERACT Take Gas",
@@ -495,11 +494,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_no_data_usb_key = "",
 		hint_no_usb_key = "",
 		hud_int_hold_pick_up = "$BTN_INTERACT Take",
-		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close",
 		hud_unpack_turret = "$BTN_INTERACT Unpack Turret",
 
 		--Aftershock
-		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe",
+		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe", --i'm still mad about the Completely Overkill Pack
 		hud_int_hold_pku_knife = "$BTN_INTERACT Take Knife",
 
 		--Stealth Tutorial
@@ -600,7 +598,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_download_keys = "$BTN_INTERACT Download Keys",
 		hud_int_hold_gather_evidence = "$BTN_INTERACT Take Evidence",
 		hud_equipment_need_evidence = "",
-		hud_int_hold_check_evidence = "$BTN_INTERACT Check Evidence",
+		hud_int_hold_check_evidence = "$BTN_INTERACT Check Evidence", --used to be "Scan Evidence" but they reused this in Breakfast in Tijuana
 		hud_int_search_files = "$BTN_INTERACT Search",
 		hud_int_use_files = "$BTN_INTERACT Slide Files",
 		
@@ -665,7 +663,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_call_elevator = "$BTN_INTERACT Call Elevator",
 		hud_int_hold_stash_vial = "$BTN_INTERACT Stash Sample",
 		hud_int_hold_breach = "$BTN_INTERACT Breach",
-		hint_dropped_blood_sample = "Blood sample destroyed",
 
 		--Prison Nightmare
 		press_insert_keycard = "$BTN_INTERACT Insert Keycard",
@@ -722,7 +719,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_crowbar = "$BTN_INTERACT Breach",
 		debug_interact_crowbar2 = "$BTN_INTERACT Breach",
 		debug_interact_hold_to_breach = "$BTN_INTERACT Breach",
-		debug_interact_interaction_ball = "$BTN_INTERACT Pull Hose",
+		debug_interact_interaction_ball = "$BTN_INTERACT Pull Hose", --wtf does ball mean?
 		hud_int_take_paper_roll = "$BTN_INTERACT Take Roll",
 		hud_int_take_printer_ink = "$BTN_INTERACT Take Ink",
 		hud_int_equipment_printer_ink = "Ink",
@@ -1043,8 +1040,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_press_answering_play = "$BTN_INTERACT Play Message",
 		hud_int_hold_to_help_turtle = "$BTN_INTERACT Help Turtle",
 		hud_hold_bet_slotmachine_chl = "$BTN_INTERACT Play Slots ($10,000)",
-		hud_press_bet_red = "$BTN_INTERACT Red",
-		hud_press_bet_black = "$BTN_INTERACT Black",
+		hud_press_bet_red = "$BTN_INTERACT Bet Red ($10,000)",
+		hud_press_bet_black = "$BTN_INTERACT Bet Black ($10,000)",
 		hud_int_spin_wheel = "$BTN_INTERACT Spin",
 		hud_int_press_shoot_puck = "$BTN_INTERACT Shoot",
 		hud_press_play_jacket_sound = "$BTN_INTERACT Play Tape",
@@ -1058,7 +1055,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_pick_up = "$BTN_INTERACT Take",
 		hud_int_touch_book = "$BTN_INTERACT Touch Book",
 		hud_int_use_device = "$BTN_INTERACT Use Device",
-		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close",
 		hud_chill_access_sidejobs = "$BTN_INTERACT View Trophies",
 		hud_hold_burn_offshore_money = "$BTN_INTERACT Burn Offshore",
 		hud_int_press_use_medallion = "$BTN_INTERACT Open Coffer",
@@ -1086,9 +1082,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_carry_block = "Already carrying something",
 		hint_body_bag_limit_reached = "Out of bodybags",
 		hud_hint_health_beserking = "Sorry...",
-		hint_nea_sentry_gun = "Not enough ammo",
 		hud_hint_phoneline_jammed = "Phone is jammed",
+		hint_dropped_blood_sample = "Blood sample destroyed",
 		hint_full_keycard = "Already have keycard",
+		hud_sentry_not_enough_ammo_to_place = "Not enough ammo",
 		hud_gage_assignment_progress = "$peer_name found $assignment ($remaining left)",
 
 		--Custody, down, reviving, etc
@@ -1113,7 +1110,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cam_glass = "Alert: Camera detected broken glass",
 		hud_hint_cam_drill = "Alert: Camera detected a drill",
 		hud_hint_cam_distress = "Alert: Camera detected suspicious activity",
-		hud_hint_cam_c4 = "Alert: Camera heard an explosion",
+		hud_hint_cam_c4 = "Alert: Camera heard an explosion", --can cameras even do this?
 		hud_hint_cam_vault = "Alert: Camera detected an open vault",
 		hud_hint_cam_sentry_gun = "Alert: Camera detected a sentry",
 		hud_hint_cam_broken_cam = "Alert: Camera detected... a broken camera?", --if you can trigger this on a vanilla heist send me a screenshot
@@ -1127,10 +1124,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_civ_drill = "Alert: Civilian detected a drill",
 		hud_hint_civ_distress = "Alert: Civilian detected suspicious activity",
 		hud_hint_civ_c4 = "Alert: Civilian heard an explosion",
-		hud_hint_civ_computer = "Alert: Civilian detected a hacked computer",
+		hud_hint_civ_computer = "Alert: Civilian detected a hacked computer", --I don't think this is used?
 		hud_hint_civ_ecm_jammer = "Alert: Civilian was affected by feedback",
 		hud_hint_civ_gunfire = "Alert: Civilian heard gunfire",
-		hud_hint_civ_body_bag = "Alert: Civilian detected a bodybag",
+		hud_hint_civ_body_bag = "Alert: Civilian detected a bodybag", --unused? seems like a bug
 		hud_hint_civ_saw = "Alert: Civilian detected a saw",
 
 		hud_hint_cop_criminal = "Alert: Guard detected a player",
@@ -1145,11 +1142,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cop_gunfire = "Alert: Guard heard gunfire",
 		hud_hint_cop_ecm_jammer = "Alert: Guard was affected by feedback",
 		hud_hint_cop_sentry_gun = "Alert: Guard detected a sentry",
-		hud_hint_cop_body_bag = "Alert: Guard detected a bodybag",
+		hud_hint_cop_body_bag = "Alert: Guard detected a bodybag", --unused? seems like a bug
 		hud_hint_cop_vault = "Alert: Guard detected an open vault",
 		hud_hint_cop_saw = "Alert: Guard detected a saw",
 
-		hud_hint_alarm_civ  = "Alert: Civilian pressed panic button",
+		hud_hint_alarm_civ  = "Alert: Panic button was pressed",
 		hud_hint_blame_missing = "Alert: Someone saw suspicious activity",
 		hud_hint_blame_csgo_gunfire = "Alert: Neighbors called police",
 		hud_hint_mot_criminal = "Alert: Lasers were tripped",
@@ -1207,27 +1204,19 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_controller_normal = "Normal",
 		menu_controller_vehicle = "Vehicle",
 		
-		--INVENTORY--
+		--LOADOUT--
+		menu_player_column_one_title = "Player & Equipment",
+		menu_player_column_two_title = "Inventory",
+		menu_player_column_three_title = "Skills & Perks",
+		menu_button_hide = "[X]",
+		menu_button_show = "[  ]",
 		bm_menu_grenades = "Consumable",
 		bm_menu_deployables = "Deployable",
 		bm_menu_characters = "Characters",
 		menu_preferred_character = "Character",
 		menu_preferred_character_lobby_error = "You cannot change character while in a lobby.",
-
-		menu_lobby_player_slot_available = "",
-
-		menu_steam_inventory = "Steam Inventory",
-		menu_steam_inventory_help = "The inventory contains all items handled by Steam.",
-		bm_menu_btn_open_container = "Open",
-		bm_menu_inventory_tradable_all = "All",
-		bm_menu_inventory_tradable_safes = "Safes",
-		bm_menu_btn_sell_tradable = "Sell",
-		bm_menu_inventory_tradable_weapon_skins = "Weapon Skins",
-		bm_menu_inventory_tradable_weapon_drills = "Drills",
-		bm_menu_inventory_tradable_armor_skins = "Armor Skins",
 		bm_menu_mod_preview = "Preview",
 		bm_menu_buy_mask_title = "Mask Inventory",
-		bm_menu_btn_buy_tradable = "Buy Skin",
 		bm_menu_btn_craft_mod = "Apply Mod",
 		bm_menu_btn_remove_mod = "Remove Mod",
 		bm_menu_btn_buy_mod = "Buy With Coins",
@@ -1235,7 +1224,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_preview_no_mod = "Preview Without Mod",
 		bm_menu_btn_clear_mod_preview = "Reset Preview",
 		bm_menu_btn_stop_preview_weapon_cosmetic = "Preview Without Skin",
-		menu_steam_market_title = "Item Collections",
 		bm_menu_btn_preview_weapon_cosmetic = "Preview",
 		bm_menu_btn_preview = "Preview",
 		bm_menu_btn_preview_mask = "Preview",
@@ -1281,13 +1269,20 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_buy_weapon_slot = "Unlock",
 		bm_menu_locked_mask_slot = "Locked",
 		bm_menu_btn_buy_mask_slot = "Unlock",
+		bm_menu_btn_sentry_ap_rounds = "Normal Rounds",
+		bm_menu_btn_sentry_default_rounds = "AP Rounds",
+		
+		menu_specialization = "Perks",  --Perk Decks
+		menu_st_skilltree = "Skills",  --Skill Trees
+		menu_st_activate_spec = "Use",
+		menu_st_max_perk_deck = "Unlock All",
+
+		menu_equipment_ecm_jammer = "ECM Jammer",
 
 		menu_preferred_character_title = "Character Hierarchy",
 		bm_menu_btn_clear_preferred = "Reset",
 		bm_menu_btn_swap_preferred_slots = "Swap",
 		bm_menu_btn_set_preferred_to_slot = "Select",
-		
-		loading_trivia_96 = "Various Text Changes was first uploaded in September of 2015. Development stopped during Crimefest, but two years later it recieved a surprise update. Updates were restarted again in 2020.",
 
 		bm_armor_level_1 = "Suit",
 		bm_armor_level_2 = "LBV",
@@ -1297,27 +1292,28 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_armor_level_6 = "CTV",
 		bm_armor_level_7 = "ICTV",
 
+		bm_msk_character_locked = "Default",  --Default Mask
+		bm_msk_character_locked_desc = "Equips the default mask for the character you are playing as.",
+
+		--STEAM INVENTORY--
+		bm_menu_btn_open_container = "Open",
+		bm_menu_inventory_tradable_all = "All",
+		bm_menu_inventory_tradable_safes = "Safes",
+		bm_menu_btn_sell_tradable = "Sell",
+		menu_steam_market_title = "Item Collections",
+		bm_menu_inventory_tradable_weapon_skins = "Weapon Skins",
+		bm_menu_inventory_tradable_weapon_drills = "Drills",
+		bm_menu_inventory_tradable_armor_skins = "Armor Skins",
+		bm_menu_btn_buy_tradable = "Buy Skin",
 		menu_ti_steam_buy_drills_title = "Buy Drills",
 		menu_ti_steam_open_safe_title = "Safe Preview",
 		menu_ti_steam_open_container = "Open",
 
-		menu_description = "Briefing",
-		menu_assets = "Assets",
-		menu_loadout = "Loadout",
-		menu_team_loadout = "Crew",
-		menu_jukebox = "Music",
-
-		bm_msk_character_locked = "Default",  --Default Mask
-		bm_msk_character_locked_desc = "Equips the default mask for the character you are playing as.",
-
+		--TIMERS--
 		prop_timer_gui_malfunction = "//ERROR//",  --Drill Broke Top Text
 		prop_timer_gui_error = "//UNKNOWN//",  --Drill Broke Timer
 		prop_timer_hack_ipad_gui_working = "HACKING IN PROGRESS",
 		prop_timer_upload_gui_working = "UPLOAD IN PROGRESS",
 		prop_computer_gui_analyzing = "ANALYSIS IN PROGRESS",
-
-		hud_offshore_account = "Offshore",  --Offshore Name
-
-		hud_carrying = "Carrying:" --Carrying bag
 	})
 end)
