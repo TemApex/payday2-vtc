@@ -17,4 +17,4 @@ If someone else wants to make a mod that adds new strings for anything that's un
 - There are probably still a few interactions I've missed. Please report these if you find them.
 - This mod does not play nicely with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a background to interactions might also look strange, but will function normally.
 - As much as I wanted to remove certain hint messages ("You can't stand up here"), it causes problems with the default HUD and some (maybe all) custom HUDs. For this reason I've simplified all the hints instead.
-- There are alarm reasons for cameras, civs, and guards detecting body bags but the vanilla game doesn't use them (seems like a bug). Despite this I've changed them anyway, but you won't see them unless Overkill or another mod fixes it.
+- There are alarm reasons for cameras, civs, and guards detecting body bags but the vanilla game doesn't use them (seems like a bug). I've changed them anyway, but you won't see them unless Overkill or another mod fixes it.
