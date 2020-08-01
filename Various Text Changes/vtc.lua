@@ -429,6 +429,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_temp_interact_box = "$BTN_INTERACT Interact",
 		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close", --hud_int_open_slash_close exists, use it for Sangres' revolver case instead of this.
 		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close", --I had to change this to open/close because they used ONLY the open interaction for Sangres' weapon case
+		hud_int_escape_taser = "$BTN_INTERACT Break Free",
 
 		--DEPLOYABLES--
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
