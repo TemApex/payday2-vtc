@@ -303,9 +303,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cn_casino_pay_accept = "Yes",
 		
 		--HUD--
-		hud_instruct_mask_on = "",  --Prompt telling you how to mask up
+		hud_instruct_mask_on = "",  --Prompt telling you how to mask up. Pointless after playing one heist.
 		hud_suspicion_detected = "- ALERTED -",  --Someone has detected you
-		hud_instruct_throw_bag = "",
+		hud_instruct_throw_bag = "", --"PRESS G TO THROW BAG" text. Pointless once you've played one heist.
 		hud_custody_in = "BLEEDOUT",
 		hud_uncuffed_in = "BREAKOUT",
 
@@ -434,8 +434,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
 		debug_interact_ammo_bag_take_ammo = "$BTN_INTERACT Take Ammo",
 		hud_int_equipment_normal_mode_trip_mine = "Switch to Explosive", --Yep, no key indicator. Not a mistake.
-		hud_int_equipment_sensor_mode_trip_mine = "Switch to Sensor", --It makes it easier to instantly tell what you're interacting with
-		hud_int_equipment_ecm_feedback = "$BTN_INTERACT ECM Feedback", --More important in stealth with sensor mines really, but still
+		hud_int_equipment_sensor_mode_trip_mine = "Switch to Sensor", --It makes it easier to tell what you're interacting with
+		hud_int_equipment_ecm_feedback = "$BTN_INTERACT ECM Feedback", --More important in stealth with sensor mines, but still
 		debug_interact_bodybags_bag_take_bodybag = "$BTN_INTERACT Take Bodybag",
 		hud_interact_pickup_sentry_gun = "$BTN_INTERACT Pickup Sentry Gun",
 		hud_interact_sentry_gun_switch_fire_mode = "Change Ammo Type ($AMMO_LEFT%)", --You don't really need it for these. Could change in future though
@@ -492,7 +492,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_unpack_turret = "$BTN_INTERACT Unpack Turret",
 
 		--Aftershock
-		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe", --i'm still mad about the Completely Overkill Pack
+		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe", --i'm still mad about the COP
 		hud_int_hold_pku_knife = "$BTN_INTERACT Take Knife",
 
 		--Stealth Tutorial
