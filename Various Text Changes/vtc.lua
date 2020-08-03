@@ -437,7 +437,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_equipment_normal_mode_trip_mine = "Switch to Explosive", --Yep, no key indicator. Not a mistake.
 		hud_int_equipment_sensor_mode_trip_mine = "Switch to Sensor", --It makes it easier to tell what you're interacting with
 		hud_int_equipment_ecm_feedback = "$BTN_INTERACT ECM Feedback", --More important in stealth with sensor mines, but still
-		debug_interact_bodybags_bag_take_bodybag = "$BTN_INTERACT Take Bodybag",
+		debug_interact_bodybags_bag_take_bodybag = "$BTN_INTERACT Take Body Bag",
 		hud_interact_pickup_sentry_gun = "$BTN_INTERACT Pickup Sentry Gun",
 		hud_interact_sentry_gun_switch_fire_mode = "Change Ammo Type ($AMMO_LEFT%)", --You don't really need it for these. Could change in future though
 
@@ -1030,8 +1030,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_press_answering_play = "$BTN_INTERACT Play Message",
 		hud_int_hold_to_help_turtle = "$BTN_INTERACT Help Turtle",
 		hud_hold_bet_slotmachine_chl = "$BTN_INTERACT Play Slots ($10,000)",
-		hud_press_bet_red = "$BTN_INTERACT Bet Red ($10,000)",
-		hud_press_bet_black = "$BTN_INTERACT Bet Black ($10,000)",
+		hud_press_bet_red = "$BTN_INTERACT Red ($10,000)",
+		hud_press_bet_black = "$BTN_INTERACT Black ($10,000)",
 		hud_int_spin_wheel = "$BTN_INTERACT Spin",
 		hud_int_press_shoot_puck = "$BTN_INTERACT Shoot",
 		hud_press_play_jacket_sound = "$BTN_INTERACT Play Tape",
@@ -1060,7 +1060,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_new_mask = "Mask unlocked",
 		hint_been_electrocuted = "Being electrocuted",
 		hint_cant_stand_up = "Can't stand",
-		hint_full_bodybags = "Max bodybags",
+		hint_full_bodybags = "Max body bags",
 		hint_full_ammo = "Max ammo",
 		hint_full_grenades = "Max throwables",
 		hint_full_health = "Full health/downs",
@@ -1070,7 +1070,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_zipline_no_bag = "Need a bag",
 		hint_ability_no_grenade_pickup = "No grenades equipped",
 		hud_hint_carry_block = "Already carrying something",
-		hint_body_bag_limit_reached = "Out of bodybags",
+		hud_hint_body_bag_limit_reached = "No body bags",
 		hud_hint_health_beserking = "Sorry...",
 		hud_hint_phoneline_jammed = "Phone is jammed",
 		hint_dropped_blood_sample = "Blood sample destroyed",
@@ -1079,6 +1079,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_gage_assignment_progress = "$peer_name found $assignment ($remaining left)",
 		hud_civilian_killed_title = "Civilian Killed",
 		hud_civilian_killed_message = "-$AMOUNT",
+		hud_hint_hostage_follow_limit = "Already moving a hostage",
 
 		--Custody, down, reviving, etc
 		hint_teammate_downed = "$TEAMMATE is down",
@@ -1106,7 +1107,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cam_vault = "Alert: Camera detected an open vault",
 		hud_hint_cam_sentry_gun = "Alert: Camera detected a sentry",
 		hud_hint_cam_broken_cam = "Alert: Camera detected... a broken camera?", --if you can trigger this on a vanilla heist send me a screenshot
-		hud_hint_body_bag = "Alert: Camera detected a bodybag", --unused? seems like a bug
+		hud_hint_body_bag = "Alert: Camera detected a body bag", --unused? seems like a bug
 		hud_hint_cam_saw = "Alert: Camera detected a saw",
 
 		hud_hint_civ_criminal = "Alert: Civilian detected a player",
@@ -1119,7 +1120,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_civ_computer = "Alert: Civilian detected a hacked computer", --I don't think this is used?
 		hud_hint_civ_ecm_jammer = "Alert: Civilian was affected by feedback",
 		hud_hint_civ_gunfire = "Alert: Civilian heard gunfire",
-		hud_hint_civ_body_bag = "Alert: Civilian detected a bodybag", --unused? seems like a bug
+		hud_hint_civ_body_bag = "Alert: Civilian detected a body bag", --unused? seems like a bug
 		hud_hint_civ_saw = "Alert: Civilian detected a saw",
 
 		hud_hint_cop_criminal = "Alert: Guard detected a player",
@@ -1134,7 +1135,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cop_gunfire = "Alert: Guard heard gunfire",
 		hud_hint_cop_ecm_jammer = "Alert: Guard was affected by feedback",
 		hud_hint_cop_sentry_gun = "Alert: Guard detected a sentry",
-		hud_hint_cop_body_bag = "Alert: Guard detected a bodybag", --unused? seems like a bug
+		hud_hint_cop_body_bag = "Alert: Guard detected a body bag", --unused? seems like a bug
 		hud_hint_cop_vault = "Alert: Guard detected an open vault",
 		hud_hint_cop_saw = "Alert: Guard detected a saw",
 
