@@ -14,7 +14,7 @@ These issues could be fixed by adding new strings to the game, but the purpose o
 If someone else wants to make a mod that adds new strings for anything that's unfixable then go for it. I won't be doing this myself though.
 
 **Unsupported/untested Heists:**
-- None, aside from custom heists which I will not add support for.
+- None, aside from custom heists which I will not add support for due to how long it would take.
 
 **Notes:**
 - There are probably still a few interactions I've missed. Please report these if you find them.
