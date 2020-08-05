@@ -247,7 +247,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		victory_group_hit_accuracy = "Crew Accuracy",
 		victory_criminals_finished = "Surviving Players",
 		--Personal Stats
-		victory_total_downed = "Total Downs",
+		victory_total_downed = "Downs",
 		victory_hit_accuracy = "Accuracy",
 		victory_total_kills = "Total Kills",
 		victory_total_specials_kills = "Specials Killed",
@@ -1061,7 +1061,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_been_electrocuted = "Being electrocuted",
 		hint_cant_stand_up = "Can't stand",
 		hint_full_bodybags = "Max body bags",
-		hint_full_ammo = "Max ammo",
+		hint_full_ammo = "Full ammo",
 		hint_full_grenades = "Max throwables",
 		hint_full_health = "Full health/downs",
 		hint_max_special_equipment = "Can't pick up",
@@ -1139,7 +1139,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_cop_vault = "Alert: Guard detected an open vault",
 		hud_hint_cop_saw = "Alert: Guard detected a saw",
 
-		hud_hint_alarm_civ  = "Alert: Panic button was pressed",
+		hud_hint_alarm_civ  = "Alert: Panic button pressed",
 		hud_hint_blame_missing = "Alert: Someone saw suspicious activity",
 		hud_hint_blame_csgo_gunfire = "Alert: Neighbors called police",
 		hud_hint_mot_criminal = "Alert: Lasers were tripped",
