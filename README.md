@@ -13,7 +13,7 @@ Various Text Changes, now with way more changes and a lot less text!
 These issues could be fixed by adding new strings to the game, but the purpose of this project is just to modify the existing strings and improve their readability.
 If someone else wants to make a mod that adds new strings for anything that's unfixable then go for it. I won't be doing this myself though.
 
-**Unsupported/untested Heists:**
+**Untested Heists:**
 - None, aside from custom heists which I will not add support for due to how long it would take.
 
 **Notes:**
