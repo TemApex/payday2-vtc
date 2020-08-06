@@ -2,9 +2,9 @@
 Various Text Changes, now with way more changes and a lot less text!
 
 **Fixable Issues:**
-- Strings that only appear for clients are unchanged. There aren't many of these and I think I've already got them all, though.
+- Strings that only appear for clients are unchanged. There aren't many of these and I think I've already got them all though.
 - Lots of heist specific "You require X item" strings are unchanged. These are low priority.
-- I've noticed a few unchanged hints, but these are super low priority.
+- I've noticed a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 
 **Unfixable Issues:**
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".
