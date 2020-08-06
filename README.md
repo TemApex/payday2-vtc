@@ -16,7 +16,7 @@ If someone else wants to make a mod that adds new strings for anything that's un
 **Unsupported Heists:**
 - None.
 
-I will not add support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new custom heists. Adding support for the official heists took around a week of non-stop work, and I'm not going through that again.
+I will not add support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new custom heists. Adding support for the official heists took around a week of non-stop work, I don't have the time to go through that again.
 
 **Notes:**
 - There are probably still a few interactions I've missed. Please report these if you find them.
