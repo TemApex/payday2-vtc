@@ -171,6 +171,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		daily_discord_objective = "Finish 3 heists with a converted cop.",
 		
 		menu_filter_time = "Heist Length",
+		menu_filter_favourite = "Favorites",
 		
 		menu_cs_enter_safehouse = "Enter",
 		menu_cs_map = "Map",
