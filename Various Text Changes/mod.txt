@@ -7,10 +7,11 @@
 	"blt_version" : 2,
 	"color" : "51 153 204",
 	"image" : "vtc.png",
+	"priority" : 0,
 	"updates" : [
 		{
 			"identifier": "vtc",
-			"revision": 53,
+			"revision": 54,
 			"host": {
 				"meta": "https://github.com/TemApex/payday2-vtc/raw/master/meta.json"
 			}
