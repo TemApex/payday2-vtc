@@ -286,6 +286,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_pp_asset_kenaz_limo_escape = "Limo (Default)",
 		menu_pp_asset_kenaz_zeppelin_escape = "Blimp",
 		menu_pp_asset_kenaz_van_escape = "Van",
+		menu_asset_buy_all = "Buy All",
 		
 		--CASINO--
 		menu_casino_title_main = "Offshore Casino",
@@ -1072,7 +1073,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_ability_no_grenade_pickup = "No grenades equipped",
 		hud_hint_carry_block = "Already carrying something",
 		hud_hint_body_bag_limit_reached = "No body bags",
-		hud_hint_health_beserking = "Sorry...",
+		hud_hint_health_beserking = "Swan Song active",
 		hud_hint_phoneline_jammed = "Phone is jammed",
 		hint_dropped_blood_sample = "Blood sample destroyed",
 		hint_full_keycard = "Already have keycard",
@@ -1081,6 +1082,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_civilian_killed_title = "Civilian Killed",
 		hud_civilian_killed_message = "-$AMOUNT",
 		hud_hint_hostage_follow_limit = "Already moving a hostage",
+		hud_vehicle_no_enter_beserker = "Swan Song active",
 
 		--Custody, down, reviving, etc
 		hint_teammate_downed = "$TEAMMATE is down",
@@ -1211,17 +1213,19 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_crew_management = "AI Loadout",
 		bm_menu_ability = "Ability",
 		bm_menu_skill = "Boost",
+		bm_menu_btn_unequip_weapon = "Unequip",
 		menu_preferred_character_lobby_error = "You cannot change character while in a lobby.",
 		bm_menu_mod_preview = "Preview",
 		bm_menu_buy_mask_title = "Mask Inventory",
-		bm_menu_btn_craft_mod = "Apply Mod",
+		bm_menu_btn_craft_mod = "Equip Mod",
 		bm_menu_btn_remove_mod = "Remove Mod",
 		bm_menu_btn_buy_mod = "Buy With Coins",
 		bm_menu_btn_preview_with_mod = "Preview Mod",
 		bm_menu_btn_preview_no_mod = "Preview Without Mod",
 		bm_menu_btn_clear_mod_preview = "Reset Preview",
 		bm_menu_btn_stop_preview_weapon_cosmetic = "Preview Without Skin",
-		bm_menu_btn_preview_weapon_cosmetic = "Preview",
+		bm_menu_btn_preview_weapon_cosmetic = "Preview Skin",
+		menu_dlc_buy_weapon_color = "Buy DLC",
 		bm_menu_btn_preview = "Preview",
 		bm_menu_btn_preview_mask = "Preview",
 		bm_menu_btn_preview_melee_weapon = "Preview",
@@ -1232,7 +1236,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_sell_mask = "Sell",
 		bm_menu_btn_buy_selected_mask = "Buy",
 		bm_menu_btn_choose_mask_mod = "Apply",
-		bm_menu_btn_customize_mask = "Create",
+		bm_menu_btn_customize_mask = "Finalize",
+		bm_menu_color_a = "Color 1",
+		bm_menu_color_b = "Color 2",
+		bm_menu_btn_choose_color_a = "Apply",
+		bm_menu_btn_choose_color_b = "Apply",
 		bm_menu_btn_buy_new_mask = "Buy Mask",
 		bm_menu_empty_mask_slot = "Empty",
 		bm_menu_btn_buy_new_weapon = "Buy Weapon",
@@ -1271,7 +1279,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		menu_specialization = "Perks",  --Perk Decks
 		menu_st_skilltree = "Skills",  --Skill Trees
-		menu_st_activate_spec = "Use",
+		menu_st_make_active_skill_switch = "Inactive",
+		menu_st_points_unspent_skill_switch = "$points Skill Points",
+		menu_st_points_all_spent_skill_switch = "No Skill Points",
+		menu_st_activate_spec = "Use Deck",
+		menu_st_available_spec_points = "$points Perk Points",
 		menu_st_max_perk_deck = "Unlock All",
 
 		menu_equipment_ecm_jammer = "ECM Jammer",
