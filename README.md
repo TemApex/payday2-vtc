@@ -2,20 +2,19 @@
 Various Text Changes, now with way more changes and a lot less text!
 
 **Fixable Issues:**
-- Lots of heist specific "You require X item" strings are unchanged. These are low priority.
+- Heist specific "You require X item" strings are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 
 **Unfixable Issues:**
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".
 - The chrome skull in Biker Heist Day 1 says "PICKUP" instead of "TAKE".
 
-These issues could be fixed by adding new strings to the game, but the purpose of this project is just to modify the existing strings and improve their readability.
-If someone else wants to make a mod that adds new strings for anything that's unfixable then go for it. I won't be doing this myself though.
+These issues could be fixed by adding new strings to the game, but that's not the purpose of this project.
 
 **Unsupported Heists:**
 - None.
 
-I do not plan to add support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new ones. Adding support for the official heists already took around a week of non-stop work, I don't have the time to go through that again.
+I don't plan on adding support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new ones. Adding support for official heists took around a week of non-stop work.
 
 **Notes:**
 - There are probably still a few interactions I've missed. Please report these if you find them.
