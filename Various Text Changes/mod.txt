@@ -1,6 +1,6 @@
 {
 	"name" : "Various Text Changes 6",
-	"description" : "Replaces various lines of text throughout the game to increase consistency and make text easier to read. Aimed at experienced players.",
+	"description" : "Replaces various lines of text throughout the game to increase consistency and simplicity.",
 	"author" : "TemApex",
 	"contact" : "TemApex00@gmail.com",
 	"version" : "6.3.3",
