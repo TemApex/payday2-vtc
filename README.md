@@ -2,6 +2,7 @@
 Various Text Changes, now with way more changes and a lot less text!
 
 **Fixable Issues:**
+- The interaction to reboot the computer on White House isn't changed. This will be fixed in the next update.
 - Heist specific "You require X item" strings are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 
