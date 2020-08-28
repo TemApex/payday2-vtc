@@ -151,6 +151,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cn_chill_combat_ignore_defend = "Ignore",
 		menu_chill_combat_under_attack_desc = "",
 		menu_cn_premium_buy = "Heist Select",
+		menu_cn_premium_buy_fee = "Offshore cost: $contract_fee",
 		menu_cn_premium_buy_accept = "Play",
 		menu_contract_broker = "Heist Select",
 		menu_cn_contact_info = "Character Profiles",
@@ -777,6 +778,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_relay_locke = "$BTN_INTERACT Relay Locke",
 		hud_int_hold_bypass_firewall = "$BTN_INTERACT Bypass Firewall",
 		hud_int_hold_take_pardons = "$BTN_INTERACT Take Pardon",
+		hud_int_hold_reboot = "$BTN_INTERACT Reboot",
 
 		hud_int_hold_pull_lever = "$BTN_INTERACT Pull Lever", --oh yeah, you best believe I changed the secret stuff
 		hud_action_placing_mayan_gold_bar = "$BTN_INTERACT Place Gold",
@@ -1282,16 +1284,34 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_sentry_ap_rounds = "Normal Rounds",
 		bm_menu_btn_sentry_default_rounds = "AP Rounds",
 		
+		menu_hide_all = "$BTN_X Hide All",
 		menu_specialization = "Perks",  --Perk Decks
 		menu_st_skilltree = "Skills",  --Skill Trees
 		menu_st_make_active_skill_switch = "Inactive",
 		menu_st_points_unspent_skill_switch = "$points Skill Points",
 		menu_st_points_all_spent_skill_switch = "No Skill Points",
+		menu_st_switch_skillset = "$BTN_SKILLSET Switch Skillset",
+		skill_tree_reset_skills_button = "$BTN_RESET_SKILLS Reset Tree",
+		skill_tree_reset_all_skills_button = "$BTN_RESET_ALL_SKILLS Reset All",
+		dialog_skills_respec_title = "",
+		dialog_respec_skilltree_all = "Are you sure you want to reset all skill trees?",
+		dialog_respec_skilltree = "Are you sure you want to reset the $tree skill tree?",
 		menu_st_activate_spec = "Use Deck",
 		menu_st_available_spec_points = "$points Perk Points",
 		menu_st_max_perk_deck = "Unlock All",
 
 		menu_equipment_ecm_jammer = "ECM Jammer",
+
+		menu_infamy_rank = "Infamy $rank",
+		st_menu_infamy_available_points = "$points infamy points",
+		menu_infamy_total_xp = "$xpboost% XP bonus",
+		menu_infamytree_help = "",
+
+		menu_dialog_become_infamous_no_cash = "You need $cash in offshore.",
+		menu_dialog_become_infamous = "$200,000,000 will be deducted from offshore. You will be reset to level 0, and you will lose all spending cash.\n\nYou will keep all of your masks, weapons, and customization parts for both. Weapons will be level locked again.\n\nYou will gain one infamy level and one infamy point.",
+		menu_dialog_become_infamous_above_5 = "You will be reset to level 0. No money will be deducted from offshore or spending.\n\nYou will keep all of your masks, weapons, and customization parts for both. Weapons will be level locked again.\n\nYou will gain one infamy level and one infamy point.",
+		menu_dialog_become_infamous_free = "You will be reset to level 0. No money will be deducted from offshore or spending.\n\nYou will keep all of your masks, weapons, and customization parts for both. Weapons will be level locked again.\n\nYou will gain one infamy level and one infamy point.",
+		--I'm not sure if "above_5" or "free" is used
 
 		menu_preferred_character_title = "Character Hierarchy",
 		bm_menu_btn_clear_preferred = "Reset",
@@ -1329,5 +1349,17 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		prop_timer_hack_ipad_gui_working = "HACKING IN PROGRESS",
 		prop_timer_upload_gui_working = "UPLOAD IN PROGRESS",
 		prop_computer_gui_analyzing = "ANALYSIS IN PROGRESS",
+
+		--DISCORD--
+		discord_rp_mp_heist = "Online",
+		discord_rp_mp_heist_details = "$day $heist",
+		discord_rp_mp_end = "Online (Summary)",
+		discord_rp_mp_end_details = "$day $heist",
+		discord_rp_single_heist = "",
+		discord_rp_single_heist_details = "$day $heist",
+		discord_rp_single_end = "Summary",
+		discord_rp_single_end_details = "$day $heist",
+		discord_rp_lobby_details = "$heist",
+		discord_rp_day_string = "[$day]",
 	})
 end)
