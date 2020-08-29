@@ -14,7 +14,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_infamy_name_lurker = "The Lurker",  --Infamy Lurker Mask
 		menu_infamy_name_ranger = "The Ranger",  --Infamy Heister Sentry Mask
 		menu_infamy_name_punk = "The Inventor",  --Infamy The Being Mask
-		menu_infamy_name_xp = "XP Boost",  --Infamy XP Bonus
+		menu_infamy_name_xp = "EXP Boost",  --Infamy XP Bonus
 
 		--LOBBY--
 		savefile_saving = "Saving",
@@ -38,7 +38,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_lobby_menu_state_options = "Options",
 		menu_invite_friends = "Invite",
 		menu_loading_progress = "$prog%",
-		menu_ghost_bonus = "Stealth Bonus: $exp_bonus%",
+		menu_ghost_bonus = "$BTN_GHOST EXP Bonus: +$exp_bonus%",
+		menu_ghostable_job = "$BTN_GHOST Stealth Bonus: +$bonus% EXP",
+		menu_heat_warm = "EXP Bonus: +$job_heat%",
+		menu_heat_cold = "EXP Reduction: -$job_heat%",
+		menu_exp_short = "EXP",
 		menu_jukebox_playlist_all = "Random",
 		menu_jukebox_random_heist_playlist = "Random From Playlist",
 		menu_jukebox_playlist_heist = "Heist Track",
@@ -76,6 +80,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_risk_pd = "Normal. 1x reward multiplier.",
 		menu_stat_job_completed = "\nCompleted $stat times.",
 		--these multipliers are based on the PAYDAY multiplier, so aren't 100% accurate but are close enough
+
+		cn_menu_contract_jobpay_header = "Heist Payout",
 
 		menu_cs_suspend_spree = "Exit",
 		menu_cs_get_rewards = "End Spree",
@@ -164,7 +170,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_mutators = "Mutators",
 		menu_mutators_desc = "",
 		menu_mutators_achievement_disabled = "Achievement / trophy progress is disabled.",
-		menu_mutators_reduction = "Cash reduced by $cash_reduction%.\nXP reduced by $exp_reduction%.\nCleaner costs are disabled.", --this is SO MUCH CLEANER than the original text holy shit
+		menu_mutators_reduction = "Cash reduced by $cash_reduction%.\nEXP reduced by $exp_reduction%.\nCleaner costs are disabled.", --this is SO MUCH CLEANER than the original text holy shit
 		menu_mutators_incompatibilities = "This mutator is incompatible with:\n$mutators",
 		menu_mutators_reset = "Reset",
 		dialog_mutators_active_text = "Mutators are enabled. Do you want to play with mutators?",
@@ -259,6 +265,22 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		victory_total_head_shots = "Headshot Kills",
 		victory_favourite_weapon = "Favorite Weapon",
 		victory_civilians_killed_penalty = "Civilians Killed",
+
+		menu_es_safehouse_summary = "Coins",
+		menu_es_safehouse_total_coins = "You have $amount coins.",
+		menu_es_safehouse_upgrade_available = "",
+
+		menu_es_ghost_bonus_day = "$BTN_GHOST Day successfully ##stealthed##",
+		menu_es_ghost_bonus_job = "##$BTN_GHOST Stealth bonus## earned:\n+$bonus% EXP on the next heist",
+
+		victory_stage_cash_summary_name = "",
+		victory_stage_cash_summary_name_job = "Heist payout: $job_cash.",
+		victory_stage_cash_summary_name_bags = "\n$bag_amount bags: $bag_cash.",
+		victory_stage_cash_summary_name_loose = "\nExtra loot: $loose_cash.",
+		victory_stage_cash_summary_name_vehicles = "\n$vehicle_amount cars: $vehicle_cash.",
+		victory_stage_cash_summary_name_offshore = "Offshore: $cash.",
+		victory_stage_cash_summary_name_spending = "Spending: $cash.",
+		failed_summary_name = "Heist failed. No payout will be given.\nAll assets have been locked and need to be repurchased.\nAny loot you stole has been confiscated.",
 		
 		--PREPLANNING--
 		menu_preplanning_enter = "Preplanning",
@@ -1304,7 +1326,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		menu_infamy_rank = "Infamy $rank",
 		st_menu_infamy_available_points = "$points infamy points",
-		menu_infamy_total_xp = "$xpboost% XP bonus",
+		menu_infamy_total_xp = "$xpboost% EXP bonus",
 		menu_infamytree_help = "",
 
 		menu_dialog_become_infamous_no_cash = "You need $cash in offshore.",
@@ -1361,5 +1383,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		discord_rp_single_end_details = "$day $heist",
 		discord_rp_lobby_details = "$heist",
 		discord_rp_day_string = "[$day]",
+
+		--STEAM (not working)--
+		steam_rp_in_lobby_heist = "In Lobby: $heist",
+		steam_rp_current_players = "($current of $max)",
+		steam_rp_current_difficulty = "[$difficulty]",
+		steam_rp_current_heist_multiday = "[$day] $heist",
+		steam_rp_current_heist_one_day = "$heist",
 	})
 end)
