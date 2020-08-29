@@ -3,7 +3,7 @@
 	"description" : "Replaces various lines of text throughout the game to increase consistency and simplicity.",
 	"author" : "TemApex",
 	"contact" : "TemApex00@gmail.com",
-	"version" : "6.4.1",
+	"version" : "6.5.0",
 	"blt_version" : 2,
 	"color" : "51 153 204",
 	"image" : "vtc.png",
