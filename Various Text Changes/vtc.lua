@@ -81,7 +81,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_stat_job_completed = "\nCompleted $stat times.",
 		--these multipliers are based on the PAYDAY multiplier, so aren't 100% accurate but are close enough
 
-		cn_menu_contract_jobpay_header = "Heist Payout",
+		cn_menu_contract_jobpay_header = "Heist Payout:",
 
 		menu_cs_suspend_spree = "Exit",
 		menu_cs_get_rewards = "End Spree",
@@ -159,6 +159,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cn_premium_buy = "Heist Select",
 		menu_cn_premium_buy_fee = "Offshore cost: $contract_fee",
 		menu_cn_premium_buy_accept = "Play",
+		menu_cn_premium_cannot_buy = "Not Enough Money",
 		menu_contract_broker = "Heist Select",
 		menu_cn_contact_info = "Character Profiles",
 		menu_cn_casino = "Offshore Casino",
@@ -1281,7 +1282,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_primaries = "[1]",
 		bm_menu_secondaries = "[2]",
 		bm_menu_btn_remove_mask = "Return",
-		dialog_blackmarket_slot_mask_remove_suffix = "and you will be refunded $money. ",
+		dialog_blackmarket_slot_mask_remove_suffix = "and you will be refunded $money",
 		dialog_blackmarket_slot_mask_remove = "The mask will be returned$suffix.",
 		bm_menu_btn_equip_mask = "Equip",
 		bm_menu_btn_equip_weapon = "Equip",
