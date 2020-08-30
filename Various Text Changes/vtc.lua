@@ -275,9 +275,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		victory_stage_cash_summary_name = "",
 		victory_stage_cash_summary_name_job = "Heist payout: $job_cash.",
-		victory_stage_cash_summary_name_bags = "\n$bag_amount bags: $bag_cash.",
+		victory_stage_cash_summary_name_bags = "\n$bag_amount bag(s): $bag_cash.",
 		victory_stage_cash_summary_name_loose = "\nExtra loot: $loose_cash.",
-		victory_stage_cash_summary_name_vehicles = "\n$vehicle_amount cars: $vehicle_cash.",
+		victory_stage_cash_summary_name_vehicles = "\n$vehicle_amount car(s): $vehicle_cash.",
 		victory_stage_cash_summary_name_offshore = "Offshore: $cash.",
 		victory_stage_cash_summary_name_spending = "Spending: $cash.",
 		failed_summary_name = "Heist failed. No payout will be given.\nAll assets have been locked and need to be repurchased.\nAny loot you stole has been confiscated.",
@@ -337,6 +337,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_instruct_throw_bag = "", --"PRESS G TO THROW BAG" text. Pointless once you've played one heist.
 		hud_custody_in = "BLEEDOUT", --didn't need changing but it looks nicer
 		hud_uncuffed_in = "BREAKOUT", --didn't need changing but it looks nicer
+		hud_potential_xp = "EXP on completion: $XP",
 
 		--INTERACTIONS--
 		--Generic Interactions
@@ -1262,10 +1263,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_mod = "Modify",
 		bm_menu_btn_mod_mask = "Modify",
 		bm_menu_btn_sell = "Sell",
+		dialog_blackmarket_slot_item_sell = "You will be refunded $money.",
 		bm_menu_btn_sell_mask = "Sell",
+
 		bm_menu_btn_buy_selected_mask = "Buy",
 		bm_menu_btn_choose_mask_mod = "Apply",
 		bm_menu_btn_customize_mask = "Finalize",
+		dialog_blackmarket_finalize_item = "$ITEM\n\nThis will cost $money. This process is irreversible.",
 		bm_menu_color_a = "Color 1",
 		bm_menu_color_b = "Color 2",
 		bm_menu_btn_choose_color_a = "Apply",
@@ -1276,7 +1280,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_empty_weapon_slot = "Empty",
 		bm_menu_primaries = "[1]",
 		bm_menu_secondaries = "[2]",
-		bm_menu_btn_remove_mask = "Remove",
+		bm_menu_btn_remove_mask = "Return",
+		dialog_blackmarket_slot_mask_remove_suffix = "and you will be refunded $money. ",
+		dialog_blackmarket_slot_mask_remove = "The mask will be returned$suffix.",
 		bm_menu_btn_equip_mask = "Equip",
 		bm_menu_btn_equip_weapon = "Equip",
 		bm_menu_btn_equip_melee_weapon = "Equip",
@@ -1321,6 +1327,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_st_activate_spec = "Use Deck",
 		menu_st_available_spec_points = "$points Perk Points",
 		menu_st_max_perk_deck = "Unlock All",
+		menu_st_spec_xp_gained = "EXP since last conversion:",
 
 		menu_equipment_ecm_jammer = "ECM Jammer",
 
@@ -1342,7 +1349,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		bm_armor_level_1 = "Suit",
 		bm_armor_level_2 = "LBV",
-		bm_armor_level_3 = "Vest",
+		bm_armor_level_3 = "Ballistic Vest",
 		bm_armor_level_4 = "Heavy Vest",
 		bm_armor_level_5 = "Flak",
 		bm_armor_level_6 = "CTV",
@@ -1368,9 +1375,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--TIMERS--
 		prop_timer_gui_malfunction = "//ERROR//",  --Drill Broke Top Text
 		prop_timer_gui_error = "//UNKNOWN//",  --Drill Broke Timer
-		prop_timer_hack_ipad_gui_working = "HACKING IN PROGRESS",
+		prop_timer_hack_ipad_gui_working = "HACK IN PROGRESS",
 		prop_timer_upload_gui_working = "UPLOAD IN PROGRESS",
 		prop_computer_gui_analyzing = "ANALYSIS IN PROGRESS",
+		prop_computer_gui_downloading = "DOWNLOAD IN PROGRESS",
+		prop_computer_gui_hacking = "HACK IN PROGRESS",
+		prop_computer_gui_unlocking = "UNLOCK IN PROGRESS",
+		prop_security_lock_title = "STAGE $NR",
 
 		--DISCORD--
 		discord_rp_mp_heist = "Online",
