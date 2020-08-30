@@ -159,7 +159,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cn_premium_buy = "Heist Select",
 		menu_cn_premium_buy_fee = "Offshore cost: $contract_fee",
 		menu_cn_premium_buy_accept = "Play",
-		menu_cn_premium_cannot_buy = "No Money",
+		menu_cn_premium_cannot_buy = "Not Enough Money",
 		menu_contract_broker = "Heist Select",
 		menu_cn_contact_info = "Character Profiles",
 		menu_cn_casino = "Offshore Casino",
