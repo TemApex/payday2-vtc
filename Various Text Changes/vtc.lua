@@ -281,6 +281,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		victory_stage_cash_summary_name_vehicles = "\n$vehicle_amount car(s): $vehicle_cash.",
 		victory_stage_cash_summary_name_offshore = "Offshore: $cash.",
 		victory_stage_cash_summary_name_spending = "Spending: $cash.",
+		victory_stage_cash_summary_name_crew = "\n$winners surviving player(s): $crew_cash.",
 		failed_summary_name = "Heist failed. No payout will be given.\nAll assets have been locked and need to be repurchased.\nAny loot you stole has been confiscated.",
 		
 		--PREPLANNING--
@@ -449,6 +450,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_activate = "$BTN_INTERACT Activate",
 		hud_int_equipment_drill_upgrade = "$BTN_INTERACT Upgrade Drill",
 		hud_int_equipment_lance_upgrade = "$BTN_INTERACT Upgrade Drill",
+		hud_int_equipment_saw_upgrade = "$BTN_INTERACT Upgrade Saw",
 		hud_int_rewire_box = "$BTN_INTERACT Rewire",
 		hud_int_rewire_timelock = "$BTN_INTERACT Rewire",
 		hud_int_hold_open_vault = "$BTN_INTERACT Open Vault",
@@ -1381,7 +1383,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		prop_computer_gui_analyzing = "ANALYSIS IN PROGRESS",
 		prop_computer_gui_downloading = "DOWNLOAD IN PROGRESS",
 		prop_computer_gui_hacking = "HACK IN PROGRESS",
-		prop_computer_gui_unlocking = "UNLOCK IN PROGRESS",
+		prop_computer_gui_unlocking = "UNLOCKING",
 		prop_security_lock_title = "STAGE $NR",
 
 		--DISCORD--
