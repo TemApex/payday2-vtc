@@ -83,8 +83,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		cn_menu_contract_jobpay_header = "Heist Payout:",
 
+		--crime spree
 		menu_cs_suspend_spree = "Exit",
 		menu_cs_get_rewards = "End Spree",
+		menu_cs_gage_assets = "Boosts",
+		menu_cs_coins = "Coins",
+		menu_challenge_loot_drop = "Cards",
 
 		menu_victory_goto_next_stage ="Next Day",
 		menu_victory_goto_payday = "Card Drop",
