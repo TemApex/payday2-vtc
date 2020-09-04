@@ -222,8 +222,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cn_game_settings = "Settings", --if you remove this the 'Mods' tab also disappears from Crime.net
 		menu_friends_only_game = "Friends Only",
 		menu_private_game = "Invite Only",
-		menu_drop_in_on = "Auto Drop-In", --More accurate than "on"
-		menu_drop_in_prompt = "Host Confirm",
+		menu_drop_in_on = "Automatic", --More accurate than "on"
+		menu_drop_in_prompt = "Confirm",
 		menu_drop_in_stealth_prompt = "Confirm (Stealth)", --It took longer than I want to admit to come up with this
 
 		menu_cn_legend_risk = "Difficulty",
