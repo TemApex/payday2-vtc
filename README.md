@@ -11,6 +11,9 @@ Various Text Changes, now with way more changes and a lot less text!
 
 These issues could be fixed by adding new strings to the game, but that's not the purpose of this project.
 
+**Questionable Issues:**
+- The body bags on Boiling Point say "corpse" even though they're unconscious, not dead. This could be fixed by changing it to say "Body", as it is by default, but this is such an incredibly minor issue I'm not sure if it's worth fixing. This issue literally ONLY exists on this one heist, and ONLY while you're carrying the bodies. For now I'm settling on "Corpse" because I think it looks a little nicer on the HUD, this could very well change in future.
+
 **Unsupported Heists:**
 - None.
 
