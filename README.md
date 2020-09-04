@@ -5,10 +5,6 @@ Various Text Changes, now with way more changes and a lot less text!
 - Heist specific "You require X item" strings are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 
-**"Ehhh" Issues:**
-- The body bags on Boiling Point say "Corpse" even though they're unconscious, not dead. This could be fixed by changing it to say "Body", as it is by default, but this is such an incredibly minor issue I'm not sure if it's worth fixing. This issue literally only exists on this one heist, and only while you're carrying the bodies. For now I'm using "Corpse" because I think it looks a little nicer on the HUD, but this could change in future.
-- When using the default HUD, the hints aren't center-aligned. Best I can tell the game inserts a space after the punctuation at the end of the hint, but I'm not including end-line punctuation so it never inserts a final space. If my assumption is right the fix to this is literally to put a fullstop at the end of every hint, but I also prefer the cleanness of the hints without the fullstops. If you're using the default HUD and this bothers you (or you didn't notice it until you read this), I'm so sorry. I might try and fix this in future.
-
 **Unfixable Issues:**
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".
 - The chrome skull in Biker Heist Day 1 says "PICKUP" instead of "TAKE".
