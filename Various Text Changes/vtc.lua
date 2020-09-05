@@ -99,9 +99,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		loading_trivia_96 = "Various Text Changes was first uploaded in September of 2015. Development stopped at V2 during Crimefest, but it was updated two years later, ending at V5.23. Finally, in 2020, VTC6 was released.",
 
 		--MENU BUTTONS--
-		fast_net_title = "Play Online (Lobby Browser)",  --FAST.NET
-		fast_net_friends_title = "Play Online (Friend Browser)",  --FAST.NET Friends
-		--is FAST.NET even a thing anymore? Does anyone care about this compatibility?
+		fast_net_title = "Server List",  --FAST.NET
+		fast_net_friends_title = "(Friends) Server List",  --FAST.NET Friends
+		--apparently fast.net still exists and this compatibility is still required
+
+		create_empty_lobby_title = "Empty Lobby",
+		create_empty_lobby_desc = "Create a contractless multiplayer lobby.",
 		
 		menu_crimenet = "Play Online",  --CRIME.NET
 		menu_crimenet_help = "Play online with other players.",  --CRIME.NET Description
@@ -109,7 +112,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_crimenet_offline_help = "Play offline with bots.",  --CRIME.NET Offline Description
 		menu_quickplay_settings_mutators = "Mutators",
 		menu_quickplay_option_default = "Default Settings",
-		menu_cn_quickplay = "Find Game",
+
 		
 		menu_debug = "",  --If you have the Fast.net mod or the (old) freecam mod this hides the debug button
 		debug_start_the_game = "",  --If you have the Fast.net mod or the (old) freecam mod this hides the debug button
@@ -117,16 +120,18 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		menu_player_inventory = "Loadout",  --New Inventory
 		menu_player_inventory_help = "Opens the loadout. Contains weapons, skills, and perks.",
-		menu_visit_community = "Steam Community",
-		menu_visit_community_help = "Opens the PAYDAY 2 Steam Community page in the Steam overlay.",
+		menu_visit_community = "Community Hub",
+		menu_visit_community_help = "Opens the PAYDAY 2 Community Hub in the Steam overlay.",
 		menu_option_default = "Reset Options",
 		menu_option_default_help = "Resets all of your options to the defaults.",
 		dialog_default_options_message = "This will reset all of your settings to the default. Are you sure you want to do this?",
-		menu_visit_fbi_files = "Open FBI Files",
+		menu_visit_fbi_files = "FBI Files",
 		menu_visit_fbi_files_help = "Opens the FBI files in the Steam overlay.",
 		menu_custom_safehouse = "Safe House",
-		menu_steam_inventory = "Steam Inventory",
-		menu_steam_inventory_help = "The inventory contains all items handled by Steam.",
+		menu_steam_inventory = "Skinventory",
+		menu_steam_inventory_help = "The skinventory contains all items handled by Steam.",
+		menu_movie_theater = "Movies",
+		menu_movie_theater_help = "Watch cinematics related to the PAYDAY 2 story.",
 
 		menu_reset_account = "Delete Save Data",  --Reset Progress
 		menu_reset_account_help = "Deletes your save data. Only do this if you're 100% sure this is what you want to do.",  --Reset Progress
@@ -1356,7 +1361,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		bm_armor_level_1 = "Suit",
 		bm_armor_level_2 = "LBV",
-		--bm_armor_level_3 = "Ballistic Vest",
 		bm_armor_level_4 = "Heavy Vest",
 		bm_armor_level_5 = "Flak",
 		bm_armor_level_6 = "CTV",
