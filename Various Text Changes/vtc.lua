@@ -119,17 +119,16 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--I don't know if any mods even activate the debug buttons anymore, but for compatibility I'm leaving them
 
 		menu_player_inventory = "Loadout",  --New Inventory
-		menu_player_inventory_help = "Opens the loadout. Contains weapons, skills, and perks.",
+		menu_player_inventory_help = "Opens the loadout: contains weapons, skills, and perks.",
 		menu_visit_community = "Community Hub",
 		menu_visit_community_help = "Opens the PAYDAY 2 Community Hub in the Steam overlay.",
 		menu_option_default = "Reset Options",
 		menu_option_default_help = "Resets all of your options to the defaults.",
 		dialog_default_options_message = "This will reset all of your settings to the default. Are you sure you want to do this?",
-		menu_visit_fbi_files = "FBI Files",
 		menu_visit_fbi_files_help = "Opens the FBI files in the Steam overlay.",
 		menu_custom_safehouse = "Safe House",
-		menu_steam_inventory = "Skinventory",
-		menu_steam_inventory_help = "The skinventory contains all items handled by Steam.",
+		menu_steam_inventory = "Skins",
+		menu_steam_inventory_help = "View your collection of skins and accept new ones.",
 		menu_movie_theater = "Movies",
 		menu_movie_theater_help = "Watch cinematics related to the PAYDAY 2 story.",
 
@@ -349,6 +348,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_custody_in = "BLEEDOUT", --didn't need changing but it looks nicer
 		hud_uncuffed_in = "BREAKOUT", --didn't need changing but it looks nicer
 		hud_potential_xp = "EXP on completion: $XP",
+		
+		--Big Box--
+		hud_civilian_killed_title = "Civilian Killed",
+		hud_civilian_killed_message = "-$AMOUNT",
+		present_obtained_mission_equipment_title = "Item Obtained",
 
 		--INTERACTIONS--
 		--Generic Interactions
@@ -413,7 +417,6 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_take_painting = "$BTN_INTERACT Bag Painting",
 		hud_int_hold_take_jewelry = "$BTN_INTERACT Bag Jewelry",
 		debug_interact_security_station = "$BTN_INTERACT Security Override",
-		present_obtained_mission_equipment_title = "Item Obtained:",
 		debug_interact_circuit_breaker = "$BTN_INTERACT Use Circuit Breaker",
 		hud_int_setup_zipline = "$BTN_INTERACT Setup Zipline",
 		hud_int_use_zipline = "$BTN_INTERACT Ride Zipline",
@@ -1121,10 +1124,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_full_keycard = "Already have keycard.",
 		hud_sentry_not_enough_ammo_to_place = "Not enough ammo.",
 		hud_gage_assignment_progress = "$peer_name found $assignment ($remaining left).",
-		hud_civilian_killed_title = "Civilian Killed",
-		hud_civilian_killed_message = "-$AMOUNT",
 		hud_hint_hostage_follow_limit = "Already moving a hostage.",
 		hud_vehicle_no_enter_beserker = "Can't enter vehicles in Swan Song.",
+		hint_cross_thugs = "Passing this point will blow your cover.",
 
 		--Custody, down, reviving, etc
 		hint_teammate_downed = "$TEAMMATE is down!",
