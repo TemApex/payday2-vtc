@@ -60,6 +60,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_l_choose_card_local = "",
 		menu_l_choose_card_chosen_suspense = "",
 		menu_l_waiting_for_all = "",
+		menu_l_you_got = "$category:\n$item",
+		menu_l_choose_card_waiting = "Waiting for response...",
+		menu_l_choose_card_chosen = "Revealed in $time...",
 		failed_disconnected_continue = "Continue",
 		menu_gamemode_heist = "Standard",
 		
@@ -285,8 +288,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_es_safehouse_total_coins = "You have $amount coins.",
 		menu_es_safehouse_upgrade_available = "",
 
-		menu_es_ghost_bonus_day = "$BTN_GHOST Day successfully ##stealthed##",
+		menu_es_ghost_bonus_day = "##$BTN_GHOST ##Day successfully ##stealthed##.",
 		menu_es_ghost_bonus_job = "##$BTN_GHOST Stealth bonus## earned:\n+$bonus% EXP on the next heist",
+		menu_es_gage_assignment_package_complete = "Completed a Courier assignment.",
 
 		victory_stage_cash_summary_name = "",
 		victory_stage_cash_summary_name_job = "Heist payout: $job_cash.",
@@ -349,7 +353,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		--HUD--
 		hud_instruct_mask_on = "",  --Prompt telling you how to mask up. Pointless after playing one heist.
-		hud_suspicion_detected = "! ALERT !",  --Someone has detected you
+		hud_suspicion_detected = "- ALERT -",  --Someone has detected you
 		hud_instruct_throw_bag = "", --"PRESS G TO THROW BAG" text. Pointless once you've played one heist.
 		hud_custody_in = "BLEEDOUT", --didn't need changing but it looks nicer
 		hud_uncuffed_in = "BREAKOUT", --didn't need changing but it looks nicer
@@ -481,6 +485,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close", --hud_int_open_slash_close exists, use it for Sangres' revolver case instead of this.
 		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close", --This is open/close because they didn't use the close interaction for Sangres' weapon case
 		hud_int_escape_taser = "$BTN_INTERACT Break Free",
+		hud_vehicle_broken = "Vehicle is broken!",
 
 		--DEPLOYABLES--
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
@@ -1418,6 +1423,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_ti_steam_buy_drills_title = "Buy Drills",
 		menu_ti_steam_open_safe_title = "Safe Preview",
 		menu_ti_steam_open_container = "Open",
+		bm_menu_ti_bonus = "Stat Boost",
 
 		--TIMERS--
 		prop_timer_gui_malfunction = "//ERROR//",  --Drill Broke Top Text
