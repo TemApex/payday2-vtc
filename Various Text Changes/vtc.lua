@@ -18,7 +18,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--LOBBY--
 		savefile_saving = "Saving",
-		hud_offshore_account = "Offshore",  --Offshore Name
+		hud_offshore_account = "Offshore",
 		menu_waiting_is_ready = "[X]",  --Heist Ready
 		menu_waiting_is_not_ready = "[  ]", --Heist Not Ready
 		menu_lobby_player_slot_available = "",
@@ -29,8 +29,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_loadout = "Loadout",
 		menu_team_loadout = "Crew",
 		menu_jukebox = "Music",
-		hud_skip_blackscreen = "$BTN_ACCEPT",  --Hold to skip intro
-		menu_lobby_menu_state_lobby = "", --removes the "READY" text while in the main menu because who gives a shit if someone isn't doing anything
+		hud_skip_blackscreen = "$BTN_ACCEPT",
+		menu_lobby_menu_state_lobby = "", --removes the "READY" text while in the main menu
 		menu_edit_game_settings = "Lobby Settings",
 		menu_reputation_permission = "Level Limit",
 		menu_toggle_drop_in = "Drop-in",
@@ -43,11 +43,12 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_heat_warm = "EXP Bonus: +$job_heat%",
 		menu_heat_cold = "EXP Reduction: -$job_heat%",
 		menu_exp_short = "EXP",
+		cn_menu_num_players_online = "Active Players: $amount",
 		menu_jukebox_playlist_all = "Random",
 		menu_jukebox_random_heist_playlist = "Random From Playlist",
 		menu_jukebox_playlist_heist = "Heist Track",
 		menu_jukebox_your_choice = "Custom",
-		menu_choose_contract = "Select Heist",
+		menu_choose_contract = "Select Heist", --not sure what this is
 		menu_leave_lobby = "Leave",
 		menu_start_the_game = "Start",
 		cn_menu_decline_contract = "Back",
@@ -60,10 +61,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_l_choose_card_chosen_suspense = "",
 		menu_l_waiting_for_all = "",
 		failed_disconnected_continue = "Continue",
-		menu_gamemode_heist = "Normal",
+		menu_gamemode_heist = "Standard",
 		
 		menu_asset_gage_assignment = "Gage Packages",
 		
+		--Difficulties
 		menu_asset_risklevel_6 = "Death Sentence",
 		menu_risk_sm_wish = "Death Sentence. 14x reward multiplier.",
 		menu_asset_risklevel_5 = "Death Wish",
@@ -90,10 +92,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cs_coins = "Coins",
 		menu_challenge_loot_drop = "Cards",
 
+		--Heist End
 		menu_victory_goto_next_stage ="Next Day",
 		menu_victory_goto_payday = "Card Drop",
 		menu_victory_retry_stage = "Retry",
-		menu_es_calculating_experience = "Calculating...", --if you remove this the continue button doesn't appear
+		menu_es_calculating_experience = "Calculating...", --can't be removed or it bugs out
 		victory_client_waiting_for_server = "Waiting For Host",
 		debug_mission_end_continue = "Continue",
 		loading_trivia_96 = "Various Text Changes was first uploaded in September of 2015. Development stopped at V2 during Crimefest, but it was updated two years later, ending at V5.23. Finally, in 2020, VTC6 was released.",
@@ -104,19 +107,19 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--apparently fast.net still exists and this compatibility is still required
 
 		create_empty_lobby_title = "Empty Lobby",
-		create_empty_lobby_desc = "Create a contractless multiplayer lobby.",
+		create_empty_lobby_desc = "Create a lobby without selecting a heist.",
 		
+		menu_or_press_any_xbox_button = "or controller button",
 		menu_crimenet = "Play Online",  --CRIME.NET
 		menu_crimenet_help = "Play online with other players.",  --CRIME.NET Description
 		menu_crimenet_offline = "Play Offline",  --CRIME.NET Offline
 		menu_crimenet_offline_help = "Play offline with bots.",  --CRIME.NET Offline Description
 		menu_quickplay_settings_mutators = "Mutators",
 		menu_quickplay_option_default = "Default Settings",
-
 		
 		menu_debug = "",  --If you have the Fast.net mod or the (old) freecam mod this hides the debug button
 		debug_start_the_game = "",  --If you have the Fast.net mod or the (old) freecam mod this hides the debug button
-		--I don't know if any mods even activate the debug buttons anymore, but for compatibility I'm leaving them
+		--I don't know if the debug button is even activated by mods anymore, but I'm leaving this for reasons of "I'm scared and don't know"
 
 		menu_player_inventory = "Loadout",  --New Inventory
 		menu_player_inventory_help = "Opens the loadout: contains weapons, skills, and perks.",
@@ -156,7 +159,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		heist_short1 = "Stealth",
 		heist_short2 = "Loud",
-		
+
 		menu_cn_story_missions = "Missions",
 		menu_cn_chill = "Safe House",
 		menu_cn_chill_combat = "Safe House Raid",
@@ -186,8 +189,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_skirmish_map_selection = "Location",
 		menu_skirmish_pick_heist = "",
 
+		menu_challenge_safehouse_daily_reward = "6 Coins.",
+		menu_challenge_daily_reward = "Money and a weapon mod.",
 		daily_discord_objective = "Finish 3 heists with a converted cop.",
-		--This daily job has a typo. It originally said "3 heist" instead of "3 heists". Yep.
+		--This daily job had a typo. It said "3 heist" instead of "3 heists".
 		
 		menu_filter_time = "Heist Length",
 		menu_filter_favourite = "Favorites",
@@ -204,9 +209,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_cs_cant_afford = "Not enough Continental Coins.",
 		menu_cs_rooms_help_hover_no_upgrade = "Room fully upgraded",
 		menu_cs_rooms_help_hover = "Room is upgradeable",
+		menu_cs_total_upgrades = "Upgrades",
 
 		menu_story_missions = "Missions",
-		menu_sm_claim_rewards_goto_next = "Claim Rewards", --why is the default message so long
+		menu_sm_claim_rewards_goto_next = "Claim Rewards", --why is the default text so long
 		
 		menu_cn_filters_sidebar = "Lobby Filters",
 		
@@ -218,17 +224,17 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_max_lobbies_filter = "Max Servers",
 		menu_diff_filter = "Difficulty",
 		menu_job_id_filter = "Heist Filter",
-		menu_kicking_allowed_filter = "Kick / Restart Mode",
+		menu_kicking_allowed_filter = "Kick / Restart",
 		dialog_reset_filters = "Reset",
 		menu_apply_settings = "Apply",
 
 		--Lobby Settings
-		menu_cn_game_settings = "Settings", --if you remove this the 'Mods' tab also disappears from Crime.net
+		menu_cn_game_settings = "Settings", --if removed then the "Mods" tab also vanishes when looking at lobbies
 		menu_friends_only_game = "Friends Only",
 		menu_private_game = "Invite Only",
-		menu_drop_in_on = "Automatic", --More accurate than "on"
+		menu_drop_in_on = "Automatic",
 		menu_drop_in_prompt = "Confirm",
-		menu_drop_in_stealth_prompt = "Confirm (Stealth)", --It took longer than I want to admit to come up with this
+		menu_drop_in_stealth_prompt = "Confirm (Stealth)",
 
 		menu_cn_legend_risk = "Difficulty",
 		menu_cn_legend_mutated = "Mutators",
@@ -238,10 +244,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_risk = "Difficulty",
 		menu_new = "", 
 		menu_permission = "Privacy",
-		menu_kicking_allowed_option = "Kick / Restart Mode", --Kick Mode is shorter but it also effects how restarts are handled argh
+		menu_kicking_allowed_option = "Kick / Restart",
 		menu_kick_server = "Host",
 		menu_kick_vote = "Vote",
-		menu_kick_disabled = "Disabled",
+		menu_kick_disabled = "Kick Disabled",
 		
 		menu_contact_info_title = "Character Profiles",
 		
@@ -258,7 +264,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--STATS SCREEN--
 		--Crew Stats
-		victory_time_played = "Final Time",
+		victory_time_played = "Time Taken",
 		victory_most_downs = "Most Downs",
 		victory_best_accuracy = "Most Accurate",
 		victory_best_killer = "Most Kills",
@@ -343,7 +349,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		--HUD--
 		hud_instruct_mask_on = "",  --Prompt telling you how to mask up. Pointless after playing one heist.
-		hud_suspicion_detected = "- ALERTED -",  --Someone has detected you
+		hud_suspicion_detected = "! ALERT !",  --Someone has detected you
 		hud_instruct_throw_bag = "", --"PRESS G TO THROW BAG" text. Pointless once you've played one heist.
 		hud_custody_in = "BLEEDOUT", --didn't need changing but it looks nicer
 		hud_uncuffed_in = "BREAKOUT", --didn't need changing but it looks nicer
@@ -1260,30 +1266,39 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_unequip_weapon = "Unequip",
 		menu_preferred_character_lobby_error = "You cannot change character while in a lobby.",
 		bm_menu_mod_preview = "Preview",
-		bm_menu_buy_mask_title = "Mask Inventory",
+		bm_menu_buy_mask_title = "Mask Collection",
+		bm_menu_buy_weapon_title = "Gage's Armory",
 		bm_menu_btn_craft_mod = "Equip Mod",
 		bm_menu_btn_remove_mod = "Remove Mod",
 		bm_menu_btn_buy_mod = "Buy With Coins",
 		bm_menu_btn_preview_with_mod = "Preview Mod",
 		bm_menu_btn_preview_no_mod = "Preview Without Mod",
 		bm_menu_btn_clear_mod_preview = "Reset Preview",
+		bm_menu_weapon_cosmetics = "Skin",
 		bm_menu_btn_stop_preview_weapon_cosmetic = "Preview Without Skin",
-		bm_menu_btn_preview_weapon_cosmetic = "Preview Skin",
+		bm_menu_btn_preview_weapon_cosmetic = "Preview",
+		menu_mouse_search_market = " Search Market",
+		menu_mouse_preview = " Preview",
+		menu_mouse_select = " Select",
+		menu_mouse_switch = " Switch",
+		menu_mouse_refund = " Remove",
+		menu_mouse_invest = " Unlock",
 		menu_dlc_buy_weapon_color = "Buy DLC",
 		bm_menu_btn_preview = "Preview",
 		bm_menu_btn_preview_mask = "Preview",
 		bm_menu_btn_preview_melee_weapon = "Preview",
 		bm_menu_btn_preview_grenade = "Preview",
 		bm_menu_btn_mod = "Modify",
-		bm_menu_btn_mod_mask = "Modify",
+		bm_menu_btn_mod_mask = "Customize",
 		bm_menu_btn_sell = "Sell",
 		dialog_blackmarket_slot_item_sell = "You will be refunded $money.",
 		bm_menu_btn_sell_mask = "Sell",
-
+		bm_menu_missing_to_finalize_mask = "$missed_mods required to finalize.",
 		bm_menu_btn_buy_selected_mask = "Buy",
 		bm_menu_btn_choose_mask_mod = "Apply",
 		bm_menu_btn_customize_mask = "Finalize",
-		dialog_blackmarket_finalize_item = "$ITEM\n\nThis will cost $money. This process is irreversible.",
+		dialog_blackmarket_finalize_item = "$ITEM\n\nThis will cost $money. The process is irreversible.",
+		dialog_blackmarket_abort_mask_warning = "You are about to exit mask customization.",
 		bm_menu_color_a = "Color 1",
 		bm_menu_color_b = "Color 2",
 		bm_menu_btn_choose_color_a = "Apply",
@@ -1307,6 +1322,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_btn_unequip_deployable = "Remove",
 		bm_menu_btn_equip_armor = "Equip",
 		bm_menu_btn_customize_armor = "Skins",
+		bm_menu_btn_equip_armor_skin = "Apply",
+		bm_menu_btn_preview_armor_skin = "Preview",
+		bm_menu_btn_skin = "Edit",
+		bm_menu_btn_equip_player_style = "Wear",
+		bm_menu_btn_preview_player_style = "Preview",
+		bm_menu_btn_equip_gloves = "Wear",
+		bm_menu_btn_preview_gloves = "Preview",
 		bm_askn_none = "Default",
 		bm_menu_btn_move_weapon = "Move",
 		bm_menu_btn_move_mask = "Move",
@@ -1316,7 +1338,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		bm_menu_stats_max_detection = "",
 		bm_menu_stats_detection = "",
 		bm_menu_stats_min_detection = "",
-		bm_menu_btn_customize_player_style = "Customize",
+		bm_menu_btn_customize_player_style = "Variations",
 		bm_menu_btn_equip_suit_variation = "Equip",
 		bm_menu_btn_preview_suit_variation = "Preview",
 		bm_menu_locked_weapon_slot = "Locked",
@@ -1342,6 +1364,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_st_available_spec_points = "$points Perk Points",
 		menu_st_max_perk_deck = "Unlock All",
 		menu_st_spec_xp_gained = "EXP since last conversion:",
+		st_menu_max_perk_dialog_text = "Unlocking $perk_deck_name ($perk_tier/$max_tier).\nThis will cost $point_cost points.",
 
 		menu_equipment_ecm_jammer = "ECM Jammer",
 
@@ -1370,6 +1393,17 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		bm_msk_character_locked = "Default",  --Default Mask
 		bm_msk_character_locked_desc = "Equips the default mask for the character you are playing as.",
+
+		--WEAPON MODIFICATIONS
+		bm_menu_ammo = "Ammo", --ammo type
+		bm_menu_custom = "Fire Lock",
+		bm_wp_upg_i_autofire = "Full Auto",
+		bm_wp_m1928_b_short = "Stubby Barrel", --Overkill never capitalised the B, so I'm fixing it
+		bm_wp_m1928_b_long = "Long Barrel",
+		bm_menu_disables_cosmetic_bonus = "Overrides skin boost.",
+		bm_menu_no_items = "Unavailable",
+		bm_menu_item_amount = "Available: $amount",
+		bm_mod_incompatibilities = "Incompatibile with $quantifier $category!",
 
 		--STEAM INVENTORY--
 		bm_menu_btn_open_container = "Open",
