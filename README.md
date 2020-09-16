@@ -8,6 +8,7 @@ Various Text Changes, now with way more changes and a lot less text!
 **Unfixable Issues:**
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".
 - The chrome skull in Biker Heist Day 1 says "PICKUP" instead of "TAKE".
+- Proportional custom fonts have improper spacing on certain strings. Monospace fonts (like default) work best.
 
 These issues could be fixed by adding new strings to the game, but that's not the purpose of this project.
 
