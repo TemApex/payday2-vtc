@@ -13,7 +13,7 @@ Various Text Changes, now with way more changes and a lot less text!
 These issues could be fixed by adding new strings to the game, but that's not the purpose of this project.
 
 **Unsupported Heists:**
-- None.
+- Buluc's Mansion (will take a while, lots of interactions to change and my PC doesn't like playing it)
 
 I don't plan on adding support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new ones. Adding support for official heists took around a week of non-stop work.
 
