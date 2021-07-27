@@ -2,6 +2,7 @@
 Various Text Changes, now with way more changes and a lot less text!
 
 **Fixable Issues:**
+- The Ukrainian Prisoner update rewrote the main menu in almost the same way I did, so I need to remove the duplicated strings.
 - Heist specific "You require X item" strings are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 
@@ -14,6 +15,8 @@ These issues could be fixed by adding new strings to the game, but that's not th
 
 **Unsupported Heists:**
 - Buluc's Mansion (will take a while, lots of interactions to change and my PC doesn't like playing it)
+- Dragon Heist
+- Ukrainian Prisoner Heist
 
 I don't plan on adding support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new ones. Adding support for official heists took around a week of non-stop work.
 
@@ -22,7 +25,7 @@ I don't plan on adding support for custom heists due to how long it would take t
 - This mod plays weirdly with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a background to interactions might also look strange, but will function normally. Not game breaking, just weird to look at.
 - As much as I wanted to remove certain hint messages ("You can't stand up here"), it looks weird with the default HUD and some (maybe all) custom HUDs. For this reason I've simplified all the hints instead.
 - There are alarm reasons for cameras, civs, and guards detecting body bags but the vanilla game doesn't use them (seems like a bug). I've changed them anyway, but you won't see them unless Overkill or another mod fixes it.
-- VR works.
+- Payday 2 VR is fully functional.
 
 Lots of interactions had to be made fairly generic due to Overkill reusing them for things that they didn't make sense to be used for. Examples are circuit breakers, which are used for both disabling and enabling power. The vanilla text says "TURN ON THE POWER", which doesn't make sense for Firestarter. Other heists eventually added an interaction for disabling power, but some older heists still use the "TURN ON" interaction. Situations like this would benefit from having their strings swapped entirely or completely new strings being added, but again, that's beyond the scope of this project and I'm trying to work with the mess that Overkill left.
 
