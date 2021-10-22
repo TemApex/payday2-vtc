@@ -33,4 +33,4 @@ Lots of interactions had to be made fairly generic due to Overkill reusing them 
 
 A more recent example of string reuse is in Breakfast in Tijuana. The string for searching the evidence is reused from scanning the evidence in Hoxton Breakout, so I had to change the line from "Scan Evidence" to "Check Evidence" just so it makes sense. If I could I'd have more flavourful text, but Overkill's reuse of strings limits how much I can do.
 
-If you ever come across a string that seems out of place, feel free to report it since it was likely used for a different purpose in a different heist.
+If you ever come across a string that seems out of place, chances are it was also used in a completely different heist, possibly in a completely different context.
