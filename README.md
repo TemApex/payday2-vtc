@@ -1,8 +1,9 @@
 # payday2-vtc
 Various Text Changes, now with way more changes and a lot less text!
 
+The assets .zip is purely optional. It hides the checkbox on the ready screen, because this mod adds its own checkbox using strings.
+
 **Fixable Issues:**
-- The Ukrainian Prisoner update rewrote the main menu in almost the same way I did, so I need to remove the duplicated strings.
 - Heist specific "You require X item" strings are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 

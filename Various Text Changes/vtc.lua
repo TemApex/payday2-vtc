@@ -19,8 +19,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		--LOBBY--
 		savefile_saving = "Saving",
 		hud_offshore_account = "Offshore",
-		menu_waiting_is_ready = "[X]",  --Heist Ready
-		menu_waiting_is_not_ready = "[  ]", --Heist Not Ready
+		menu_waiting_is_ready = "[X]",  --Ready
+		menu_waiting_is_not_ready = "[  ]", --Not Ready
 		menu_lobby_player_slot_available = "",
 		menu_description = "Briefing", --finally fixed this, no clue why they did it this way
 		menu_description_bain = "Briefing", --they could've used a macro instead of separate strings, like "$handler's Plan"
@@ -89,7 +89,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		cn_menu_contract_jobpay_header = "Heist Payout:",
 
-		--crime spree
+		--Crime Spree
 		menu_cs_suspend_spree = "Exit",
 		menu_cs_get_rewards = "End Spree",
 		menu_cs_gage_assets = "Boosts",
@@ -114,9 +114,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		create_empty_lobby_desc = "Create a lobby without selecting a heist.",
 		
 		menu_or_press_any_xbox_button = "or controller button",
-		menu_crimenet = "Play Online",  --CRIME.NET
 		menu_crimenet_help = "Play online with other players.",  --CRIME.NET Description
-		menu_crimenet_offline = "Play Offline",  --CRIME.NET Offline
 		menu_crimenet_offline_help = "Play offline with bots.",  --CRIME.NET Offline Description
 		menu_quickplay_settings_mutators = "Mutators",
 		menu_quickplay_option_default = "Default Settings",
@@ -127,8 +125,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		menu_player_inventory = "Loadout",  --New Inventory
 		menu_player_inventory_help = "Opens the loadout: contains weapons, skills, and perks.",
-		menu_visit_community = "Community Hub",
-		menu_visit_community_help = "Opens the PAYDAY 2 Community Hub in the Steam overlay.",
+		menu_visit_community_help = "Opens the Community Hub in the Steam overlay.",
 		menu_option_default = "Reset Options",
 		menu_option_default_help = "Resets all of your options to the defaults.",
 		dialog_default_options_message = "This will reset all of your settings to the default. Are you sure you want to do this?",
@@ -196,7 +193,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_challenge_safehouse_daily_reward = "6 Coins.",
 		menu_challenge_daily_reward = "Money and a weapon mod.",
 		daily_discord_objective = "Finish 3 heists with a converted cop.",
-		--This daily job had a typo. It said "3 heist" instead of "3 heists".
+		--This daily job has a typo. It says "3 heist" instead of "3 heists".
 		
 		menu_filter_time = "Heist Length",
 		menu_filter_favourite = "Favorites",
@@ -431,7 +428,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_uncuffed_in = "BREAKOUT", --didn't need changing but it looks nicer
 		hud_potential_xp = "EXP on completion: $XP",
 		
-		--Big Box--
+		--BIG BOX--
 		hud_civilian_killed_title = "Civilian Killed",
 		hud_civilian_killed_message = "-$AMOUNT",
 		present_obtained_mission_equipment_title = "Item Obtained",
@@ -553,13 +550,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_use_flare = "$BTN_INTERACT Light Flare",
 		hud_equipment_need_glass_cutter = "",
 		debug_interact_free = "$BTN_INTERACT Free",
-		debug_interact_temp_interact_box = "$BTN_INTERACT Interact",
+		debug_interact_temp_interact_box = "$BTN_INTERACT Interact", --credit to Eightan
 		hud_int_press_interaction_open = "$BTN_INTERACT Open/Close", --hud_int_open_slash_close exists, use it for Sangres' revolver case instead of this.
 		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close", --This is open/close because they didn't use the close interaction for Sangres' weapon case
 		hud_int_escape_taser = "$BTN_INTERACT Break Free",
 		hud_vehicle_broken = "Vehicle is broken!",
 
-		--DEPLOYABLES--
+		--Deployables
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
 		debug_interact_ammo_bag_take_ammo = "$BTN_INTERACT Take Ammo",
 		hud_int_equipment_normal_mode_trip_mine = "Switch to Explosive", --Yep, no key indicator. Not a mistake.
@@ -567,7 +564,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_equipment_ecm_feedback = "$BTN_INTERACT ECM Feedback", --More important in stealth with sensor mines, but still
 		debug_interact_bodybags_bag_take_bodybag = "$BTN_INTERACT Take Body Bag",
 		hud_interact_pickup_sentry_gun = "$BTN_INTERACT Pickup Sentry Gun",
-		hud_interact_sentry_gun_switch_fire_mode = "Change Ammo Type ($AMMO_LEFT%)", --You don't really need it for these. Could change in future though
+		hud_interact_sentry_gun_switch_fire_mode = "Change Ammo Type ($AMMO_LEFT%)",
 
 		--Golden Grin, AKA "How Many Interactions Can We Shove In One Heist"
 		hud_cas_take_gear = "$BTN_INTERACT Take Gear",
@@ -618,10 +615,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hint_no_usb_key = "",
 		hud_open_cas_elevator = "$BTN_INTERACT Open/Close",
 		hud_int_hold_pick_up = "$BTN_INTERACT Take",
-		hud_unpack_turret = "$BTN_INTERACT Unpack Turret",
+		hud_unpack_turret = "$BTN_INTERACT Unpack Turret", --credit to Eightan
 
 		--Aftershock
-		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe", --i'm still annoyed about COP
+		hud_int_hold_take_safe = "$BTN_INTERACT Pickup Safe", --I'm still annoyed about COP
 		hud_int_hold_pku_knife = "$BTN_INTERACT Take Knife",
 
 		--Stealth Tutorial
@@ -670,7 +667,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_connect_equip = "$BTN_INTERACT Connect Cable",
 		hud_int_hold_start_motor = "$BTN_INTERACT Start Engine",
 		hud_int_hold_read_barcode = "$BTN_INTERACT Read Barcode",
-		hud_int_hold_activate_reader = "$BTN_INTERACT Reactivate",
+		hud_int_hold_activate_reader = "$BTN_INTERACT Reactivate", --credit to Eightan
 		hud_int_hold_barcode = "$BTN_INTERACT Take Barcode",
 		hud_int_hold_open_circuitbreaker = "$BTN_INTERACT Open Breaker",
 		hud_int_hold_remove_cover = "$BTN_INTERACT Remove Cover",
@@ -697,7 +694,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_pickup_tablet = "$BTN_INTERACT Take Tablet",
 		hud_int_pickup_phone = "$BTN_INTERACT Take Phone",
 		hud_int_hold_take_expensive_wine = "$BTN_INTERACT Pickup Wine",
-		hud_int_hold_take_vr_headset = "$BTN_INTERACT Pickup Headset",
+		hud_int_hold_take_vr_headset = "$BTN_INTERACT Pickup Headset", --credit to Eightan
 
 		--Election Day
 		hud_int_hold_resume_upload = "$BTN_INTERACT Resume Upload",
@@ -713,7 +710,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_use_bridge = "$BTN_INTERACT Make Bridge",
 		hud_int_take_ticket = "$BTN_INTERACT Take Ticket",
 		hud_int_keyboard_hox_1 = "$BTN_INTERACT Lower Bollards",
-		hud_int_remove_stinger = "$BTN_INTERACT Remove Stinger",
+		hud_int_remove_stinger = "$BTN_INTERACT Remove Stinger", --credit to Eightan
 		hud_int_hold_remove_armor_plating = "$BTN_INTERACT Remove Armor",
 		hud_int_use_ticket = "$BTN_INTERACT Use Ticket",
 		hud_int_invisible_interaction_close = "$BTN_INTERACT Close",
@@ -769,7 +766,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_open_lid = "$BTN_INTERACT Open",
 		hud_int_hold_take_yayo = "$BTN_INTERACT Bag Cocaine",
 		hud_int_hold_attach_magnet = "$BTN_INTERACT Attach Magnet",
-		hud_int_hold_unfold_ladder = "$BTN_INTERACT Unfold Ladder",
+		hud_int_hold_unfold_ladder = "$BTN_INTERACT Unfold Ladder", --credit to Eightan
 		
 		--Shadow Raid
 		debug_interact_sewer_manhole = "$BTN_INTERACT Open Manhole",
@@ -810,8 +807,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_born_search_tools = "$BTN_INTERACT Search",
 		hud_int_hold_hand_over_tool = "$BTN_INTERACT Give Tool",
 		hud_born_plug_in_powercord = "$BTN_INTERACT Plug In",
-		hud_int_hold_born_soda = "$BTN_INTERACT Take Cola",
-		hud_int_hold_hand_over_soda = "$BTN_INTERACT Give Cola",
+		hud_int_hold_born_soda = "$BTN_INTERACT Take Cola", --credit to Eightan
+		hud_int_hold_hand_over_soda = "$BTN_INTERACT Give Cola", --credit to Eightan
 		
 		--Beneath The Mountain
 		hud_int_hold_pku_breaching_charges = "$BTN_INTERACT Pickup Charges",
@@ -841,9 +838,9 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		
 		--Wolf Pack Heists
 		debug_interact_crowbar = "$BTN_INTERACT Breach",
-		debug_interact_crowbar2 = "$BTN_INTERACT Breach",
+		debug_interact_crowbar2 = "$BTN_INTERACT Breach", --credit to Eightan
 		debug_interact_hold_to_breach = "$BTN_INTERACT Breach", --fuck yeah, THREE breach interactions
-		debug_interact_interaction_ball = "$BTN_INTERACT Pull Hose", --wtf does ball mean?
+		debug_interact_interaction_ball = "$BTN_INTERACT Pull Hose", --ball?
 		hud_int_take_paper_roll = "$BTN_INTERACT Take Roll",
 		hud_int_take_printer_ink = "$BTN_INTERACT Take Ink",
 		hud_int_equipment_printer_ink = "Ink",
@@ -907,6 +904,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_action_taking_uno_gold = "$BTN_INTERACT Take Gold",
 		hud_int_hold_pku_uno_gold = "$BTN_INTERACT Pickup Gold",
 		hud_int_equipment_mayan_gold_bar = "Mayan Gold",
+		--I don't know if these changes actually worked, tell me if they don't
 
 		--Breaking Feds
 		hud_int_hold_hack_barrier = "$BTN_INTERACT Hack Barrier",
@@ -927,10 +925,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_glass_cutter = "$BTN_INTERACT Place Cutter",
 		hud_int_hold_take_circle_cutter = "$BTN_INTERACT Take Cutter",
 		hud_int_hold_place_laptop = "$BTN_INTERACT Place Laptop",
-		hud_int_are_turn_on_tv = "$BTN_INTERACT Turn On TV",
-		hud_int_press_for_info = "$BTN_INTERACT Play Audio",
-		hud_int_hold_take_fire_extinguisher = "$BTN_INTERACT Take Fire Extinguisher",
-		hud_int_hold_extinguish_fire = "$BTN_INTERACT Put Out Fire",
+		hud_int_are_turn_on_tv = "$BTN_INTERACT Turn On TV", --credit to Eightan
+		hud_int_press_for_info = "$BTN_INTERACT Play Audio", --credit to Eightan
+		hud_int_hold_take_fire_extinguisher = "$BTN_INTERACT Take Fire Extinguisher", --credit to Eightan
+		hud_int_hold_extinguish_fire = "$BTN_INTERACT Put Out Fire", --credit to Eightan
 
 		--Armored Transport
 		hud_int_german_folder = "$BTN_INTERACT Take Folder",
@@ -939,13 +937,13 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_take_confidential_folder_event = "$BTN_INTERACT Take Folder",
 
 		--Murky Station
-		hud_hold_remove_screw = "$BTN_INTERACT Unscrew",
+		hud_hold_remove_screw = "$BTN_INTERACT Unscrew", --credit to Eightan
 
 		--GO Bank
-		hud_int_bank_note = "$BTN_INTERACT Search",
-		hud_int_hold_pickup_boards = "$BTN_INTERACT Take Boards",
-		hud_equipment_boards = "Boards",
-		hud_equipment_need_boards = "",
+		hud_int_bank_note = "$BTN_INTERACT Search", --credit to Eightan
+		hud_int_hold_pickup_boards = "$BTN_INTERACT Take Boards", --credit to Eightan
+		hud_equipment_boards = "Boards", --credit to Eightan
+		hud_equipment_need_boards = "", --credit to Eightan
 
 		--Boiling Point
 		hud_int_fire_missiles = "$BTN_INTERACT Fire Missiles",
@@ -955,8 +953,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hold_turn_of_gas = "$BTN_INTERACT Stop Gas",
 		hud_hold_start_scanning = "$BTN_INTERACT Activate Scanner",
 		hud_int_hold_pku_briefcase = "$BTN_INTERACT Take Briefcase",
-		hud_hold_removing_hand = "$BTN_INTERACT Take Hand",
-		hud_hold_scan_hand = "$BTN_INTERACT Scan Hand",
+		hud_hold_removing_hand = "$BTN_INTERACT Take Hand", --credit to Eightan
+		hud_hold_scan_hand = "$BTN_INTERACT Scan Hand", --credit to Eightan
 
 		--Big Oil
 		hud_int_take_confidential_folder = "$BTN_INTERACT Take Intel",
@@ -989,8 +987,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_equipment_huge_lance = "$BTN_INTERACT Start The Beast",
 		hud_int_equipment_huge_lance_jammed = "$BTN_INTERACT Fix The Beast",
 		hud_int_equipment_no_lance_part = "",
-		hud_int_hold_assemble_thermite = "$BTN_INTERACT Place Thermite",
-		hud_int_hold_ignite_thermite = "$BTN_INTERACT Ignite",
+		hud_int_hold_assemble_thermite = "$BTN_INTERACT Place Thermite", --credit to Eightan
+		hud_int_hold_ignite_thermite = "$BTN_INTERACT Ignite", --credit to Eightan
 
 		--Framing Frame
 		hud_int_answer_phone = "$BTN_INTERACT Answer Phone",
@@ -999,7 +997,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_old_wine = "$BTN_INTERACT Pickup Wine",
 		hud_int_hold_take_hdd = "$BTN_INTERACT Take HDD",
 		hud_int_use_computer = "$BTN_INTERACT Take Laptop",
-		hud_int_hold_use_computer = "$BTN_INTERACT Use Computer", --I'd change this to "Place Laptop" but it's used by other computers that you hack
+		hud_int_hold_use_computer = "$BTN_INTERACT Use Computer", --I'd change this to "Place Laptop" but it's used by other stuff
 		hud_int_hold_use_device = "$BTN_INTERACT Place Device",
 
 		--Yacht Heist
@@ -1129,7 +1127,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_clear = "RESET",
 		hud_int_press_enter = "ENTER",
 
-		--SAFEHOUSE INTERACTIONS--
+		--Safehouse
 		hud_int_talk_butler = "$BTN_INTERACT Talk",
 		hud_int_talk_wild = "$BTN_INTERACT Talk",
 		hud_int_talk_hoxton = "$BTN_INTERACT Talk",
@@ -1473,7 +1471,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 
 		--WEAPON MODIFICATIONS
 		bm_menu_ammo = "Ammo", --ammo type
-		bm_menu_custom = "Fire Lock",
+		bm_menu_custom = "Fire Mode",
 		bm_wp_upg_i_autofire = "Full Auto",
 		bm_wp_m1928_b_short = "Stubby Barrel", --Overkill never capitalised the B, so I'm fixing it
 		bm_wp_m1928_b_long = "Long Barrel",
