@@ -1,6 +1,8 @@
 # payday2-vtc
 Various Text Changes, now with way more changes and a lot less text!
 
+The assets .zip is purely optional. It hides the checkbox on the ready screen, because this mod adds its own checkbox using strings.
+
 **Fixable Issues:**
 - Heist specific "You require X item" strings are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
