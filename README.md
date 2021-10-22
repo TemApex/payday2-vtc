@@ -14,7 +14,7 @@ Various Text Changes, now with way more changes and a lot less text!
 These issues could be fixed by adding new strings to the game, but that's not the purpose of this project.
 
 **Unsupported Heists:**
-- Buluc's Mansion (will take a while, lots of interactions to change and my PC doesn't like playing it)
+- Buluc's Mansion
 - Dragon Heist
 - Ukrainian Prisoner Heist
 - Black Cat Heist
