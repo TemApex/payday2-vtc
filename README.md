@@ -1,4 +1,7 @@
 # payday2-vtc
+
+**THIS MOD IS NO LONGER BEING UPDATED.**
+
 Various Text Changes, now with way more changes and a lot less text!
 
 The assets .zip is purely optional. It hides the checkbox on the ready screen, because this mod adds its own checkbox using strings.
