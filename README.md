@@ -22,7 +22,7 @@ These issues could be fixed by adding new strings to the game, but that's not th
 - Dragon Heist
 - Ukrainian Prisoner Heist
 - Black Cat
-- ...and anything released afer this.
+- ...and anything released after this
 
 I don't plan on adding support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new ones. Adding support for official heists took around a week of non-stop work.
 
