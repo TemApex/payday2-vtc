@@ -27,7 +27,7 @@ These issues could be fixed by adding new strings to the game, but that's not th
 I don't plan on adding support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new ones. Adding support for official heists took around a week of non-stop work.
 
 **Notes:**
-- There are probably still a few interactions I've missed. Please report these if you find them.
+- There are probably still a few interactions I've missed. ~~Please report these if you find them.~~
 - This mod plays weirdly with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a background to interactions might also look strange, but will function normally. Not game breaking, just weird to look at.
 - As much as I wanted to remove certain hint messages ("You can't stand up here"), it looks weird with the default HUD and some (maybe all) custom HUDs. For this reason I've simplified all the hints instead.
 - There are alarm reasons for cameras, civs, and guards detecting body bags but the vanilla game doesn't use them (seems like a bug). I've changed them anyway, but you won't see them unless Overkill or another mod fixes it.
