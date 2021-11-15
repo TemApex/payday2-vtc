@@ -13,7 +13,7 @@ The assets .zip is purely optional. It hides the checkbox on the ready screen, b
 **Unfixable Issues:**
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".
 - The chrome skull in Biker Heist Day 1 says "PICKUP" instead of "TAKE".
-- Custom fonts have improper spacing on very specific strings.
+- Custom fonts have improper spacing on specific strings.
 
 These issues could be fixed by adding new strings to the game, but that's not the purpose of this project.
 
