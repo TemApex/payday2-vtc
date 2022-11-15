@@ -8,7 +8,7 @@ The assets .zip is purely optional. It hides the checkbox on the ready screen, b
 - Heist specific "You require X item" strings are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 - Some of the strings related to the secret are wrong. This is also super low priority, but I will fix it if I get the chance.
-- Taking the mask on Mountain Master. I did this once and can't be bothered doing it again.
+- Taking the mask on Mountain Master is unchanged. I simply can't be bothered doing this achievement again.
 
 **Unfixable Issues:**
 - The server in IT in Hoxton Breakout Day 2 says "TAKE" instead of "PICKUP".
