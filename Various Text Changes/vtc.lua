@@ -333,6 +333,8 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_pp_asset_safe_escape_desc = "Hire a better driver. Nullifies escapes.",
 		menu_pp_asset_sniper_spot_desc = "Grants access to a sniping spot.",
 		menu_pp_asset_bag_shortcut_desc = "Opens a vent on the roof that connects to the hallway outside the bedroom.",
+		menu_pp_asset_bag_zipline = "Bag Zipline",
+		menu_pp_asset_bag_zipline_desc = "Places a zipline that you can safely send loot bags across.",
 		menu_pp_asset_delay_police_10 = "Alarm 10s. Delay",
 		menu_pp_asset_delay_police_10_desc = "Delays the first police response by 10 seconds.",
 		menu_pp_asset_delay_police_20 = "Alarm 20s. Delay",
@@ -351,10 +353,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_pp_asset_unlocked_door = "Open Door",
 		menu_pp_asset_unlocked_door_desc = "Open a door, giving you more movement options.",
 		menu_pp_asset_kenaz_loud_entry_with_c4 = "Loud (C4)",
-		menu_pp_asset_kenaz_loud_entry_with_c4 = "Start masked up with a bag of C4. The alarm will immediately go off.",
+		menu_pp_asset_kenaz_loud_entry_with_c4_desc = "Start masked up with a bag of C4. The alarm will immediately go off.",
 		menu_pp_asset_kenaz_loud_entry = "Loud",
 		menu_pp_asset_kenaz_loud_entry_desc = "Start masked up without a bag of C4. The alarm will immediately go off.",
-		menu_pp_asset_kenaz_silent_entry = "Silent",
+		menu_pp_asset_kenaz_silent_entry = "Silent (Default)",
 		menu_pp_asset_kenaz_silent_entry_desc = "Start in civilian mode.",
 		menu_pp_asset_kenaz_vault_gate_key = "Keys",
 		menu_pp_asset_branchbank_vault_key = "Keys",
@@ -400,6 +402,17 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		menu_pp_camera_access_desc = "Place a camera access point.",
 		menu_pp_asset_extra_cameras = "Hidden Cameras",
 		menu_pp_asset_extra_cameras_desc = "Install extra cameras that run on a separate loop.\n\nView them from a security room or access point.",
+		menu_pp_asset_chas_open_window = "Open Window",
+		menu_pp_asset_chas_garbage_truck = "Garbage Truck",
+		menu_pp_asset_chas_garbage_truck_desc = "A garbage truck waits for the bags (stealth only).",
+		menu_pp_asset_chca_entry_as_crew = "Crew Deck",
+		menu_pp_asset_chca_entry_as_crew_desc = "Start in the crew deck already masked up.",
+		menu_pp_asset_chca_entry_helicopter = "Helicopter (Loud)",
+		menu_pp_asset_chca_entry_helicopter_desc = "Start the heist in loud on the ship's bow. The alarm will immediately go off.",
+		menu_pp_asset_chca_entry_as_guest = "Guest Cabin (Default)",
+		menu_pp_asset_chca_entry_as_guest_desc = "Start in civilian mode.",
+		menu_pp_asset_chca_spiked_drink = "Spiked Drink",
+		menu_pp_asset_pent_carkeys = "Car Keys",
 
 		menu_asset_buy_all_button = "Buy All",
 		menu_asset_buy_all_desc = "Total cost: $price",
@@ -644,7 +657,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_take_meth = "$BTN_INTERACT Bag Meth",
 		
 		--Slaughterhouse
-		hud_int_hold_start_crane = "$BTN_INTERACT Start Crane",
+		hud_int_hold_start_crane = "$BTN_INTERACT Move Crane",
 		hud_int_hold_ignite_trap = "$BTN_INTERACT Ignite Gas",
 		hud_int_hold_take_pig = "$BTN_INTERACT Pickup Pig",
 
@@ -822,6 +835,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_unlock_display_zeus = "Zeus",
 		hud_int_hold_unlock_display_hades = "Hades",
 		hud_int_hold_unlock_display_chronos = "Chronos",
+		hud_int_hold_place_breaching_detonator_rearm = "$BTN_INTERACT Restart Detonator",
 		
 		--The Diamond
 		hud_int_hold_open_display = "$BTN_INTERACT Open Display",
@@ -926,7 +940,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_take_circle_cutter = "$BTN_INTERACT Take Cutter",
 		hud_int_hold_place_laptop = "$BTN_INTERACT Place Laptop",
 		hud_int_are_turn_on_tv = "$BTN_INTERACT Turn On TV", --credit to Eightan
-		hud_int_press_for_info = "$BTN_INTERACT Play Audio", --credit to Eightan
+		hud_int_press_for_info = "$BTN_INTERACT Play", --credit to Eightan
 		hud_int_hold_take_fire_extinguisher = "$BTN_INTERACT Take Fire Extinguisher", --credit to Eightan
 		hud_int_hold_extinguish_fire = "$BTN_INTERACT Put Out Fire", --credit to Eightan
 
@@ -1060,7 +1074,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_equipment_concoction = "Volatile Mixture",
 		hud_int_hold_ignite_concoction = "$BTN_INTERACT Ignite Mixture",
 		hud_int_hold_search_documents = "$BTN_INTERACT Search Documents",
-		hud_int_hold_move_crane = "$BTN_INTERACT Start Crane",
+		hud_int_hold_move_crane = "$BTN_INTERACT Move Crane",
 		hud_int_hold_aim_laser = "$BTN_INTERACT Aim Laser",
 		hud_int_hold_take_battery = "$BTN_INTERACT Pickup Battery",
 		hold_interact_charge_gun = "$BTN_INTERACT Charge Laser",
@@ -1110,6 +1124,139 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_armory_hack = "$BTN_INTERACT Hack",
 		hud_hold_hook_car = "$BTN_INTERACT Attach Hook",
 
+		--Dragon Heist
+		hud_int_hold_flip_light = "$BTN_INTERACT Turn On", --ahhhhh, feels good to be back.
+		hud_press_to_interact = "$BTN_INTERACT Interact", --first interaction already says "hold" when it's a press...
+		hud_int_take_tea_set = "$BTN_INTERACT Pickup Tea Set",
+		hud_int_take_c4 = "$BTN_INTERACT Take C4",
+		hud_int_hold_take_dragon_statue = "$BTN_INTERACT Bag Statue",
+		hud_int_take_tablets = "$BTN_INTERACT Take Device",
+		hud_equipment_need_forklift_keys = "Need Keys",
+		hud_int_pickup_keychain_forklift = "$BTN_INTERACT Take Keys",
+		hud_int_hold_unlock_forklift = "$BTN_INTERACT Start Forklift",
+		hud_int_hold_breach_shutter = "$BTN_INTERACT Open Shutter",
+
+		--Ukrainian Prisoner, the new 2nd place for most interactions
+		hud_int_hit_gong = "Don't Press $BTN_INTERACT",
+		hud_int_take_gas_canister = "$BTN_INTERACT Take Gas",
+		hud_int_place_gas_canister = "$BTN_INTERACT Place Gas",
+		hud_int_take_laxative = "$BTN_INTERACT Take Cleaner",
+		hud_int_spike_cake = "$BTN_INTERACT Spike Cake",
+		hud_int_take_note = "$BTN_INTERACT Take Note",
+		hud_int_place_note = "$BTN_INTERACT Place Note",
+		hud_int_open_handcuffs = "$BTN_INTERACT Remove Handcuffs",
+		hud_int_start_defibrillator = "$BTN_INTERACT Charge Defibrillator",
+		hud_int_take_paddles = "$BTN_INTERACT Take Defibrillator",
+		hud_int_use_paddles = "$BTN_INTERACT Use Defibrillator",
+		hud_int_place_paddles = "$BTN_INTERACT Charge Defibrillator",
+		hud_int_open_first_aid_kit = "$BTN_INTERACT Open",
+		hud_int_take_adrenaline = "$BTN_INTERACT Take Adrenaline",
+		hud_int_use_adrenaline = "$BTN_INTERACT Use Adrenaline",
+		hud_int_search_for_documents = "$BTN_INTERACT Search Documents",
+		hud_int_take_usb = "$BTN_INTERACT Take USB",
+		hud_int_place_documents = "$BTN_INTERACT Place Documents",
+		hud_int_insert_usb = "$BTN_INTERACT Insert USB",
+		hud_int_open_slide_gate = "$BTN_INTERACT Open Gate",
+		hud_int_open_warehouse_door = "$BTN_INTERACT Open Door",
+		hud_int_move_cargo = "$BTN_INTERACT Move Pallet Jack",
+		hud_int_move_truck = "$BTN_INTERACT Move Truck",
+		hud_int_raise_ramp = "$BTN_INTERACT Raise Ramp",
+		hud_int_slide_ramp = "$BTN_INTERACT Move Ramp",
+		hud_hold_place_gas_can = "$BTN_INTERACT Place Gas",
+
+		--Black Cat
+		hud_int_passenger_manifest = "$BTN_INTERACT Access Manifest",
+		hud_int_hold_take_diesel = "$BTN_INTERACT Take Diesel",
+		hud_int_take_business_card = "$BTN_INTERACT Take Business Card",
+		hud_int_lower_painting = "$BTN_INTERACT Move Painting",
+		hud_equipment_need_keychain = "",
+		hud_int_open_safe = "$BTN_INTERACT Open Safe",
+		hud_int_hold_place_bug = "$BTN_INTERACT Place Bug",
+		hud_int_hold_take_hand = "$BTN_INTERACT Take Hand",
+		hud_int_pku_disable_firewall = "$BTN_INTERACT Disable Firewall",
+		hud_int_use_handprint = "$BTN_INTERACT Scan Hand",
+		chca_int_hold_burn_money = "$BTN_INTERACT Burn Money",
+		hud_int_ink_money = "$BTN_INTERACT Place Ink Bomb",
+		hud_int_pour_diesel = "$BTN_INTERACT Pour Diesel",
+		hud_int_lower_lifeboat = "$BTN_INTERACT Lower Lifeboat",
+
+		--Mountain Master
+		debug_interact_elevator_door = "$BTN_INTERACT Call Elevator",
+		debug_interact_crowbar_breach = "$BTN_INTERACT Breach",
+		hud_int_pku_force_open_vent = "$BTN_INTERACT Open Vent",
+		hud_int_press_signal_operator  = "$BTN_INTERACT Signal",
+		hint_no_notepad = "",
+		hud_int_hold_start_fire_alarm = "$BTN_INTERACT Trigger Alarm",
+		hud_int_hold_repair_cable = "$BTN_INTERACT Fix Cable",
+		hud_int_hold_take_gnome = "$BTN_INTERACT Pickup Gnome",
+		hud_int_press_take_wire = "$BTN_INTERACT Take Wire",
+		hud_int_hold_remove_hatch = "$BTN_INTERACT Remove Hatch",
+		hud_int_hold_connect_wire_to_elevator = "$BTN_INTERACT Connect Wire",
+		hud_int_hold_connect_wire_to_door = "$BTN_INTERACT Connect Hook",
+		hud_int_press_car_platform = "$BTN_INTERACT Rotate Platform",
+		debug_interact_press_open_trunk = "$BTN_INTERACT Open Trunk",
+		hud_int_press_take_gas_can = "$BTN_INTERACT Take Gas",
+		hud_int_press_take_car_jack = "$BTN_INTERACT Take Jack",
+		debug_interact_long_pour_gas = "$BTN_INTERACT Pour Gas",
+		hud_int_hold_lift_car = "$BTN_INTERACT Lift Car",
+		hud_int_press_release_car_jack = "$BTN_INTERACT Release Jack",
+
+		--Ranch Heist, nevermind this is the new 2nd place
+		hud_int_pickup_horseshoe = "$BTN_INTERACT Take Horseshoe",
+		hud_int_take_bugging_device = "$BTN_INTERACT Take Bug",
+		hud_int_wake_computer = "$BTN_INTERACT Start Computer",
+		hud_int_plant_bugging_device = "$BTN_INTERACT Plant Bug",
+		hud_int_take_hammer = "$BTN_INTERACT Take Hammer",
+		hud_int_place_hammer = "$BTN_INTERACT Place Hammer",
+		hud_hint_need_hammer = "",
+		hud_int_take_mould = "$BTN_INTERACT Take Mold",
+		hud_int_place_mould = "$BTN_INTERACT Place Mold",
+		hud_hint_need_mould = "",
+		hud_int_take_silver_ingot = "$BTN_INTERACT Take Ingot",
+		debug_interact_equipment_silver_ingot = "",
+		hud_int_craft_sheriff_star = "$BTN_INTERACT Create Star",
+		hud_int_take_sheriff_star = "$BTN_INTERACT Take Star",
+		hud_int_adjust_temperature = "$BTN_INTERACT Change Temperature",
+		hud_int_turn_on_firepit = "$BTN_INTERACT Turn On",
+		hud_int_take_barrel = "$BTN_INTERACT Take Barrel",
+		hud_int_place_barrel = "$BTN_INTERACT Place Barrel",
+		hud_int_take_stock = "$BTN_INTERACT Take Stock",
+		hud_int_place_stock = "$BTN_INTERACT Place Stock",
+		hud_int_take_receiver = "$BTN_INTERACT Take Receiver",
+		hud_int_place_receiver = "$BTN_INTERACT Place Receiver",
+		hud_int_construct_weapon = "$BTN_INTERACT Assemble Weapon",
+		hud_hint_need_stock = "Need Stock",
+		hud_hint_need_barrel = "Need Barrel",
+		hud_hint_need_receiver = "Need Receiver",
+		hud_int_take_ranc_acid = "$BTN_INTERACT Take Acid",
+		hud_int_enter_turret = "$BTN_INTERACT Use Turret",
+		hud_int_disassemble_turret = "$BTN_INTERACT Disassemble",
+		hud_int_assemble_turret = "$BTN_INTERACT Assemble",
+		hud_int_pour_acid = "$BTN_INTERACT Pour Acid",
+		hud_int_take_laptop = "$BTN_INTERACT Take Laptop",
+		hud_int_place_laptop = "$BTN_INTERACT Place Laptop",
+		hud_int_release_brake = "$BTN_INTERACT Release Brake",
+		hud_int_push_truck = "$BTN_INTERACT Push Truck",
+		hud_int_take_winchhook = "$BTN_INTERACT Take Hook",
+		hud_int_attach_winchhook = "$BTN_INTERACT Attach Hook",
+		hud_int_start_truck = "$BTN_INTERACT Start Truck",
+
+		--Lost In Transit
+		hud_int_trai_connect_locke_walkietalkie = "$BTN_INTERACT Connect Locke", --oh god long interactions again
+		hud_trai_hold_interact_place_thermite = "$BTN_INTERACT Place Thermite", --WHY
+		hud_int_trai_toolsafe_lockpick = "$BTN_INTERACT Pick Lock", --why.
+		hud_int_trai_hold_access_console = "$BTN_INTERACT Access",
+		hud_int_hold_take_printing_plates = "$BTN_INTERACT Bag Plates",
+		hud_int_trai_press_achievement_safe = "$BTN_INTERACT Open Safe",
+		hud_int_trai_connect_locke = "$BTN_INTERACT Connect Locke", --i'm not even going to say anything
+		hud_int_refuel_locomotive = "$BTN_INTERACT Fuel Train",
+		hud_int_decouple_locomotive = "$BTN_INTERACT Decouple Train",
+		hud_int_trai_hold_crane_control = "$BTN_INTERACT Move Crane", --i'm gonna snap
+		hud_int_attach_hook = "$BTN_INTERACT Attach Hook",
+		hud_int_start_locomotive = "$BTN_INTERACT Start Engine",
+		hud_int_trai_turntable_console_use = "$BTN_INTERACT Rotate Turntable",
+		hud_int_trai_fix_cable = "$BTN_INTERACT Fix Cable", --mountain master had this string already...
+
 		--Holdout
 		debug_interact_trade_hostage_skm = "$BTN_INTERACT Trade",
 		
@@ -1124,6 +1271,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_07 = "7",
 		hud_int_press_08 = "8",
 		hud_int_press_09 = "9",
+		hud_int_press_number_sign = "#",
 		hud_int_press_clear = "RESET",
 		hud_int_press_enter = "ENTER",
 
@@ -1208,6 +1356,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_hint_hostage_follow_limit = "Already moving a hostage.",
 		hud_vehicle_no_enter_beserker = "Can't enter vehicles in Swan Song.",
 		hint_cross_thugs = "Passing this point will blow your cover.",
+		hud_hint_pent_speed_demon = "Good job, speed demon!",
 
 		--Custody, down, reviving, etc
 		hint_teammate_downed = "$TEAMMATE is down!",
@@ -1320,6 +1469,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_carry_robot_toy = "Toy",
 		hud_carry_shoes = "High Heels",
 		hud_carry_hydraulic_opener = "Door Breaker",
+		hud_carry_gnome = "Garden Gnome",
 		
 		--OPTIONS--
 		menu_controller_normal = "Normal",
