@@ -1276,6 +1276,10 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_clear = "RESET",
 		hud_int_press_enter = "ENTER",
 
+		--Christmas Event
+		cg22_hold_summon_present = "$BTN_INTERACT Start Event",
+		--hud_cg22_show_buff = "", --not sure what the macro is for this, can't be bothered finding it. sorry
+
 		--Safehouse
 		hud_int_talk_butler = "$BTN_INTERACT Talk",
 		hud_int_talk_wild = "$BTN_INTERACT Talk",
