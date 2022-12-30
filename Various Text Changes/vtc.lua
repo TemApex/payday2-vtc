@@ -273,6 +273,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		victory_group_total_downed = "Total Downs",
 		victory_group_hit_accuracy = "Crew Accuracy",
 		victory_criminals_finished = "Surviving Players",
+		victory_most_damage = "Most Damage",
 		--Personal Stats
 		victory_total_downed = "Downs",
 		victory_hit_accuracy = "Accuracy",
@@ -281,6 +282,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		victory_total_head_shots = "Headshot Kills",
 		victory_favourite_weapon = "Favorite Weapon",
 		victory_civilians_killed_penalty = "Civilians Killed",
+		victory_session_damage = "Total Damage",
 
 		menu_es_safehouse_summary = "Coins",
 		menu_es_safehouse_total_coins = "You have $amount coins.",
@@ -1181,6 +1183,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_ink_money = "$BTN_INTERACT Place Ink Bomb",
 		hud_int_pour_diesel = "$BTN_INTERACT Pour Diesel",
 		hud_int_lower_lifeboat = "$BTN_INTERACT Lower Lifeboat",
+		hud_int_ignite_flare = "$BTN_INTERACT Ignite Flare",
 
 		--Mountain Master
 		debug_interact_elevator_door = "$BTN_INTERACT Call Elevator",
