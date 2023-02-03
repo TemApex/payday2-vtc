@@ -561,7 +561,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_rewire_timelock = "$BTN_INTERACT Rewire",
 		hud_int_hold_open_vault = "$BTN_INTERACT Open Vault",
 		debug_c4_diffusible = "$BTN_INTERACT Defuse C4",
-		hud_int_place_flare = "$BTN_INTERACT Light Flare",
+		hud_int_place_flare = "$BTN_INTERACT Place Flare",
 		hud_int_use_flare = "$BTN_INTERACT Light Flare",
 		hud_equipment_need_glass_cutter = "",
 		debug_interact_free = "$BTN_INTERACT Free",
@@ -1139,6 +1139,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_pickup_keychain_forklift = "$BTN_INTERACT Take Keys",
 		hud_int_hold_unlock_forklift = "$BTN_INTERACT Start Forklift",
 		hud_int_hold_breach_shutter = "$BTN_INTERACT Open Shutter",
+		hud_int_hold_hack_box = "$BTN_INTERACT Open",
 
 		--Ukrainian Prisoner, the new 2nd place for most interactions
 		hud_int_hit_gong = "Don't Press $BTN_INTERACT",
@@ -1183,7 +1184,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_ink_money = "$BTN_INTERACT Place Ink Bomb",
 		hud_int_pour_diesel = "$BTN_INTERACT Pour Diesel",
 		hud_int_lower_lifeboat = "$BTN_INTERACT Lower Lifeboat",
-		hud_int_ignite_flare = "$BTN_INTERACT Ignite Flare",
+		hud_int_ignite_flare = "$BTN_INTERACT Light Flare",
 
 		--Mountain Master
 		debug_interact_elevator_door = "$BTN_INTERACT Call Elevator",
