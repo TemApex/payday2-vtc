@@ -24,7 +24,7 @@ The assets .zip is purely optional. It hides the checkbox on the ready screen, b
 I don't plan on adding support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new ones. Adding support for official heists took around a week of non-stop work.
 
 **Notes:**
-- There are probably still a few interactions I've missed. Please report these if you find them.
+- There are probably a few obscure interactions that I've missed. Please report these if you find them.
 - This mod plays weirdly with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a background to interactions might also look strange, but will function normally. Not game breaking, but visually strange.
 - As much as I wanted to remove certain hint messages ("You can't stand up here"), it looks weird with the default HUD and some (maybe all) custom HUDs. For this reason I've simplified all the hints instead.
 - There are alarm reasons for cameras, civs, and guards detecting body bags but the vanilla game doesn't use them (seems like a bug). I've changed them anyway, but you won't see them unless Overkill or another mod fixes it.
@@ -34,4 +34,4 @@ Lots of interactions had to be made fairly generic due to Overkill reusing them 
 
 A more recent example of reuse is Breakfast in Tijuana. The interaction for searching the evidence is reused from scanning the evidence in Hoxton Breakout, so I had to change the line from "Scan Evidence" to "Check Evidence" just so it makes sense. If I could I'd have more flavourful text, but Overkill's reuse of text limits how much I can do.
 
-If you find an interaction that seems out of place chances are it was used in a completely different heist, possibly in a completely different context. Feel free to report these and I'll look into them. Feel free to report vanilla interactions as well, as there are still some obscure ones that I've missed.
+If you find an interaction that seems out of place chances are it was used in a completely different heist, possibly in a completely different context. Feel free to report these and I'll look into them.
