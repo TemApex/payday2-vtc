@@ -32,4 +32,4 @@ Lots of interactions had to be made fairly generic due to Overkill reusing them 
 
 A more recent example of reuse is Breakfast in Tijuana. The interaction for searching the evidence is reused from scanning the evidence in Hoxton Breakout, so I had to change the line from "Scan Evidence" to "Check Evidence" just so it makes sense. If I could I'd have more flavourful text, but Overkill's reuse of text limits how much I can do.
 
-If you find an interaction that seems out of place chances are it was used in a completely different heist, possibly in a completely different context. Feel free to report these and I'll look into them.
+If you find an interaction that seems out of place chances are it was used in a completely different heist, possibly in a completely different context. Feel free to report these and I'll look into them. Feel free to report vanilla interactions as well, as there are still some obscure ones that I've missed.
