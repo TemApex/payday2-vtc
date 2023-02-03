@@ -25,7 +25,7 @@ I don't plan on adding support for custom heists due to how long it would take t
 
 **Notes:**
 - There are probably a few obscure interactions that I've missed. Please report these if you find them.
-- This mod plays weirdly with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a background to interactions might also look strange, but will function normally. Not game breaking, but visually strange.
+- This mod looks weird with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a background to interactions might also look strange, but will function normally. Not game breaking, just visually strange. [MUI](https://modworkshop.net/mod/41187), [VanillaHUD+](https://modworkshop.net/mod/25629), and the default HUD have no visual problems.
 - As much as I wanted to remove certain hint messages ("You can't stand up here"), it looks weird with the default HUD and some (maybe all) custom HUDs. For this reason I've simplified all the hints instead.
 - There are alarm reasons for cameras, civs, and guards detecting body bags but the vanilla game doesn't use them (seems like a bug). I've changed them anyway, but you won't see them unless Overkill or another mod fixes it.
 - Payday 2 VR is fully functional.
