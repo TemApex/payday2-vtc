@@ -23,9 +23,14 @@ The assets .zip is purely optional. It hides the checkbox on the ready screen, b
 
 I don't plan on adding support for custom heists due to how long it would take to go through all the existing custom heists and the uphill struggle it'll be to stay on top of new ones. Adding support for official heists took around a week of non-stop work.
 
+**HUD Compatibility:**
+
+Realistically this works with every HUD mod because it only changes text, but certain HUD mods do have visual issues. [PDTH HUD](https://modworkshop.net/mod/19900) has issues with certain prompts, such as "You are being revived" or "You need X item". These prompts will display the interaction bar with no text. Any HUD that adds a background to interaction prompts will have the same issue, but otherwise they should function normally - they will just look a bit weird.
+
+HUDs that I have personally tested and have no issues are: [MUI](https://modworkshop.net/mod/41187), [VanillaHUD+](https://modworkshop.net/mod/25629), and the default HUD.
+
 **Notes:**
 - There are probably a few obscure interactions that I've missed. Please report these if you find them.
-- This mod looks weird with [PDTH HUD](https://modworkshop.net/mod/19900). Any text that I've removed (being revived, "You need X item", etc) will display an interaction bar but no text. Any other HUDs that add a background to interactions might also look strange, but will function normally. Not game breaking, just visually strange. [MUI](https://modworkshop.net/mod/41187), [VanillaHUD+](https://modworkshop.net/mod/25629), and the default HUD have no visual problems.
 - As much as I wanted to remove certain hint messages ("You can't stand up here"), it looks weird with the default HUD and some (maybe all) custom HUDs. For this reason I've simplified all the hints instead.
 - There are alarm reasons for cameras, civs, and guards detecting body bags but the vanilla game doesn't use them (seems like a bug). I've changed them anyway, but you won't see them unless Overkill or another mod fixes it.
 - Payday 2 VR is fully functional.
