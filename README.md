@@ -2,7 +2,7 @@
 
 Various Text Changes, now with way more changes and a lot less text!
 
-The assets .zip is purely optional. It hides the checkbox on the ready screen, because this mod adds its own checkbox using strings.
+The assets .zip is purely optional. It hides the checkbox on the ready screen, because this mod adds its own checkbox using strings (may unintentionally hide other checkboxes throughout the game).
 
 **Fixable Issues:**
 - Heist specific "You require X item" strings are unchanged. These are low priority.
