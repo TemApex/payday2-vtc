@@ -3,7 +3,7 @@
 	"description" : "Replaces various lines of text throughout the game to increase consistency and simplicity.",
 	"author" : "Ema Pex",
 	"contact" : "emapex12@gmail.com",
-	"version" : "6.9.1",
+	"version" : "6.9.2",
 	"blt_version" : 2,
 	"color" : "51 153 204",
 	"image" : "vtc.png",
@@ -11,7 +11,7 @@
 	"updates" : [
 		{
 			"identifier": "vtc",
-			"revision": 74,
+			"revision": 75,
 			"host": {
 				"meta": "https://github.com/TemApex/payday2-vtc/raw/master/meta.json"
 			}
