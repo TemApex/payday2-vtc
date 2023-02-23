@@ -1306,6 +1306,23 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_press_bunny_button = "$BTN_INTERACT Bunny",
 		hud_hold_center_button = "$BTN_INTERACT Activate",
 
+		--Hostile Takeover
+		corp_hold_computer_email = "$BTN_INTERACT Access Emails",
+		corp_hold_computer_download_email = "$BTN_INTERACT Download Email",
+		corp_hold_phone_play_voice_message = "$BTN_INTERACT Play Voicemail",
+		corp_hold_desk_drawer_open = "$BTN_INTERACT Open Drawer",
+		corp_hold_voice_recorder_play = "$BTN_INTERACT Play Recording",
+		corp_hold_unlock_controlbox = "$BTN_INTERACT Open",
+		corp_hold_close_curtains = "$BTN_INTERACT Close Curtains",
+		corp_hold_pku_prototype = "$BTN_INTERACT Pickup NEO-2",
+		corp_hud_hold_use_tag_reader = "$BTN_INTERACT Scan Tag",
+		--this is a COMPLETELY different string structure to normal
+		hud_int_corp_take_key_fob = "$BTN_INTERACT Take Tag",
+		hud_hold_use_achievement_laptop = "$BTN_INTERACT Use Laptop",
+		hud_corp_hold_shelf_research_documents = "$BTN_INTERACT Search Shelf",
+		corp_hold_pku_paper_pile_bag = "$BTN_INTERACT Pickup Documents",
+		hud_int_corp_prop_celing_wires_cut = "$BTN_INTERACT Cut Wires",
+
 		--Holdout
 		debug_interact_trade_hostage_skm = "$BTN_INTERACT Trade Hostage",
 
