@@ -5,7 +5,7 @@ Various Text Changes, now with way more changes and a lot less text!
 The assets .zip is purely optional. It hides the checkbox on the ready screen, because this mod adds its own checkbox using strings (may unintentionally hide other checkboxes throughout the game).
 
 **Fixable Issues:**
-- Heist specific "You require X item" lines are unchanged. These are low priority.
+- Heist specific "You require X item" prompts are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 - Some of the text related to the secret is wrong. This is also super low priority, but I will fix it if I get the chance.
 - Taking the mask on Mountain Master is unchanged. I simply can't be bothered doing this achievement again.
