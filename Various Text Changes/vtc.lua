@@ -537,6 +537,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_take_handcuffs = "$BTN_INTERACT Take Handcuffs",
 		debug_interact_grenade_crate_take_grenades = "$BTN_INTERACT Take Throwable",
 		hud_int_vehicle_drive = "$BTN_INTERACT Drive",
+		hud_int_driving_drive = "$BTN_INTERACT Enter Vehicle",
 		hud_int_vehicle_enter = "$BTN_INTERACT Passenger",
 		hud_int_vehicle_open_trunk = "$BTN_INTERACT Open Trunk",
 		hud_int_vehicle_repair = "$BTN_INTERACT Repair Vehicle",
@@ -1333,7 +1334,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		corp_hold_voice_recorder_play = "$BTN_INTERACT Play Recording",
 		corp_hold_unlock_controlbox = "$BTN_INTERACT Open",
 		corp_hold_close_curtains = "$BTN_INTERACT Close Curtains",
-		corp_hold_pku_prototype = "$BTN_INTERACT Pickup NEO-2",
+		corp_hold_pku_prototype = "$BTN_INTERACT Pickup Neo-2",
 		corp_hud_hold_use_tag_reader = "$BTN_INTERACT Scan Tag",
 		--this is a COMPLETELY different string structure to normal
 		hud_int_corp_take_key_fob = "$BTN_INTERACT Take Tag",
@@ -1341,6 +1342,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_corp_hold_shelf_research_documents = "$BTN_INTERACT Search Shelf",
 		corp_hold_pku_paper_pile_bag = "$BTN_INTERACT Pickup Documents",
 		hud_int_corp_prop_celing_wires_cut = "$BTN_INTERACT Cut Wires",
+		corp_hold_computer_lead_schedule = "$BTN_INTERACT Access Schedule",
 
 		--Holdout
 		debug_interact_trade_hostage_skm = "$BTN_INTERACT Trade Hostage",
@@ -1560,6 +1562,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_carry_shoes = "High Heels",
 		hud_carry_hydraulic_opener = "Door Breaker",
 		hud_carry_gnome = "Garden Gnome",
+		hud_carry_corp_prototype = "Neo-2",
 
 		--OPTIONS
 		menu_controller_normal = "Normal",
