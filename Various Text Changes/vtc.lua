@@ -590,6 +590,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_press_interaction_close = "$BTN_INTERACT Open/Close", --This is open/close because they didn't use the close interaction for Sangres' weapon case
 		hud_int_escape_taser = "$BTN_INTERACT Break Free",
 		hud_int_pick_up_item = "$BTN_INTERACT Take Anniversary Item",
+		debug_interact_cutter_jammed = "$BTN_INTERACT Restart Cutter",
 
 		--Deployables
 		debug_interact_doctor_bag_heal = "$BTN_INTERACT Heal",
@@ -1051,7 +1052,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_open_window = "$BTN_INTERACT Open Window",
 		hud_int_close_window = "$BTN_INTERACT Close Window",
 		hud_int_hack_server_room = "$BTN_INTERACT Hack Laptop",
-		hud_int_turn_off = "$BTN_INTERACT Turn Off",
+		hud_int_turn_off = "$BTN_INTERACT Turn Valve",
 
 		--Brooklyn 10-10
 		hud_int_pry_open_elevator_door = "$BTN_INTERACT Open Door",
@@ -1343,6 +1344,24 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		corp_hold_pku_paper_pile_bag = "$BTN_INTERACT Pickup Documents",
 		hud_int_corp_prop_celing_wires_cut = "$BTN_INTERACT Cut Wires",
 		corp_hold_computer_lead_schedule = "$BTN_INTERACT Access Schedule",
+
+		--Crude Awakening
+		deep_hud_int_hold_pickup_ladder = "$BTN_INTERACT Move Ladder",
+		deep_hold_control_lever = "$BTN_INTERACT Pull Lever",
+		deep_hud_int_open_door = "$BTN_INTERACT Open Door",
+		hud_hold_pickup_oilsample = "$BTN_INTERACT Take Oil Sample",
+		hud_deep_press_network_cable_connect = "$BTN_INTERACT Connect Cable",
+		hud_hold_override_pc = "$BTN_INTERACT Override Network",
+		deep_press_test_oil_sample = "$BTN_INTERACT Analyse Sample",
+		deep_hold_pipe_corner_spin = "$BTN_INTERACT Rotate Pipe",
+		deep_hud_press_intercom = "$BTN_INTERACT Activate",
+		deep_hud_int_hold_open_valve = "$BTN_INTERACT Open Valve",
+		deep_hud_int_hold_jam_vent = "$BTN_INTERACT Jam Vent",
+		hud_hold_turn_on_gas = "$BTN_INTERACT Release Gas",
+
+		--Lost Tapes
+		hud_int_action_lrm_safe_keycard = "",
+		hud_int_use_lrm_safe_keycard = "$BTN_INTERACT Insert Keycard",
 
 		--Holdout
 		debug_interact_trade_hostage_skm = "$BTN_INTERACT Trade Hostage",
