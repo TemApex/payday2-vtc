@@ -1,6 +1,6 @@
 # payday2-vtc
 
-*THIS MOD WILL BE DISCONTINUED AND UNSUPPORTED AFTER SEPTEMBER 21ST.*
+*THIS MOD WILL BE DISCONTINUED AND UNSUPPORTED AFTER SEPTEMBER 21ST.*  
 
 Various Text Changes, now with way more changes and a lot less text!
 
@@ -9,7 +9,7 @@ The assets .zip is purely optional. It hides the checkbox on the ready screen, b
 **Fixable Issues:**
 - Heist specific "You require X item" prompts are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
-- Some of the text related to the secret is wrong. This is also super low priority, but I will fix it if I get the chance.
+- Some of the text related to the secret is wrong. This is super low priority, but I will fix it if I get the chance.
 - Taking the mask on Mountain Master is unchanged. I simply can't be bothered doing this achievement again.
 - Taking the suit on Crude Awakening is unchanged. Same reason as Mountain Master.
 
@@ -28,9 +28,9 @@ I don't plan on adding support for custom heists due to how long it would take t
 
 **HUD Compatibility:**
 
-Realistically this works with every HUD mod because it only changes text, but certain HUD mods do have visual issues. [PDTH HUD](https://modworkshop.net/mod/19900) has issues with certain prompts, such as "You are being revived" or "You need X item". These prompts will display the interaction bar with no text. Any other HUD that adds a background to interaction prompts might have the same issue, but otherwise they should function normally - they will just look a bit weird.
+Realistically this works with every HUD mod because it only changes text, but certain HUD mods do have visual issues. [PDTH HUD](https://modworkshop.net/mod/19900) has issues with certain prompts, such as "You are being revived" or "You need X item". These prompts will display the interaction bar with no text. Any other HUD that adds a background to interaction prompts might have the same issue, but otherwise they should function normally - they will just look a bit strange. If you want to see if a HUD has issues just try it out and decide if it looks right or not.
 
-HUDs that I have personally tested and have no issues are: [MUI](https://modworkshop.net/mod/41187), [VanillaHUD+](https://modworkshop.net/mod/25629), and the default HUD.
+HUDs that I have personally tested and can confirm have no issues are: [MUI](https://modworkshop.net/mod/41187), [VanillaHUD+](https://modworkshop.net/mod/25629), and the default HUD.
 
 **Notes:**
 - There are probably a few obscure interactions that I've missed. Please report these if you find them.
