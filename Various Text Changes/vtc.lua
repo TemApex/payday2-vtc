@@ -1217,7 +1217,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_repair_cable = "$BTN_INTERACT Fix Cable",
 		hud_int_hold_take_gnome = "$BTN_INTERACT Pickup Gnome",
 		hud_int_press_take_wire = "$BTN_INTERACT Take Wire",
-		hud_int_hold_remove_hatch = "$BTN_INTERACT Remove Hatch",
+		hud_int_hold_remove_elevator_hatch = "$BTN_INTERACT Remove Hatch",
 		hud_int_hold_connect_wire_to_elevator = "$BTN_INTERACT Connect Wire",
 		hud_int_hold_connect_wire_to_door = "$BTN_INTERACT Connect Hook",
 		hud_int_press_car_platform = "$BTN_INTERACT Rotate Platform",
@@ -1227,6 +1227,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		debug_interact_long_pour_gas = "$BTN_INTERACT Pour Gas",
 		hud_int_hold_lift_car = "$BTN_INTERACT Lift Car",
 		hud_int_press_release_car_jack = "$BTN_INTERACT Release Jack",
+		hud_int_hold_start_brew = "$BTN_INTERACT Start Coffee Machine",
 
 		--Ranch Heist, nevermind this is the new 2nd place
 		hud_int_pickup_horseshoe = "$BTN_INTERACT Take Horseshoe",
