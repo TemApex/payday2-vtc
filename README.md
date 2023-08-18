@@ -10,7 +10,6 @@ The assets .zip is purely optional. It hides the checkbox on the ready screen, b
 - Heist specific "You require X item" prompts are unchanged. These are low priority.
 - There are a few unchanged hints, but these are super low priority. I'll still change them if I remember though.
 - Some of the text related to the secret is wrong. This is super low priority, but I will fix it if I get the chance.
-- Taking the mask on Mountain Master is unchanged. I simply can't be bothered doing this achievement again.
 - Taking the suit on Crude Awakening is unchanged. Same reason as Mountain Master.
 
 **Unfixable Issues:**
