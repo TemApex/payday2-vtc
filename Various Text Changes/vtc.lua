@@ -937,12 +937,11 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		hud_int_hold_postpone_update = "$BTN_INTERACT Pause Update",
 
 		hud_int_hold_pull_lever = "$BTN_INTERACT Pull Lever", --oh yeah, you best believe I changed the secret stuff
-		hud_action_placing_mayan_gold_bar = "$BTN_INTERACT Place Gold",
+		hud_int_place_mayan_gold_bar = "$BTN_INTERACT Place Gold",
 		hud_int_equipment_no_mayan_gold = "",
-		hud_action_taking_uno_gold = "$BTN_INTERACT Take Gold",
+		hud_int_take_mayan_gold_bar = "$BTN_INTERACT Take Gold",
 		hud_int_hold_pku_uno_gold = "$BTN_INTERACT Pickup Gold",
 		hud_int_equipment_mayan_gold_bar = "Mayan Gold",
-		--I don't know if these changes actually worked, tell me if they don't (they didn't)
 
 		--Breaking Feds
 		hud_int_hold_hack_barrier = "$BTN_INTERACT Hack Barrier",
@@ -1359,6 +1358,7 @@ Hooks:Add("LocalizationManagerPostInit", "vtc_main", function(loc)
 		deep_hud_int_hold_open_valve = "$BTN_INTERACT Open Valve",
 		deep_hud_int_hold_jam_vent = "$BTN_INTERACT Jam Vent",
 		hud_hold_turn_on_gas = "$BTN_INTERACT Release Gas",
+		hud_deep_press_pickup_texas_suit = "$BTN_INTERACT Take Suit",
 
 		--Lost Tapes
 		hud_int_action_lrm_safe_keycard = "",
